@@ -10,6 +10,7 @@ export type Post = {
   mediaType: MediaType;
   likesCount: number;
   commentsCount: number;
+  repostsCount: number;
   caption: string;
   permalink: string;
 };

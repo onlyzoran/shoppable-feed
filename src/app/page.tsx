@@ -1,6 +1,5 @@
-import { Placeholder } from "@/components/Placeholder";
-import { APP_NAME } from "@/lib/constants";
+import { FeedPage } from "@/components/feed/FeedPage";
 
 export default function Home() {
-  return <Placeholder title={APP_NAME} />;
+  return <FeedPage />;
 }

@@ -201,6 +201,7 @@ function mapNodeToPost(
     mediaType: resolveMediaType(node),
     likesCount,
     commentsCount,
+    repostsCount: 0,
     caption,
     permalink: `https://www.instagram.com/p/${node.shortcode}/`,
   };
