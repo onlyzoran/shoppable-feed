@@ -13,6 +13,9 @@ export type Post = {
   repostsCount: number;
   caption: string;
   permalink: string;
+  profileBio: string;
+  profileExternalUrl: string;
+  profileLinks: string[];
 };
 
 export type FetchFn = typeof fetch;

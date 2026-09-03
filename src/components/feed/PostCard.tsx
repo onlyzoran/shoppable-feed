@@ -10,6 +10,7 @@ import {
 } from "@/components/icons";
 
 import { PostCaption } from "./PostCaption";
+import { PostShoppableButtons } from "./PostShoppableButtons";
 import styles from "./feed.module.css";
 
 const MEDIA_LABELS: Record<MediaType, string> = {
@@ -105,6 +106,7 @@ export function PostCard({ post }: PostCardProps) {
       </div>
 
       <PostCaption username={post.username} caption={post.caption} />
+      <PostShoppableButtons post={post} />
     </article>
   );
 }
