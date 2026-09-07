@@ -32,15 +32,17 @@ function filterButtons(
   buttons: ShoppableButton[],
   show: PostShoppableButtonsProps["show"],
 ): ShoppableButton[] {
+  const withoutProduct = buttons.filter((button) => button.kind !== "product");
+
   if (show === "below") {
-    return buttons.filter(isBelowOnlyButton);
+    return withoutProduct.filter(isBelowOnlyButton);
   }
 
   if (show === "pin") {
-    return buttons.filter(isPinButton);
+    return withoutProduct.filter(isPinButton);
   }
 
-  return buttons;
+  return withoutProduct;
 }
 
 export function PostShoppableButtons({

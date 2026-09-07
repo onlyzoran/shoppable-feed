@@ -7,8 +7,12 @@
       "id": "urban-veil",
       "label": "Ветровка Urban Veil",
       "url": "https://manekenbrand.com/catalog/new/vetrovka_urban_veil_siniy/",
-      "keywords": ["urban veil", "ветровка urban"],
-      "priority": 10
+      "keywords": [
+        "urban veil",
+        "ветровка urban"
+      ],
+      "priority": 10,
+      "price": "24 000 ₽"
     },
     {
       "id": "core-edition-legacy-18",
@@ -19,42 +23,60 @@
         "core edition legacy '18",
         "core edition legacy"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "24 500 ₽"
     },
     {
       "id": "slim-base",
       "label": "Футболка Slim Base",
       "url": "https://manekenbrand.com/catalog/women/futbolki_topy_rubashki/futbolki_1/futbolka_slim_base_rozovyy/",
-      "keywords": ["slim base"],
-      "priority": 10
+      "keywords": [
+        "slim base"
+      ],
+      "priority": 10,
+      "price": "4 900 ₽"
     },
     {
       "id": "champion",
       "label": "Костюм Champion",
       "url": "https://manekenbrand.com/catalog/bestsellers/kostyum_champion_melanzh_1/",
-      "keywords": ["костюм champion", "костюм чемпион", "champion"],
-      "priority": 10
+      "keywords": [
+        "костюм champion",
+        "костюм чемпион",
+        "champion"
+      ],
+      "priority": 10,
+      "price": "24 800 ₽"
     },
     {
       "id": "zip-sporty-peach",
       "label": "Костюм Zip Sporty Peach",
       "url": "https://manekenbrand.com/catalog/women/kostyum_zip_sporty_peach_s_bryukami_molochnyy/",
-      "keywords": ["zip sporty peach"],
-      "priority": 11
+      "keywords": [
+        "zip sporty peach"
+      ],
+      "priority": 11,
+      "price": "24 400 ₽"
     },
     {
       "id": "zip-sporty",
       "label": "Костюм Zip Sporty",
       "url": "https://manekenbrand.com/catalog/bestsellers/kostyum_zip_sporty_rozovyy/",
-      "keywords": ["zip sporty"],
-      "priority": 10
+      "keywords": [
+        "zip sporty"
+      ],
+      "priority": 10,
+      "price": "20 900 ₽"
     },
     {
       "id": "fleece-zip",
       "label": "Костюм Fleece Zip",
       "url": "https://manekenbrand.com/catalog/bestsellers/kostyum_fleece_zip_shokolad/",
-      "keywords": ["fleece zip"],
-      "priority": 10
+      "keywords": [
+        "fleece zip"
+      ],
+      "priority": 10,
+      "price": "21 900 ₽"
     }
   ]
 }

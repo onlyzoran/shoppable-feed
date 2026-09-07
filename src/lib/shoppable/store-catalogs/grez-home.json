@@ -15,7 +15,8 @@
         "bienestar hormonal 40+",
         "mujeres"
       ],
-      "priority": 11
+      "priority": 11,
+      "price": "$70.384"
     },
     {
       "id": "pack-claridad-mental",
@@ -31,7 +32,8 @@
         "memoria",
         "foco"
       ],
-      "priority": 11
+      "priority": 11,
+      "price": "$78.384"
     },
     {
       "id": "pack-control-del-estres",
@@ -47,7 +49,8 @@
         "cortisol",
         "estres"
       ],
-      "priority": 11
+      "priority": 11,
+      "price": "$58.384"
     },
     {
       "id": "pack-presion-arterial",
@@ -61,7 +64,8 @@
         "presion arterial",
         "tension"
       ],
-      "priority": 11
+      "priority": 11,
+      "price": "$46.384"
     },
     {
       "id": "pack-proteccion-muscular",
@@ -77,7 +81,8 @@
         "nutricion",
         "creatina"
       ],
-      "priority": 11
+      "priority": 11,
+      "price": "$117.584"
     },
     {
       "id": "pack-sueno-reparador",
@@ -94,7 +99,8 @@
         "descanso",
         "sueno"
       ],
-      "priority": 11
+      "priority": 11,
+      "price": "$63.184"
     },
     {
       "id": "pack-tiroides",
@@ -109,7 +115,8 @@
         "TIROIDES",
         "tiroides"
       ],
-      "priority": 11
+      "priority": 11,
+      "price": "$62.384"
     },
     {
       "id": "pack-vientre-plano",
@@ -124,7 +131,8 @@
         "hinchazon",
         "digestion"
       ],
-      "priority": 11
+      "priority": 11,
+      "price": "$54.384"
     },
     {
       "id": "adapt-vital-energia",
@@ -137,7 +145,8 @@
         "ADAPT VITAL ENERGÍA",
         "adapt vital energia"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$28.990"
     },
     {
       "id": "adapt-vital-gluco",
@@ -150,7 +159,8 @@
         "ADAPT VITAL GLUCO",
         "adapt vital gluco"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$34.990"
     },
     {
       "id": "adapt-vital-inmuno",
@@ -163,7 +173,8 @@
         "ADAPT VITAL INMUNO",
         "adapt vital inmuno"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$38.990"
     },
     {
       "id": "adapt-vital-neuro",
@@ -176,7 +187,8 @@
         "ADAPT VITAL NEURO",
         "adapt vital neuro"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$36.990"
     },
     {
       "id": "bicol-vital",
@@ -194,7 +206,8 @@
         "cabello",
         "piel"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$46.990"
     },
     {
       "id": "elec-vital",
@@ -209,7 +222,8 @@
         "elec vital",
         "minerales"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$28.990"
     },
     {
       "id": "magzi-vital-t",
@@ -225,7 +239,8 @@
         "magzi-vital",
         "magnesio"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$38.990"
     },
     {
       "id": "multi-vital-q10",
@@ -241,7 +256,8 @@
         "multi vital",
         "vitaminas"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$23.990"
     },
     {
       "id": "musc-vital-ex-crea-vital",
@@ -255,7 +271,8 @@
         "mantiene tu mente activa",
         "protege tus musculos"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$31.990"
     },
     {
       "id": "musc-vital-plus",
@@ -272,7 +289,8 @@
         "glutamina",
         "creatina"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$41.990"
     },
     {
       "id": "pot-vital-t",
@@ -285,7 +303,8 @@
         "POT VITAL T",
         "pot vital t"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$23.990"
     },
     {
       "id": "prot-vital",
@@ -300,7 +319,8 @@
         "proteina",
         "colageno"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$104.990"
     },
     {
       "id": "redox-vital-aminoacidos-l-glutation-vitaminas-y-minerale",
@@ -312,7 +332,8 @@
         "REDOX VITAL   Aminoácidos, L glutation, vitaminas y minerales",
         "redox vital   aminoacidos, l glutation, vitaminas y minerales"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$48.990"
     },
     {
       "id": "redox-vital-ii",
@@ -328,7 +349,8 @@
         "redox-vital",
         "berberina"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$48.990"
     },
     {
       "id": "sleep-vital",
@@ -345,7 +367,8 @@
         "sueño",
         "sueno"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$39.990"
     },
     {
       "id": "vit",
@@ -356,7 +379,8 @@
         "VIT",
         "vit"
       ],
-      "priority": 10
+      "priority": 10,
+      "price": "$48.990"
     }
   ]
 }

@@ -5,6 +5,8 @@ export type CatalogProduct = {
   keywords: string[];
   /** Чем выше — тем приоритетнее при нескольких совпадениях */
   priority?: number;
+  imageUrl?: string;
+  price?: string;
 };
 
 export type StoreCatalog = {

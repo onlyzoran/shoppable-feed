@@ -349,6 +349,12 @@
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 5;
+  overflow: visible;
+}
+
+.mediaClip {
+  position: absolute;
+  inset: 0;
   overflow: hidden;
   background: #000;
 }
@@ -416,6 +422,166 @@
   flex-wrap: wrap;
   gap: 8px;
   padding: 0 14px 14px;
+}
+
+.productCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 14px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.productCard:hover .productCardTitle {
+  text-decoration: underline;
+}
+
+.productCardThumb {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #efefef;
+}
+
+.productCardThumbPlaceholder {
+  composes: productCardThumb;
+  display: block;
+}
+
+.productCardMeta {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.productCardTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productCardPrice {
+  font-size: 0.8125rem;
+  color: var(--muted-foreground);
+  line-height: 1.25;
+}
+
+.productPin {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.productPinIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.productPin:hover .productPinIcon,
+.productPin:focus-visible .productPinIcon {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.32);
+}
+
+.productPinCard {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  max-width: min(240px, calc(100vw - 120px));
+  padding: 8px 12px 8px 8px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.15s ease,
+    visibility 0.15s ease,
+    transform 0.15s ease;
+}
+
+.productPin:hover .productPinCard,
+.productPin:focus-visible .productPinCard,
+.productPin:focus-within .productPinCard {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+.productPinCardThumb {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #efefef;
+}
+
+.productPinCardThumbPlaceholder {
+  composes: productPinCardThumb;
+  display: block;
+}
+
+.productPinCardMeta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.productPinCardTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productPinCardPrice {
+  font-size: 0.8125rem;
+  line-height: 1.25;
+  color: #64748b;
+}
+
+.productPinCardCta {
+  margin-top: 2px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0f172a;
 }
 
 .ctaProductPin {

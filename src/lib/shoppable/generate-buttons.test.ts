@@ -13,6 +13,7 @@ describe("buildShoppableButtons", () => {
 
     expect(buttons).toEqual([
       {
+        kind: "link",
         label: "Магазин",
         url: "https://shop.example.com/new-arrivals",
       },
@@ -32,10 +33,12 @@ describe("buildShoppableButtons", () => {
 
     expect(buttons).toHaveLength(2);
     expect(buttons[0]).toEqual({
+      kind: "link",
       label: "Записаться",
       url: "https://booking.example.com/salon",
     });
     expect(buttons[1]).toEqual({
+      kind: "link",
       label: "Салон",
       url: "https://mysalon.ru/",
     });
@@ -90,6 +93,7 @@ describe("buildShoppableButtons", () => {
 
     expect(buttons).toHaveLength(1);
     expect(buttons[0]).toEqual({
+      kind: "product",
       label: "POLKA DOT PRINT",
       url: "https://limestore.com/ru_ru/search?q=POLKA+DOT+PRINT&type=product",
     });
@@ -110,6 +114,7 @@ describe("buildShoppableButtons", () => {
       url: "https://limestore.com/ru_ru",
     });
     expect(buttons[1]).toEqual({
+      kind: "product",
       label: "SNAKE PRINT",
       url: "https://limestore.com/ru_ru/search?q=SNAKE+PRINT&type=product",
     });

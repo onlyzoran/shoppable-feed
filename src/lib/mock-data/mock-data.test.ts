@@ -130,12 +130,15 @@ describe("loadExamplePosts", () => {
 
     const buttons = buildShoppableButtonsForPost(posts[0]);
     expect(buttons[0]).toEqual({
+      kind: "link",
       label: "Магазин",
       url: "https://manekenbrand.com/",
     });
     expect(buttons[1]).toEqual({
+      kind: "product",
       label: "Костюм Core Edition Legacy",
       url: "https://manekenbrand.com/catalog/women/firmennye_kostyumy_1/bez_nachesa_3/kostyum_core_edition_legacy_18_s_bryukami_molochnyy/",
+      price: "24 500 ₽",
     });
 
     const postWithUrl = posts.find((post) =>
@@ -207,10 +210,12 @@ describe("loadExamplePosts", () => {
     expect(posts.length).toBeGreaterThanOrEqual(10);
     expect(buildShoppableButtonsForPost(posts[0])).toEqual([
       {
+        kind: "link",
         label: "Записаться",
         url: "https://yclients.com/salon/city-nails/135934/",
       },
       {
+        kind: "link",
         label: "Салон",
         url: "https://citynails.studio/",
       },
@@ -229,12 +234,15 @@ describe("loadExamplePosts", () => {
     expect(posts[0].username).toBe("thegrezwaycl");
     expect(buildShoppableButtonsForPost(posts[0])).toEqual([
       {
+        kind: "link",
         label: "Магазин",
         url: "https://www.thegrezway.cl/",
       },
       {
+        kind: "product",
         label: "PACK SUEÑO REPARADOR",
         url: "https://www.thegrezway.cl/products/pack-sueno-reparador-descanso-profundo-apagado-mental-copia",
+        price: "$63.184",
       },
     ]);
   });

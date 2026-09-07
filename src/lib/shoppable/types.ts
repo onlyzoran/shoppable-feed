@@ -1,8 +1,13 @@
 import type { MediaType } from "@/lib/instagram/types";
 
+export type ShoppableButtonKind = "link" | "product";
+
 export type ShoppableButton = {
+  kind: ShoppableButtonKind;
   label: string;
   url: string;
+  imageUrl?: string;
+  price?: string;
 };
 
 export type CommercialCategory = "salon" | "travel" | "retail" | "generic";

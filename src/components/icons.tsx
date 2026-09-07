@@ -152,3 +152,29 @@ export function PlayIcon({ className, size = 48 }: IconProps) {
     </svg>
   );
 }
+
+export function ShoppingBagIcon({ className, size = 18 }: IconProps) {
+  return (
+    <svg
+      aria-hidden
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M8 8V7a4 4 0 1 1 8 0v1"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+      />
+      <path
+        d="M5 8h14l-1.2 12.5H6.2L5 8Z"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}

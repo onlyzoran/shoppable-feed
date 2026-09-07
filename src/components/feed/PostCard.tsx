@@ -1,6 +1,10 @@
 import type { Post } from "@/lib/instagram/types";
 import { formatCount, formatPostDate } from "@/lib/format";
 import {
+  buildShoppableButtonsForPost,
+  findProductButton,
+} from "@/lib/shoppable";
+import {
   CommentIcon,
   HeartIcon,
   InstagramIcon,
@@ -10,6 +14,8 @@ import {
 } from "@/components/icons";
 
 import { PostCaption } from "./PostCaption";
+import { PostProductCard } from "./PostProductCard";
+import { PostProductPin } from "./PostProductPin";
 import { PostShoppableButtons } from "./PostShoppableButtons";
 import type { ButtonPlacement } from "./button-placement";
 import styles from "./feed.module.css";
@@ -25,6 +31,9 @@ export function PostCard({
 }: PostCardProps) {
   const formattedDate = formatPostDate(post.postedAt);
   const showOverlay = buttonPlacement === "overlay";
+  const shoppableButtons = buildShoppableButtonsForPost(post);
+  const productButton = findProductButton(shoppableButtons);
+  const fallbackProductImage = post.mediaPosterUrl ?? post.mediaUrl;
 
   return (
     <article className={styles.card}>
@@ -53,30 +62,47 @@ export function PostCard({
       </header>
 
       <div className={styles.mediaWrap}>
-        {post.mediaType === "video" ? (
-          <>
+        <div className={styles.mediaClip}>
+          {post.mediaType === "video" ? (
+            <>
+              <img
+                className={styles.media}
+                src={post.mediaPosterUrl ?? post.mediaUrl}
+                alt=""
+                loading="lazy"
+              />
+              <span className={styles.playOverlay}>
+                <PlayIcon />
+              </span>
+            </>
+          ) : (
             <img
               className={styles.media}
-              src={post.mediaPosterUrl ?? post.mediaUrl}
+              src={post.mediaUrl}
               alt=""
               loading="lazy"
             />
-            <span className={styles.playOverlay}>
-              <PlayIcon />
-            </span>
-          </>
-        ) : (
-          <img
-            className={styles.media}
-            src={post.mediaUrl}
-            alt=""
-            loading="lazy"
-          />
-        )}
+          )}
+        </div>
         {showOverlay ? (
-          <PostShoppableButtons post={post} placement="overlay" show="pin" />
+          <>
+            {productButton ? (
+              <PostProductPin
+                button={productButton}
+                fallbackImageUrl={fallbackProductImage}
+              />
+            ) : null}
+            <PostShoppableButtons post={post} placement="overlay" show="pin" />
+          </>
         ) : null}
       </div>
+
+      {productButton && !showOverlay ? (
+        <PostProductCard
+          button={productButton}
+          fallbackImageUrl={fallbackProductImage}
+        />
+      ) : null}
 
       <div className={styles.engagement}>
         <span className={styles.engagementItem}>

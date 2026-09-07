@@ -95,12 +95,15 @@ describe("buildShoppableButtons with GREZ catalog", () => {
 
     expect(buttons).toEqual([
       {
+        kind: "link",
         label: "Магазин",
         url: "https://www.thegrezway.cl/",
       },
       {
+        kind: "product",
         label: "PACK CONTROL DEL ESTRÉS",
         url: "https://www.thegrezway.cl/products/pack-control-estres-deshinchazon-drenaje-de-liquidos",
+        price: "$58.384",
       },
     ]);
   });
@@ -122,12 +125,15 @@ describe("buildShoppableButtons with MANEKEN catalog", () => {
 
     expect(buttons).toEqual([
       {
+        kind: "link",
         label: "Магазин",
         url: "https://manekenbrand.com/",
       },
       {
+        kind: "product",
         label: "Ветровка Urban Veil",
         url: "https://manekenbrand.com/catalog/new/vetrovka_urban_veil_siniy/",
+        price: "24 000 ₽",
       },
     ]);
   });
@@ -140,6 +146,7 @@ describe("buildShoppableButtons with MANEKEN catalog", () => {
 
     expect(buttons).toEqual([
       {
+        kind: "link",
         label: "Магазин",
         url: "https://manekenbrand.com/",
       },

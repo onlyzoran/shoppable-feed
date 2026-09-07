@@ -35,6 +35,9 @@ function addButton(
   seenUrls: Set<string>,
   label: string,
   url: string,
+  options: Pick<ShoppableButton, "kind" | "imageUrl" | "price"> = {
+    kind: "link",
+  },
 ): void {
   if (buttons.length >= MAX_SHOPPABLE_BUTTONS) {
     return;
@@ -46,7 +49,13 @@ function addButton(
   }
 
   seenUrls.add(normalizedUrl);
-  buttons.push({ label, url: normalizedUrl });
+  buttons.push({
+    kind: options.kind,
+    label,
+    url: normalizedUrl,
+    ...(options.imageUrl ? { imageUrl: options.imageUrl } : {}),
+    ...(options.price ? { price: options.price } : {}),
+  });
 }
 
 function collectExplicitUrlButtons(input: ShoppableInput): ShoppableButton[] {
@@ -88,8 +97,11 @@ function buildProductSearchButton(input: ShoppableInput): ShoppableButton | null
     }
 
     return {
+      kind: "product",
       label: truncateButtonLabel(catalogMatch.label),
       url: catalogMatch.url,
+      imageUrl: catalogMatch.imageUrl,
+      price: catalogMatch.price,
     };
   }
 
@@ -107,6 +119,7 @@ function buildProductSearchButton(input: ShoppableInput): ShoppableButton | null
   }
 
   return {
+    kind: "product",
     label: truncateButtonLabel(headline),
     url: buildStoreProductSearchUrl(storeUrl, headline),
   };
@@ -123,6 +136,11 @@ function collectDirectButtons(input: ShoppableInput): ShoppableButton[] {
       seenUrls,
       productButton.label,
       productButton.url,
+      {
+        kind: "product",
+        imageUrl: productButton.imageUrl,
+        price: productButton.price,
+      },
     );
   } else {
     const profileUrl = input.profileExternalUrl?.trim();
@@ -246,6 +264,12 @@ export function buildShoppableButtonsForPost(post: Post): ShoppableButton[] {
     profileExternalUrl: post.profileExternalUrl,
     profileLinks: post.profileLinks,
   });
+}
+
+export function findProductButton(
+  buttons: ShoppableButton[],
+): ShoppableButton | null {
+  return buttons.find((button) => button.kind === "product") ?? null;
 }
 
 export function extractShoppableContext(input: ShoppableInput) {
