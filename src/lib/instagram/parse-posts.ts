@@ -30,11 +30,25 @@ type RawTimelineMedia = {
   edges?: RawTimelineEdge[];
 };
 
+type RawBioLinkNode = {
+  url?: string;
+  lynx_url?: string;
+};
+
+type RawBioLinkEdge = {
+  node?: RawBioLinkNode;
+};
+
 type RawUser = {
   username?: string;
   is_verified?: boolean;
   profile_pic_url?: string;
   profile_pic_url_hd?: string;
+  biography?: string;
+  bio?: string;
+  external_url?: string;
+  bio_links?: RawBioLinkNode[];
+  edge_bio_links?: { edges?: RawBioLinkEdge[] };
   edge_owner_to_timeline_media?: RawTimelineMedia;
   xdt_api__v1__feed__user_timeline_graphql_connection?: RawTimelineMedia;
 };
@@ -151,6 +165,32 @@ function extractUser(value: unknown): RawUser | null {
   return found;
 }
 
+function extractProfileLinks(user: RawUser): string[] {
+  const links = new Set<string>();
+
+  if (typeof user.external_url === "string" && user.external_url.trim()) {
+    links.add(user.external_url.trim());
+  }
+
+  if (Array.isArray(user.bio_links)) {
+    for (const link of user.bio_links) {
+      const url = link.url ?? link.lynx_url;
+      if (typeof url === "string" && url.trim()) {
+        links.add(url.trim());
+      }
+    }
+  }
+
+  for (const edge of user.edge_bio_links?.edges ?? []) {
+    const url = edge.node?.url ?? edge.node?.lynx_url;
+    if (typeof url === "string" && url.trim()) {
+      links.add(url.trim());
+    }
+  }
+
+  return [...links];
+}
+
 function resolveMediaType(node: RawPostNode): MediaType {
   if (node.__typename === "GraphSidecar") {
     return "carousel";
@@ -191,6 +231,8 @@ function mapNodeToPost(
       ? new Date(node.taken_at_timestamp * 1000).toISOString()
       : new Date(0).toISOString();
 
+  const profileLinks = extractProfileLinks(user);
+
   return {
     id: node.id,
     username: user.username ?? username,
@@ -204,6 +246,9 @@ function mapNodeToPost(
     repostsCount: 0,
     caption,
     permalink: `https://www.instagram.com/p/${node.shortcode}/`,
+    profileBio: user.biography ?? user.bio ?? "",
+    profileExternalUrl: user.external_url?.trim() ?? profileLinks[0] ?? "",
+    profileLinks,
   };
 }
 
