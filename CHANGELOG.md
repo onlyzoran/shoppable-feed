@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4 (2026-09-07)
+
+* Shoppable-кнопки на карточках постов ([PR](https://github.com/onlyzoran/shoppable-feed/pull/4), [issue](https://github.com/onlyzoran/win-predict-ai-orchestrator/issues/54))
+
 ## 0.1.3 (2026-09-03)
 
 * Лента карточек постов на главной ([PR](https://github.com/onlyzoran/shoppable-feed/pull/3), [issue](https://github.com/onlyzoran/win-predict-ai-orchestrator/issues/53))
