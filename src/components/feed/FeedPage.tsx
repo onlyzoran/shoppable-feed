@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import type { Post } from "@/lib/instagram/types";
+import { buildPostsApiUrl } from "@/lib/api/build-posts-url";
 import { APP_NAME } from "@/lib/constants";
 import { EXAMPLE_SOURCES } from "@/lib/mock-data/examples";
 
@@ -52,9 +53,7 @@ export function FeedPage() {
     setInlineError(null);
 
     try {
-      const response = await fetch(
-        `/api/posts?url=${encodeURIComponent(url.trim())}`,
-      );
+      const response = await fetch(buildPostsApiUrl(url));
 
       if (!response.ok) {
         const payload = (await response.json()) as ApiErrorPayload;
