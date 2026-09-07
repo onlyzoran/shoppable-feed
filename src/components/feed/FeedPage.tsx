@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import type { Post } from "@/lib/instagram/types";
 import { APP_NAME } from "@/lib/constants";
@@ -23,15 +23,24 @@ type ApiErrorPayload = {
 };
 
 const SHOW_PROFILE_FORM = false;
+const DEFAULT_EXAMPLE = EXAMPLE_SOURCES[0];
+
+function normalizeProfileUrl(url: string): string {
+  return url.trim().replace(/\/+$/, "").toLowerCase();
+}
 
 const EMPTY_INPUT_MESSAGE =
   "Введите ссылку на профиль Instagram, например https://www.instagram.com/username/";
 
 export function FeedPage() {
-  const [profileUrl, setProfileUrl] = useState("");
+  const [profileUrl, setProfileUrl] = useState(
+    DEFAULT_EXAMPLE?.profileUrl ?? "",
+  );
   const [posts, setPosts] = useState<Post[]>([]);
-  const [status, setStatus] = useState<FeedStatus>("idle");
-  const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
+  const [status, setStatus] = useState<FeedStatus>(
+    DEFAULT_EXAMPLE ? "loading" : "idle",
+  );
+  const [hasLoadedOnce, setHasLoadedOnce] = useState(Boolean(DEFAULT_EXAMPLE));
   const [inlineError, setInlineError] = useState<string | null>(null);
   const [fetchError, setFetchError] = useState<string | null>(null);
   const [buttonPlacement, setButtonPlacement] =
@@ -89,6 +98,16 @@ export function FeedPage() {
     void loadPosts(url);
   };
 
+  useEffect(() => {
+    if (!DEFAULT_EXAMPLE) {
+      return;
+    }
+
+    void loadPosts(DEFAULT_EXAMPLE.profileUrl);
+  }, []);
+
+  const activeProfileUrl = normalizeProfileUrl(profileUrl);
+
   const showIdleHint = !hasLoadedOnce && status !== "loading";
   const showEmptyPosts =
     status === "success" && posts.length === 0 && hasLoadedOnce;
@@ -120,7 +139,12 @@ export function FeedPage() {
                 <li key={example.id}>
                   <button
                     type="button"
-                    className={styles.exampleButton}
+                    className={`${styles.exampleButton}${
+                      activeProfileUrl ===
+                      normalizeProfileUrl(example.profileUrl)
+                        ? ` ${styles.exampleButtonActive}`
+                        : ""
+                    }`}
                     onClick={() => handleExampleClick(example.profileUrl)}
                     disabled={status === "loading"}
                   >
