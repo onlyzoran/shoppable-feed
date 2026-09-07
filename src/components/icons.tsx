@@ -96,9 +96,17 @@ export function RepostIcon({ className, size = 24 }: IconProps) {
       fill="none"
     >
       <path
-        d="M7 7v5H2l7 7 7-7h-5V7H7Zm10 10v-5h5l-7-7-7 7h5v5h4Z"
+        d="M7 18V10.5M5.2 10.5 7 8.7 8.8 10.5M7 18H13.5"
         stroke="currentColor"
         strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M17 6V13.5M15.2 13.5 17 15.3 18.8 13.5M17 6H10.5"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>
