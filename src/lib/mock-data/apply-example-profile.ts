@@ -17,6 +17,7 @@ export function applyExampleProfile(
 
   return posts.map((post) => ({
     ...post,
+    username: example.id,
     profileBio: example.profileBio ?? post.profileBio,
     profileExternalUrl: example.profileExternalUrl ?? post.profileExternalUrl,
     profileLinks: example.profileLinks ?? post.profileLinks,

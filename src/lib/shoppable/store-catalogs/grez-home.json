@@ -16,7 +16,8 @@
         "mujeres"
       ],
       "priority": 11,
-      "price": "$70.384"
+      "price": "$70.384",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Pack_Vigor_Equilibrio_Vigor_Sexual_Balance_Hormonal.png?v=1775590627"
     },
     {
       "id": "pack-claridad-mental",
@@ -33,7 +34,8 @@
         "foco"
       ],
       "priority": 11,
-      "price": "$78.384"
+      "price": "$78.384",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Pack_Claridad_Mental_Foco_Memoria_Neuroproteccion.jpg?v=1775592903"
     },
     {
       "id": "pack-control-del-estres",
@@ -50,7 +52,8 @@
         "estres"
       ],
       "priority": 11,
-      "price": "$58.384"
+      "price": "$58.384",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Pack_Control_Estres.jpg?v=1775450483"
     },
     {
       "id": "pack-presion-arterial",
@@ -65,7 +68,8 @@
         "tension"
       ],
       "priority": 11,
-      "price": "$46.384"
+      "price": "$46.384",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Pack_Alivio_Tension_Presion_Relajacion_Fisica.jpg?v=1780980570"
     },
     {
       "id": "pack-proteccion-muscular",
@@ -82,7 +86,8 @@
         "creatina"
       ],
       "priority": 11,
-      "price": "$117.584"
+      "price": "$117.584",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Pack_Blindaje_Vital_-_cacao_58ab8a53-a99e-4f43-b361-2080cc3472c8.png?v=1781014398"
     },
     {
       "id": "pack-sueno-reparador",
@@ -100,7 +105,8 @@
         "sueno"
       ],
       "priority": 11,
-      "price": "$63.184"
+      "price": "$63.184",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Pack_Sueno_Reparador_Descanso_Profundo_Apagado_Mental_new.png?v=1779684726"
     },
     {
       "id": "pack-tiroides",
@@ -116,7 +122,8 @@
         "tiroides"
       ],
       "priority": 11,
-      "price": "$62.384"
+      "price": "$62.384",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Pack_Termostato_Metabolismo_Energia_Tiroidea.jpg?v=1776707092"
     },
     {
       "id": "pack-vientre-plano",
@@ -132,7 +139,8 @@
         "digestion"
       ],
       "priority": 11,
-      "price": "$54.384"
+      "price": "$54.384",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Pack_Vientre_Plano.png?v=1775437807"
     },
     {
       "id": "adapt-vital-energia",
@@ -146,7 +154,8 @@
         "adapt vital energia"
       ],
       "priority": 10,
-      "price": "$28.990"
+      "price": "$28.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/ADAP_VITAL_ENERGIA.jpg?v=1774690774"
     },
     {
       "id": "adapt-vital-gluco",
@@ -160,7 +169,8 @@
         "adapt vital gluco"
       ],
       "priority": 10,
-      "price": "$34.990"
+      "price": "$34.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/ADAP_VITAL_GLUCO.jpg?v=1774690638"
     },
     {
       "id": "adapt-vital-inmuno",
@@ -174,7 +184,8 @@
         "adapt vital inmuno"
       ],
       "priority": 10,
-      "price": "$38.990"
+      "price": "$38.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/ADAP_VITAL_INMUNE.jpg?v=1774690885"
     },
     {
       "id": "adapt-vital-neuro",
@@ -188,7 +199,8 @@
         "adapt vital neuro"
       ],
       "priority": 10,
-      "price": "$36.990"
+      "price": "$36.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/ADAPT_VITAL_NAURO.jpg?v=1774690915"
     },
     {
       "id": "bicol-vital",
@@ -207,7 +219,8 @@
         "piel"
       ],
       "priority": 10,
-      "price": "$46.990"
+      "price": "$46.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/BICOL-VITAL_60_Capsulas_30_dias.png?v=1782847317"
     },
     {
       "id": "elec-vital",
@@ -223,7 +236,8 @@
         "minerales"
       ],
       "priority": 10,
-      "price": "$28.990"
+      "price": "$28.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/ELEC-VITAL_Minerales_electrolitos_capsulas.jpg?v=1774691119"
     },
     {
       "id": "magzi-vital-t",
@@ -240,7 +254,8 @@
         "magnesio"
       ],
       "priority": 10,
-      "price": "$38.990"
+      "price": "$38.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/Magzi_-_vital_T.jpg?v=1776706114"
     },
     {
       "id": "multi-vital-q10",
@@ -257,7 +272,8 @@
         "vitaminas"
       ],
       "priority": 10,
-      "price": "$23.990"
+      "price": "$23.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/MULTI-VITAL_Q10_-_30.jpg?v=1775066138"
     },
     {
       "id": "musc-vital-ex-crea-vital",
@@ -272,7 +288,8 @@
         "protege tus musculos"
       ],
       "priority": 10,
-      "price": "$31.990"
+      "price": "$31.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/MUSC_-_VITAL_255.jpg?v=1775070448"
     },
     {
       "id": "musc-vital-plus",
@@ -290,7 +307,8 @@
         "creatina"
       ],
       "priority": 10,
-      "price": "$41.990"
+      "price": "$41.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/MUSC-VITAL_PLUS_1.png?v=1774482498"
     },
     {
       "id": "pot-vital-t",
@@ -304,7 +322,8 @@
         "pot vital t"
       ],
       "priority": 10,
-      "price": "$23.990"
+      "price": "$23.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/POT_T.jpg?v=1774690286"
     },
     {
       "id": "prot-vital",
@@ -320,7 +339,8 @@
         "colageno"
       ],
       "priority": 10,
-      "price": "$104.990"
+      "price": "$104.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/ChatGPT_Image_18_feb_2026_10_00_49_p.m..jpg?v=1772997651"
     },
     {
       "id": "redox-vital-aminoacidos-l-glutation-vitaminas-y-minerale",
@@ -333,7 +353,8 @@
         "redox vital   aminoacidos, l glutation, vitaminas y minerales"
       ],
       "priority": 10,
-      "price": "$48.990"
+      "price": "$48.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/6._Redox_Vital.jpg?v=1772540097"
     },
     {
       "id": "redox-vital-ii",
@@ -350,7 +371,8 @@
         "berberina"
       ],
       "priority": 10,
-      "price": "$48.990"
+      "price": "$48.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/REDOX-VITAL_II_jpg.jpg?v=1782832495"
     },
     {
       "id": "sleep-vital",
@@ -368,7 +390,8 @@
         "sueno"
       ],
       "priority": 10,
-      "price": "$39.990"
+      "price": "$39.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/slepp_-vital_2.png?v=1778602586"
     },
     {
       "id": "vit",
@@ -380,7 +403,8 @@
         "vit"
       ],
       "priority": 10,
-      "price": "$48.990"
+      "price": "$48.990",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0570/4676/1506/files/VITC.jpg?v=1774688997"
     }
   ]
 }

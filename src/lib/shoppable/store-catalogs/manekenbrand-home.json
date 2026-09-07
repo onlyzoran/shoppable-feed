@@ -12,7 +12,8 @@
         "ветровка urban"
       ],
       "priority": 10,
-      "price": "24 000 ₽"
+      "price": "24 000 ₽",
+      "imageUrl": "https://manekenbrand.com/upload/resize_cache/iblock/102/480_600_1/vnggxlc84vi1r0cmbw6fs400xzdx4443.JPG"
     },
     {
       "id": "core-edition-legacy-18",
@@ -24,7 +25,8 @@
         "core edition legacy"
       ],
       "priority": 10,
-      "price": "24 500 ₽"
+      "price": "24 500 ₽",
+      "imageUrl": "https://manekenbrand.com/upload/resize_cache/iblock/2a2/480_600_1/0y1kctms7qcaa06ep0tc19a8waync98x.JPG"
     },
     {
       "id": "slim-base",
@@ -34,7 +36,8 @@
         "slim base"
       ],
       "priority": 10,
-      "price": "4 900 ₽"
+      "price": "4 900 ₽",
+      "imageUrl": "https://manekenbrand.com/upload/resize_cache/iblock/b14/480_600_1/x3zjnrxsd480rha3i3dojn5mpncxvyi0.JPG"
     },
     {
       "id": "champion",
@@ -46,7 +49,8 @@
         "champion"
       ],
       "priority": 10,
-      "price": "24 800 ₽"
+      "price": "24 800 ₽",
+      "imageUrl": "https://manekenbrand.com/upload/resize_cache/iblock/0c7/480_600_1/idcmymoz8j3qri7ivie6iqmwhiegrdfk.JPG"
     },
     {
       "id": "zip-sporty-peach",
@@ -56,7 +60,8 @@
         "zip sporty peach"
       ],
       "priority": 11,
-      "price": "24 400 ₽"
+      "price": "24 400 ₽",
+      "imageUrl": "https://manekenbrand.com/upload/resize_cache/iblock/295/480_600_1/41tzh592p6iikdgzg4gqhzhjy0ycose2.JPG"
     },
     {
       "id": "zip-sporty",
@@ -66,7 +71,8 @@
         "zip sporty"
       ],
       "priority": 10,
-      "price": "20 900 ₽"
+      "price": "20 900 ₽",
+      "imageUrl": "https://manekenbrand.com/upload/resize_cache/iblock/d33/480_600_1/lg9wpmkrs4gk0xtn6f839atbjor07n4t.JPG"
     },
     {
       "id": "fleece-zip",
@@ -76,7 +82,8 @@
         "fleece zip"
       ],
       "priority": 10,
-      "price": "21 900 ₽"
+      "price": "21 900 ₽",
+      "imageUrl": "https://manekenbrand.com/upload/resize_cache/iblock/7fb/480_600_1/54vldl11nm66l0qwwrxa4mm3015wtxlr.JPG"
     }
   ]
 }

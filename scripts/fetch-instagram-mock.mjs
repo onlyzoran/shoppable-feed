@@ -72,7 +72,8 @@ async function scrapePost(username, shortcode) {
 
   const html = await response.text();
   const ogUrl = readMeta(html, "og:url");
-  const owner = ogUrl.match(/instagram\.com\/([^/]+)\/p\//)?.[1] ?? "";
+  const owner =
+    ogUrl.match(/instagram\.com\/([^/]+)\/(?:p|reel)\//)?.[1] ?? "";
 
   if (owner !== username) {
     return null;

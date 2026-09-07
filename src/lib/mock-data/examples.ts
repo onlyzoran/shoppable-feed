@@ -57,6 +57,26 @@ export const EXAMPLE_SOURCES: ExampleSource[] = [
     profileExternalUrl: "https://www.thegrezway.cl",
     profileLinks: ["https://www.thegrezway.cl"],
   },
+  {
+    id: "bananhot",
+    label: "BANANHOT",
+    profileUrl: "https://www.instagram.com/bananhot/",
+    fileName: "bananhot.json",
+    profileBio:
+      "Luxury swimwear & resortwear. Cheeky cuts, bold prints — https://bananhot.com",
+    profileExternalUrl: "https://bananhot.com",
+    profileLinks: ["https://bananhot.com"],
+  },
+  {
+    id: "adah.usa",
+    label: "ADAH",
+    profileUrl: "https://www.instagram.com/adah.usa/",
+    fileName: "adahlazorgan.json",
+    profileBio:
+      "Clean makeup & skincare by Adah Lazorgan — https://adahlazorgan.com",
+    profileExternalUrl: "https://adahlazorgan.com",
+    profileLinks: ["https://adahlazorgan.com"],
+  },
 ];
 
 export function findExampleByProfileUrl(profileUrl: string): ExampleSource | null {

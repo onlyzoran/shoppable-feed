@@ -1,0 +1,1070 @@
+{
+  "storeHostname": "adahlazorgan.com",
+  "source": "https://adahlazorgan.com",
+  "fetchedFrom": "https://adahlazorgan.com/products.json?limit=250&page=*",
+  "products": [
+    {
+      "id": "4k-foundation",
+      "label": "4K FOUNDATION",
+      "url": "https://adahlazorgan.com/products/4k-foundation",
+      "keywords": [
+        "4K FOUNDATION",
+        "4k foundation",
+        "foundation 4k"
+      ],
+      "priority": 12,
+      "price": "$37.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Fusion4KP.png?v=1714686673"
+    },
+    {
+      "id": "blush-stick",
+      "label": "BLUSH STICK",
+      "url": "https://adahlazorgan.com/products/blush-stick",
+      "keywords": [
+        "blush sticks",
+        "BLUSH STICK",
+        "blush stick",
+        "blushstick"
+      ],
+      "priority": 12,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/PSS1.png?v=1706578349"
+    },
+    {
+      "id": "brow-wax",
+      "label": "BROW WAX",
+      "url": "https://adahlazorgan.com/products/brow-wax",
+      "keywords": [
+        "adah's brow wax",
+        "adah brow wax",
+        "BROW WAX",
+        "brow wax"
+      ],
+      "priority": 12,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/BrowWax2.jpg?v=1714572548"
+    },
+    {
+      "id": "contour-stick",
+      "label": "CONTOUR STICK",
+      "url": "https://adahlazorgan.com/products/contour-stick",
+      "keywords": [
+        "CONTOUR STICK",
+        "contour stick"
+      ],
+      "priority": 12,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/PSA1.png?v=1706606050"
+    },
+    {
+      "id": "fusion-concealer",
+      "label": "FUSION CONCEALER",
+      "url": "https://adahlazorgan.com/products/fusion-concelear",
+      "keywords": [
+        "FUSION CONCEALER",
+        "fusion concealer"
+      ],
+      "priority": 12,
+      "price": "$27.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Consiler01silver_1.png?v=1705266129"
+    },
+    {
+      "id": "fusion-corrector",
+      "label": "FUSION CORRECTOR",
+      "url": "https://adahlazorgan.com/products/fusion-corrector",
+      "keywords": [
+        "FUSION CORRECTOR",
+        "fusion corrector"
+      ],
+      "priority": 12,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Consiler-10.png?v=1705265344"
+    },
+    {
+      "id": "glow-stick",
+      "label": "GLOW STICK",
+      "url": "https://adahlazorgan.com/products/glow-stick",
+      "keywords": [
+        "GLOW STICK",
+        "glow stick"
+      ],
+      "priority": 12,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/PSG1.png?v=1706584814"
+    },
+    {
+      "id": "mineral-loose-powder-foundation",
+      "label": "MINERAL LOOSE POWDER FOUNDATION",
+      "url": "https://adahlazorgan.com/products/powder-foundation",
+      "keywords": [
+        "MINERAL LOOSE POWDER FOUNDATION",
+        "mineral loose powder foundation",
+        "MINERAL LOOSE",
+        "mineral loose"
+      ],
+      "priority": 12,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Pudra_M1_2.png?v=1715723087"
+    },
+    {
+      "id": "silk4k-foundation",
+      "label": "SILK4K FOUNDATION",
+      "url": "https://adahlazorgan.com/products/silk4k",
+      "keywords": [
+        "SILK4K FOUNDATION",
+        "silk4k foundation",
+        "silk foundation",
+        "4k foundation",
+        "foundation 4k"
+      ],
+      "priority": 12,
+      "price": "$46.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/FoundationSilver.png?v=1715981776"
+    },
+    {
+      "id": "adah-s-night-palette",
+      "label": "ADAH'S NIGHT PALETTE",
+      "url": "https://adahlazorgan.com/products/adahs-night-palette",
+      "keywords": [
+        "ADAH'S NIGHT PALETTE",
+        "adah's night palette",
+        "adahs night palette",
+        "night palette",
+        "ADAH'S NIGHT",
+        "adah's night"
+      ],
+      "priority": 11,
+      "price": "$50.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Hollywood-Palette-1.png?v=1705265314"
+    },
+    {
+      "id": "fanta-palette-dark-solution-palette",
+      "label": "FANTA PALETTE",
+      "url": "https://adahlazorgan.com/products/fanta-palette-dark-solution-palette",
+      "keywords": [
+        "FANTA PALETTE Dark Solution Palette",
+        "fanta palette dark solution palette",
+        "Dark Solution Palette",
+        "dark solution palette",
+        "FANTA PALETTE",
+        "fanta palette"
+      ],
+      "priority": 11,
+      "price": "$50.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/A_Fpalette2.jpg?v=1721830643"
+    },
+    {
+      "id": "love-your-cheeks-palette",
+      "label": "LOVE YOUR CHEEKS PALETTE",
+      "url": "https://adahlazorgan.com/products/love-your-cheeks",
+      "keywords": [
+        "LOVE YOUR CHEEKS PALETTE",
+        "love your cheeks palette",
+        "love your cheeks",
+        "LOVE YOUR",
+        "love your"
+      ],
+      "priority": 11,
+      "price": "$50.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Blush-palette-NEW-2-1.jpg?v=1705265556"
+    },
+    {
+      "id": "luminous-cream",
+      "label": "LUMINOUS CREAM",
+      "url": "https://adahlazorgan.com/products/luminous-cream",
+      "keywords": [
+        "LUMINOUS CREAM",
+        "luminous cream"
+      ],
+      "priority": 11,
+      "price": "$42.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Luminous-Silver-1.png?v=1705265310"
+    },
+    {
+      "id": "sleeping-beautylips-mask",
+      "label": "SLEEPING BEAUTYLIPS MASK",
+      "url": "https://adahlazorgan.com/products/sleeping-beautylips-mask",
+      "keywords": [
+        "SLEEPING BEAUTYLIPS MASK",
+        "sleeping beautylips mask",
+        "SLEEPING BEAUTYLIPS",
+        "sleeping beautylips",
+        "sleeping lips mask",
+        "lips mask"
+      ],
+      "priority": 11,
+      "price": "$36.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Lips-Mask.png?v=1705265177"
+    },
+    {
+      "id": "universal-palette",
+      "label": "UNIVERSAL PALETTE",
+      "url": "https://adahlazorgan.com/products/universal-palette",
+      "keywords": [
+        "UNIVERSAL PALETTE",
+        "universal palette"
+      ],
+      "priority": 11,
+      "price": "$50.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Universal-Palette.png?v=1705265612"
+    },
+    {
+      "id": "vitamin-c-cleanser",
+      "label": "VITAMIN C CLEANSER",
+      "url": "https://adahlazorgan.com/products/vitamin-c-cleanser",
+      "keywords": [
+        "VITAMIN C CLEANSER",
+        "vitamin c cleanser",
+        "VITAMIN CLEANSER",
+        "vitamin cleanser"
+      ],
+      "priority": 11,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Mus-new.png?v=1705265649"
+    },
+    {
+      "id": "vitamin-c-serum",
+      "label": "VITAMIN C SERUM",
+      "url": "https://adahlazorgan.com/products/vitamin-c-serum",
+      "keywords": [
+        "VITAMIN C SERUM",
+        "vitamin c serum",
+        "VITAMIN SERUM",
+        "vitamin serum",
+        "vit c serum"
+      ],
+      "priority": 11,
+      "price": "$55.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Adah-Vitamin-C-Serum.png?v=1705265470"
+    },
+    {
+      "id": "a-box",
+      "label": "A BOX",
+      "url": "https://adahlazorgan.com/products/a-box",
+      "keywords": [
+        "A BOX",
+        "a box"
+      ],
+      "priority": 10,
+      "price": "$424.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/A1_sad.png?v=1705265220"
+    },
+    {
+      "id": "adah-eyelashes-100",
+      "label": "ADAH EYELASHES 100",
+      "url": "https://adahlazorgan.com/products/adah-eyelashes-100",
+      "keywords": [
+        "ADAH EYELASHES 100",
+        "adah eyelashes 100",
+        "ADAH EYELASHES",
+        "adah eyelashes",
+        "eyelashes",
+        "lashes"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/100-Boded-Short-1.jpg?v=1705265439"
+    },
+    {
+      "id": "adah-eyelashes-300",
+      "label": "ADAH EYELASHES 300",
+      "url": "https://adahlazorgan.com/products/adah-eyelashes-300",
+      "keywords": [
+        "ADAH EYELASHES 300",
+        "adah eyelashes 300",
+        "ADAH EYELASHES",
+        "adah eyelashes",
+        "eyelashes",
+        "lashes"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/300-Boded-Short-1.jpg?v=1705265432"
+    },
+    {
+      "id": "adah-eyelashes-400",
+      "label": "ADAH EYELASHES 400",
+      "url": "https://adahlazorgan.com/products/adah-eyelashes-400",
+      "keywords": [
+        "ADAH EYELASHES 400",
+        "adah eyelashes 400",
+        "ADAH EYELASHES",
+        "adah eyelashes",
+        "eyelashes",
+        "lashes"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/400-Boded-Short-2.jpg?v=1705265419"
+    },
+    {
+      "id": "adah-eyelashes-500",
+      "label": "ADAH EYELASHES 500",
+      "url": "https://adahlazorgan.com/products/adah-eyelashes-500",
+      "keywords": [
+        "ADAH EYELASHES 500",
+        "adah eyelashes 500",
+        "ADAH EYELASHES",
+        "adah eyelashes",
+        "eyelashes",
+        "lashes"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/500-Boded-Short-1.jpg?v=1705265428"
+    },
+    {
+      "id": "adah-eyelashes-600",
+      "label": "ADAH EYELASHES 600",
+      "url": "https://adahlazorgan.com/products/adah-eyelashes-600",
+      "keywords": [
+        "ADAH EYELASHES 600",
+        "adah eyelashes 600",
+        "ADAH EYELASHES",
+        "adah eyelashes",
+        "eyelashes",
+        "lashes"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/600-Boded-Short-1.jpg?v=1705265424"
+    },
+    {
+      "id": "adah-eyelashes-700",
+      "label": "ADAH EYELASHES 700",
+      "url": "https://adahlazorgan.com/products/adah-eyelashes-700",
+      "keywords": [
+        "ADAH EYELASHES 700",
+        "adah eyelashes 700",
+        "ADAH EYELASHES",
+        "adah eyelashes",
+        "eyelashes",
+        "lashes"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/ADAH-Risim-D20-new-1.jpg?v=1705265288"
+    },
+    {
+      "id": "adah-eyelashes-800",
+      "label": "ADAH EYELASHES 800",
+      "url": "https://adahlazorgan.com/products/adah-eyelashes-800",
+      "keywords": [
+        "ADAH EYELASHES 800",
+        "adah eyelashes 800",
+        "ADAH EYELASHES",
+        "adah eyelashes",
+        "eyelashes",
+        "lashes"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/ADAH-Risim-10-new-1.jpg?v=1705265282"
+    },
+    {
+      "id": "adah-eyelashes-super-curly",
+      "label": "ADAH EYELASHES SUPER CURLY",
+      "url": "https://adahlazorgan.com/products/adah-eyelashes-super-curly",
+      "keywords": [
+        "ADAH EYELASHES SUPER CURLY",
+        "adah eyelashes super curly",
+        "ADAH EYELASHES",
+        "adah eyelashes",
+        "eyelashes",
+        "lashes"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/WhatsApp-Image-2021-10-25-at-22.04.34-2-1.jpg?v=1705265540"
+    },
+    {
+      "id": "blush-bronzer-no-23",
+      "label": "BLUSH BRONZER NO 23",
+      "url": "https://adahlazorgan.com/products/blush-bronzer-no-23",
+      "keywords": [
+        "BLUSH BRONZER NO 23",
+        "blush bronzer no 23",
+        "BLUSH BRONZER",
+        "blush bronzer"
+      ],
+      "priority": 10,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/23-1.png?v=1705265849"
+    },
+    {
+      "id": "blush-no-26",
+      "label": "BLUSH NO.26",
+      "url": "https://adahlazorgan.com/products/summer-blushes",
+      "keywords": [
+        "BLUSH NO.26",
+        "blush no.26"
+      ],
+      "priority": 10,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/01_d26e13dc-a858-4cc1-b972-38e57af0ec0d.png?v=1706299111"
+    },
+    {
+      "id": "blush-no-27",
+      "label": "BLUSH NO.27",
+      "url": "https://adahlazorgan.com/products/blushe-no-27",
+      "keywords": [
+        "BLUSH NO.27",
+        "blush no.27"
+      ],
+      "priority": 10,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/01_2_ea245747-57b2-40c8-84dc-df46002c58d9.png?v=1715076601"
+    },
+    {
+      "id": "blush-no-29",
+      "label": "BLUSH NO.29",
+      "url": "https://adahlazorgan.com/products/blush-no-29",
+      "keywords": [
+        "BLUSH NO.29",
+        "blush no.29"
+      ],
+      "priority": 10,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/29.png?v=1705265298"
+    },
+    {
+      "id": "blush-no-30",
+      "label": "BLUSH NO.30",
+      "url": "https://adahlazorgan.com/products/blushe-no-30",
+      "keywords": [
+        "BLUSH NO.30",
+        "blush no.30"
+      ],
+      "priority": 10,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/01_1_08d73180-2848-49d2-b303-1370044a878f.png?v=1715076713"
+    },
+    {
+      "id": "brow-mascara",
+      "label": "BROW MASCARA",
+      "url": "https://adahlazorgan.com/products/brow-mascara",
+      "keywords": [
+        "BROW MASCARA",
+        "brow mascara"
+      ],
+      "priority": 10,
+      "price": "$34.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/MascaraSilver2.png?v=1720199341"
+    },
+    {
+      "id": "brow-pen",
+      "label": "BROW PEN",
+      "url": "https://adahlazorgan.com/products/brow-pen",
+      "keywords": [
+        "eyebrow pen",
+        "BROW PEN",
+        "brow pen"
+      ],
+      "priority": 10,
+      "price": "$27.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Et-Gabot-0.jpg?v=1705265302"
+    },
+    {
+      "id": "brush-no-11",
+      "label": "BRUSH NO 11",
+      "url": "https://adahlazorgan.com/products/brush-no-11",
+      "keywords": [
+        "BRUSH NO 11",
+        "brush no 11"
+      ],
+      "priority": 10,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/BrSilver11.png?v=1714572991"
+    },
+    {
+      "id": "brush-no-12",
+      "label": "BRUSH NO 12",
+      "url": "https://adahlazorgan.com/products/brush-no-12",
+      "keywords": [
+        "BRUSH NO 12",
+        "brush no 12"
+      ],
+      "priority": 10,
+      "price": "$37.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-Silver-12.png?v=1705266047"
+    },
+    {
+      "id": "brush-no-15",
+      "label": "BRUSH NO 15",
+      "url": "https://adahlazorgan.com/products/brush-no-15",
+      "keywords": [
+        "BRUSH NO 15",
+        "brush no 15"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/BrSilver15.png?v=1721754689"
+    },
+    {
+      "id": "brush-no-17",
+      "label": "BRUSH NO 17",
+      "url": "https://adahlazorgan.com/products/brush-no-17",
+      "keywords": [
+        "BRUSH NO 17",
+        "brush no 17"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Brush17.jpg?v=1721761671"
+    },
+    {
+      "id": "brush-no-18",
+      "label": "BRUSH NO 18",
+      "url": "https://adahlazorgan.com/products/brush-no-18",
+      "keywords": [
+        "BRUSH NO 18",
+        "brush no 18"
+      ],
+      "priority": 10,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-Silver-18.png?v=1705266034"
+    },
+    {
+      "id": "brush-no-2",
+      "label": "BRUSH NO 2",
+      "url": "https://adahlazorgan.com/products/brush-no-2",
+      "keywords": [
+        "BRUSH NO 2",
+        "brush no 2"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Brush_No.2.jpg?v=1721753578"
+    },
+    {
+      "id": "brush-no-20",
+      "label": "BRUSH NO 20",
+      "url": "https://adahlazorgan.com/products/brush-no-20",
+      "keywords": [
+        "BRUSH NO 20",
+        "brush no 20"
+      ],
+      "priority": 10,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-20.png?v=1705266029"
+    },
+    {
+      "id": "brush-no-21",
+      "label": "BRUSH NO 21",
+      "url": "https://adahlazorgan.com/products/brush-no-21",
+      "keywords": [
+        "BRUSH NO 21",
+        "brush no 21"
+      ],
+      "priority": 10,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Brush_No.21.jpg?v=1721754437"
+    },
+    {
+      "id": "brush-no-24",
+      "label": "BRUSH NO 24",
+      "url": "https://adahlazorgan.com/products/brush-no-24",
+      "keywords": [
+        "BRUSH NO 24",
+        "brush no 24"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-Silver-24.png?v=1705266026"
+    },
+    {
+      "id": "brush-no-27",
+      "label": "BRUSH NO 27",
+      "url": "https://adahlazorgan.com/products/brush-no-27",
+      "keywords": [
+        "BRUSH NO 27",
+        "brush no 27"
+      ],
+      "priority": 10,
+      "price": "$42.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Brush27.jpg?v=1721755317"
+    },
+    {
+      "id": "brush-no-29",
+      "label": "BRUSH NO 29",
+      "url": "https://adahlazorgan.com/products/brush-no-44",
+      "keywords": [
+        "BRUSH NO 29",
+        "brush no 29"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Brush29.jpg?v=1721755596"
+    },
+    {
+      "id": "brush-no-29",
+      "label": "BRUSH NO 29",
+      "url": "https://adahlazorgan.com/products/brush-no-29",
+      "keywords": [
+        "BRUSH NO 29",
+        "brush no 29"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/BrSilver29.png?v=1714572916"
+    },
+    {
+      "id": "brush-no-3",
+      "label": "BRUSH NO 3",
+      "url": "https://adahlazorgan.com/products/brush-no-3",
+      "keywords": [
+        "BRUSH NO 3",
+        "brush no 3"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-Silver-3.png?v=1705266062"
+    },
+    {
+      "id": "brush-no-30",
+      "label": "BRUSH NO 30",
+      "url": "https://adahlazorgan.com/products/brush-no-30",
+      "keywords": [
+        "BRUSH NO 30",
+        "brush no 30"
+      ],
+      "priority": 10,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-Silver-30-1.png?v=1705266133"
+    },
+    {
+      "id": "brush-no-31",
+      "label": "BRUSH NO 31",
+      "url": "https://adahlazorgan.com/products/brush-no-31",
+      "keywords": [
+        "BRUSH NO 31",
+        "brush no 31"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/lips31.jpg?v=1705266015"
+    },
+    {
+      "id": "brush-no-32",
+      "label": "BRUSH NO 32",
+      "url": "https://adahlazorgan.com/products/brush-no-32",
+      "keywords": [
+        "BRUSH NO 32",
+        "brush no 32"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/32-brush.jpg?v=1705266012"
+    },
+    {
+      "id": "brush-no-33",
+      "label": "BRUSH NO 33",
+      "url": "https://adahlazorgan.com/products/brush-no-33",
+      "keywords": [
+        "BRUSH NO 33",
+        "brush no 33"
+      ],
+      "priority": 10,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/BrSilver33.png?v=1714572892"
+    },
+    {
+      "id": "brush-no-35",
+      "label": "BRUSH NO 35",
+      "url": "https://adahlazorgan.com/products/brush-no-35",
+      "keywords": [
+        "BRUSH NO 35",
+        "brush no 35"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-Silver-35.png?v=1705266005"
+    },
+    {
+      "id": "brush-no-36",
+      "label": "BRUSH NO 36",
+      "url": "https://adahlazorgan.com/products/brush-no-36",
+      "keywords": [
+        "BRUSH NO 36",
+        "brush no 36"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-36.png?v=1705265835"
+    },
+    {
+      "id": "brush-no-37",
+      "label": "BRUSH NO 37",
+      "url": "https://adahlazorgan.com/products/brush-no-37",
+      "keywords": [
+        "BRUSH NO 37",
+        "brush no 37"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-37.png?v=1705265832"
+    },
+    {
+      "id": "brush-no-38",
+      "label": "BRUSH NO 38",
+      "url": "https://adahlazorgan.com/products/brush-no-38",
+      "keywords": [
+        "BRUSH NO 38",
+        "brush no 38"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-38.png?v=1705265685"
+    },
+    {
+      "id": "brush-no-39",
+      "label": "BRUSH NO 39",
+      "url": "https://adahlazorgan.com/products/brush-no-39",
+      "keywords": [
+        "BRUSH NO 39",
+        "brush no 39"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-Silver-39.png?v=1705265687"
+    },
+    {
+      "id": "brush-no-42",
+      "label": "BRUSH NO 42",
+      "url": "https://adahlazorgan.com/products/brush-no-42",
+      "keywords": [
+        "BRUSH NO 42",
+        "brush no 42"
+      ],
+      "priority": 10,
+      "price": "$20.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Br-Silver-42-1.png?v=1705265762"
+    },
+    {
+      "id": "brush-no-43",
+      "label": "BRUSH NO 43",
+      "url": "https://adahlazorgan.com/products/brush-no-43",
+      "keywords": [
+        "BRUSH NO 43",
+        "brush no 43"
+      ],
+      "priority": 10,
+      "price": "$36.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/BrSilver43.png?v=1714572904"
+    },
+    {
+      "id": "brush-no-44",
+      "label": "BRUSH NO 44",
+      "url": "https://adahlazorgan.com/products/brush-no-43-copy",
+      "keywords": [
+        "BRUSH NO 44",
+        "brush no 44"
+      ],
+      "priority": 10,
+      "price": "$36.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Brush44.jpg?v=1721756597"
+    },
+    {
+      "id": "drop-sponge-pink",
+      "label": "DROP SPONGE PINK",
+      "url": "https://adahlazorgan.com/products/drop-sponge-pink",
+      "keywords": [
+        "DROP SPONGE PINK",
+        "drop sponge pink",
+        "DROP SPONGE",
+        "drop sponge"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/makeupsponge-scaled-1.jpg?v=1705265890"
+    },
+    {
+      "id": "eye-pencil",
+      "label": "EYE PENCIL",
+      "url": "https://adahlazorgan.com/products/eye-pencil",
+      "keywords": [
+        "EYE PENCIL",
+        "eye pencil"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/T1020P_83ca3bc4-2936-47ce-b60b-0bb69bbd2db0.png?v=1714575189"
+    },
+    {
+      "id": "freckles-pen",
+      "label": "FRECKLES PEN",
+      "url": "https://adahlazorgan.com/products/freckles-pen",
+      "keywords": [
+        "FRECKLES PEN",
+        "freckles pen"
+      ],
+      "priority": 10,
+      "price": "$27.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Et-Nemashim-new-2.png?v=1705265307"
+    },
+    {
+      "id": "gel-eyeliner",
+      "label": "GEL EYELINER",
+      "url": "https://adahlazorgan.com/products/gel-eyeliner",
+      "keywords": [
+        "GEL EYELINER",
+        "gel eyeliner",
+        "eyeliner"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/ELG-Black.png?v=1705266102"
+    },
+    {
+      "id": "lip-cheek-tint",
+      "label": "LIP & CHEEK TINT",
+      "url": "https://adahlazorgan.com/products/lip-cheek-tint",
+      "keywords": [
+        "lip and cheek tint",
+        "LIP & CHEEK TINT",
+        "lip & cheek tint",
+        "lip cheek tint",
+        "LIP CHEEK",
+        "lip cheek"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/LipcheekRed.png?v=1714816067"
+    },
+    {
+      "id": "lip-liner",
+      "label": "LIP LINER",
+      "url": "https://adahlazorgan.com/products/lip-liner",
+      "keywords": [
+        "LIP LINER",
+        "lip liner"
+      ],
+      "priority": 10,
+      "price": "$17.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/8697581984861_2.png?v=1714573818"
+    },
+    {
+      "id": "lip-stick-pen",
+      "label": "LIP STICK PEN",
+      "url": "https://adahlazorgan.com/products/lip-stick-pen",
+      "keywords": [
+        "lipstick pen by adah",
+        "LIP STICK PEN",
+        "lip stick pen",
+        "lipstick pen",
+        "LIP STICK",
+        "lip stick"
+      ],
+      "priority": 10,
+      "price": "$22.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Lip_Stick_1.png?v=1714818603"
+    },
+    {
+      "id": "lipgloss-xoxo",
+      "label": "LIPGLOSS XOXO",
+      "url": "https://adahlazorgan.com/products/lipgloss-xoxo",
+      "keywords": [
+        "LIPGLOSS XOXO",
+        "lipgloss xoxo"
+      ],
+      "priority": 10,
+      "price": "$16.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/XO07.png?v=1706752630"
+    },
+    {
+      "id": "liquid-eyeshadow",
+      "label": "LIQUID EYESHADOW",
+      "url": "https://adahlazorgan.com/products/liquid-eyeshadow",
+      "keywords": [
+        "LIQUID EYESHADOW",
+        "liquid eyeshadow"
+      ],
+      "priority": 10,
+      "price": "$27.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Glow-Liq-Eye.png?v=1705266249"
+    },
+    {
+      "id": "luck-blush-tint",
+      "label": "LUCK BLUSH TINT",
+      "url": "https://adahlazorgan.com/products/luck-blush-tint",
+      "keywords": [
+        "LUCK BLUSH TINT",
+        "luck blush tint",
+        "LUCK BLUSH",
+        "luck blush"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/LB_Pink.png?v=1714816399"
+    },
+    {
+      "id": "makeup-brush-cleansing-cloths",
+      "label": "MAKEUP BRUSH CLEANSING CLOTHS",
+      "url": "https://adahlazorgan.com/products/makeup-brush-cleansing-cloths",
+      "keywords": [
+        "MAKEUP BRUSH CLEANSING CLOTHS",
+        "makeup brush cleansing cloths",
+        "MAKEUP BRUSH",
+        "makeup brush"
+      ],
+      "priority": 10,
+      "price": "$12.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/Brush_cleanser_close.png?v=1720202486"
+    },
+    {
+      "id": "mineral-loose-powder-blush",
+      "label": "MINERAL LOOSE POWDER BLUSH",
+      "url": "https://adahlazorgan.com/products/lip-cheeck-powder",
+      "keywords": [
+        "MINERAL LOOSE POWDER BLUSH",
+        "mineral loose powder blush",
+        "pigmented blushes",
+        "MINERAL LOOSE",
+        "mineral loose",
+        "powder blush"
+      ],
+      "priority": 10,
+      "price": "$33.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/PudraOdem2_03412ff8-9250-4573-86ac-9ed16d9432d2.png?v=1707024317"
+    },
+    {
+      "id": "mineral-loose-powder-eyeliner",
+      "label": "MINERAL LOOSE POWDER EYELINER",
+      "url": "https://adahlazorgan.com/products/powder-eyeliner",
+      "keywords": [
+        "MINERAL LOOSE POWDER EYELINER",
+        "mineral loose powder eyeliner",
+        "MINERAL LOOSE",
+        "mineral loose"
+      ],
+      "priority": 10,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/PudraEyeliner2.png?v=1707024540"
+    },
+    {
+      "id": "pink-sponge",
+      "label": "PINK SPONGE",
+      "url": "https://adahlazorgan.com/products/pink-sponge",
+      "keywords": [
+        "PINK SPONGE",
+        "pink sponge"
+      ],
+      "priority": 10,
+      "price": "$8.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Sfog-Pink.jpg?v=1705265395"
+    },
+    {
+      "id": "renee-mascara",
+      "label": "RENEE MASCARA",
+      "url": "https://adahlazorgan.com/products/renee-mascara",
+      "keywords": [
+        "RENEE MASCARA",
+        "renee mascara",
+        "mascara"
+      ],
+      "priority": 10,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/MascaraSilver1.png?v=1719350867"
+    },
+    {
+      "id": "sassy-lips",
+      "label": "SASSY LIPS",
+      "url": "https://adahlazorgan.com/products/sassy-lips",
+      "keywords": [
+        "SASSY LIPS",
+        "sassy lips",
+        "lip oil"
+      ],
+      "priority": 10,
+      "price": "$27.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/SASSI-CLEAR.png?v=1706753626"
+    },
+    {
+      "id": "shimmer-trio-no-24",
+      "label": "SHIMMER TRIO NO 24",
+      "url": "https://adahlazorgan.com/products/blush-trio-no-24",
+      "keywords": [
+        "SHIMMER TRIO NO 24",
+        "shimmer trio no 24",
+        "SHIMMER TRIO",
+        "shimmer trio"
+      ],
+      "priority": 10,
+      "price": "$29.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/24.png?v=1705265942"
+    },
+    {
+      "id": "shimmer-trio-no-28",
+      "label": "SHIMMER TRIO NO 28",
+      "url": "https://adahlazorgan.com/products/shimmer-trio-no-28",
+      "keywords": [
+        "SHIMMER TRIO NO 28",
+        "shimmer trio no 28",
+        "SHIMMER TRIO",
+        "shimmer trio"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/28-1.png?v=1705265944"
+    },
+    {
+      "id": "shine-shine-bronzing-drops",
+      "label": "SHINE SHINE BRONZING DROPS",
+      "url": "https://adahlazorgan.com/products/shine-shine-bronzing-drops",
+      "keywords": [
+        "SHINE SHINE BRONZING DROPS",
+        "shine shine bronzing drops",
+        "bronzing drops",
+        "SHINE SHINE",
+        "shine shine"
+      ],
+      "priority": 10,
+      "price": "$37.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/ShineSilver.png?v=1714811504"
+    },
+    {
+      "id": "shine-shine-shimmer",
+      "label": "SHINE SHINE SHIMMER",
+      "url": "https://adahlazorgan.com/products/shine-shine-shimer",
+      "keywords": [
+        "SHINE SHINE SHIMMER",
+        "shine shine shimmer",
+        "perfect shimmer",
+        "shine shimmer",
+        "SHINE SHINE",
+        "shine shine"
+      ],
+      "priority": 10,
+      "price": "$37.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Shine-Silver.png?v=1705265759"
+    },
+    {
+      "id": "under-eye-pen",
+      "label": "UNDER EYE PEN",
+      "url": "https://adahlazorgan.com/products/under-eye-pen",
+      "keywords": [
+        "UNDER EYE PEN",
+        "under eye pen",
+        "under-eye pen",
+        "UNDER EYE",
+        "under eye"
+      ],
+      "priority": 10,
+      "price": "$27.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/files/UnderEye1.png?v=1706298772"
+    },
+    {
+      "id": "xoxo-gloss",
+      "label": "XOXO GLOSS",
+      "url": "https://adahlazorgan.com/products/xoxo-gloss",
+      "keywords": [
+        "lip gloss xoxo",
+        "XOXO GLOSS",
+        "xoxo gloss"
+      ],
+      "priority": 10,
+      "price": "$24.99",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0703/8782/6722/products/Lipgloss-Pink.png?v=1705265378"
+    }
+  ]
+}

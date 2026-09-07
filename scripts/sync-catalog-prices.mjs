@@ -1,9 +1,10 @@
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogsDir = join(root, "src/lib/shoppable/store-catalogs");
+const MANEKEN_ORIGIN = "https://manekenbrand.com";
 
 function normalizeUrl(url) {
   try {
@@ -52,29 +53,75 @@ function formatGrezPrice(amount) {
   return `$${formatted}`;
 }
 
-function parseManekenPrices(html) {
-  const pricesByPath = new Map();
+function formatUsdPrice(amount) {
+  const value = Number(amount);
+  if (!Number.isFinite(value)) {
+    return null;
+  }
+
+  if (Number.isInteger(value)) {
+    return `$${value}`;
+  }
+
+  return `$${value.toFixed(2)}`;
+}
+
+function extractTildaImageUrl(item) {
+  const editionImage = item.editions?.[0]?.img?.trim();
+  if (editionImage) {
+    return editionImage;
+  }
+
+  if (!item.gallery) {
+    return null;
+  }
+
+  try {
+    const gallery = JSON.parse(item.gallery);
+    return gallery[0]?.img ?? null;
+  } catch {
+    return null;
+  }
+}
+
+function toAbsoluteManekenUrl(pathOrUrl) {
+  if (!pathOrUrl) {
+    return null;
+  }
+
+  if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) {
+    return pathOrUrl;
+  }
+
+  return `${MANEKEN_ORIGIN}${pathOrUrl.startsWith("/") ? "" : "/"}${pathOrUrl}`;
+}
+
+function parseManekenCatalog(html) {
+  const byPath = new Map();
 
   for (const block of html.split('class="item-wrap"')) {
     const hrefMatch = block.match(
       /<a href="(\/catalog\/[^"]+)" class="item-tile-catalog">/,
     );
+    if (!hrefMatch) {
+      continue;
+    }
+
     const priceMatch = block.match(
       /<span class="tile-price"[^>]*>\s*([\d\s&nbsp;]+)\s*р\./i,
     );
+    const imageMatch = block.match(/<img loading="lazy" src="([^"]+)"/);
 
-    if (hrefMatch && priceMatch) {
-      const price = formatRubPrice(priceMatch[1]);
-      if (price) {
-        pricesByPath.set(hrefMatch[1], price);
-      }
-    }
+    byPath.set(hrefMatch[1], {
+      price: priceMatch ? formatRubPrice(priceMatch[1]) : null,
+      imageUrl: imageMatch ? toAbsoluteManekenUrl(imageMatch[1]) : null,
+    });
   }
 
-  return pricesByPath;
+  return byPath;
 }
 
-async function fetchManekenLivePrice(url) {
+async function fetchManekenLiveData(url) {
   const response = await fetch(url, {
     headers: { "User-Agent": "Mozilla/5.0 (compatible; ShoppableFeedBot/1.0)" },
   });
@@ -84,19 +131,27 @@ async function fetchManekenLivePrice(url) {
 
   const html = await response.text();
   const dataPrice = html.match(/data-price="(\d+)"/)?.[1];
-  if (dataPrice) {
-    return formatRubPrice(dataPrice);
-  }
-
   const itemPrice = html.match(/id="calc_item_price">(\d+)/)?.[1];
-  if (itemPrice) {
-    return formatRubPrice(itemPrice);
-  }
-
   const tilePrice = html.match(
     /<span class="tile-price"[^>]*>\s*([\d\s&nbsp;]+)\s*р\./i,
   )?.[1];
-  return tilePrice ? formatRubPrice(tilePrice) : null;
+  const ogImage = html.match(
+    /<meta property="og:image" content="([^"]+)"/i,
+  )?.[1];
+  const productImage = html.match(
+    /class="product-item-detail-slider-image[^"]*"[^>]*src="([^"]+)"/i,
+  )?.[1];
+
+  return {
+    price: dataPrice
+      ? formatRubPrice(dataPrice)
+      : itemPrice
+        ? formatRubPrice(itemPrice)
+        : tilePrice
+          ? formatRubPrice(tilePrice)
+          : null,
+    imageUrl: toAbsoluteManekenUrl(ogImage ?? productImage),
+  };
 }
 
 async function fetchJson(url) {
@@ -118,56 +173,89 @@ function saveCatalog(path, data) {
   writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`);
 }
 
-function applyPricesByUrl(catalog, priceByUrl, label) {
-  let updated = 0;
-  let missing = 0;
+function applyCatalogFieldsByUrl(catalog, fieldsByUrl, label) {
+  let priceUpdated = 0;
+  let imageUpdated = 0;
+  let missingPrice = 0;
+  let missingImage = 0;
 
   for (const product of catalog.products) {
     const key = normalizeUrl(product.url);
-    const price = priceByUrl.get(key);
-    if (price) {
-      if (product.price !== price) {
-        product.price = price;
-        updated += 1;
+    const fields = fieldsByUrl.get(key);
+
+    if (fields?.price) {
+      if (product.price !== fields.price) {
+        product.price = fields.price;
+        priceUpdated += 1;
       }
     } else {
-      missing += 1;
+      missingPrice += 1;
       console.warn(`[${label}] no price for ${product.label} (${product.url})`);
+    }
+
+    if (fields?.imageUrl) {
+      if (product.imageUrl !== fields.imageUrl) {
+        product.imageUrl = fields.imageUrl;
+        imageUpdated += 1;
+      }
+    } else {
+      missingImage += 1;
+      console.warn(`[${label}] no image for ${product.label} (${product.url})`);
     }
   }
 
-  return { updated, missing };
+  return { priceUpdated, imageUpdated, missingPrice, missingImage };
 }
 
 async function syncManeken() {
   const htmlPath = join(root, "mock-data/manekenbrand-home.html");
   const { path, data } = loadCatalog("manekenbrand-home.json");
   const html = readFileSync(htmlPath, "utf8");
-  const pricesByPath = parseManekenPrices(html);
-  const priceByUrl = new Map();
+  const catalogByPath = parseManekenCatalog(html);
+  const fieldsByUrl = new Map();
 
-  for (const [catalogPath, price] of pricesByPath) {
-    priceByUrl.set(normalizeUrl(`https://manekenbrand.com${catalogPath}`), price);
+  for (const [catalogPath, fields] of catalogByPath) {
+    fieldsByUrl.set(normalizeUrl(`${MANEKEN_ORIGIN}${catalogPath}`), fields);
   }
 
-  const stats = applyPricesByUrl(data, priceByUrl, "MANEKEN");
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "MANEKEN");
 
   for (const product of data.products) {
-    if (priceByUrl.has(normalizeUrl(product.url))) {
+    const key = normalizeUrl(product.url);
+    const existing = fieldsByUrl.get(key) ?? {};
+
+    if (existing.price && existing.imageUrl) {
       continue;
     }
 
-    const livePrice = await fetchManekenLivePrice(product.url);
-    if (livePrice) {
-      product.price = livePrice;
-      stats.updated += 1;
-      stats.missing -= 1;
-      console.log(`[MANEKEN] live price ${product.label}: ${livePrice}`);
+    const liveData = await fetchManekenLiveData(product.url);
+    if (!liveData) {
+      continue;
+    }
+
+    if (!existing.price && liveData.price && product.price !== liveData.price) {
+      product.price = liveData.price;
+      stats.priceUpdated += 1;
+      stats.missingPrice -= 1;
+      console.log(`[MANEKEN] live price ${product.label}: ${liveData.price}`);
+    }
+
+    if (
+      !existing.imageUrl &&
+      liveData.imageUrl &&
+      product.imageUrl !== liveData.imageUrl
+    ) {
+      product.imageUrl = liveData.imageUrl;
+      stats.imageUpdated += 1;
+      stats.missingImage -= 1;
+      console.log(`[MANEKEN] live image ${product.label}`);
     }
   }
 
   saveCatalog(path, data);
-  console.log(`MANEKEN: updated ${stats.updated}, missing ${stats.missing}`);
+  console.log(
+    `MANEKEN: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
 }
 
 async function syncTildaCatalog(fileName, apiUrl, cachePath) {
@@ -176,26 +264,29 @@ async function syncTildaCatalog(fileName, apiUrl, cachePath) {
   writeFileSync(cachePath, `${JSON.stringify(payload, null, 2)}\n`);
   const products = payload.products ?? [];
 
-  const priceByUrl = new Map();
+  const fieldsByUrl = new Map();
   for (const item of products) {
     if (!item.url) {
       continue;
     }
-    const price = formatTildaPrice(item);
-    if (price) {
-      priceByUrl.set(normalizeUrl(item.url), price);
-    }
+
+    fieldsByUrl.set(normalizeUrl(item.url), {
+      price: formatTildaPrice(item),
+      imageUrl: extractTildaImageUrl(item),
+    });
   }
 
-  const stats = applyPricesByUrl(data, priceByUrl, fileName);
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, fileName);
   saveCatalog(path, data);
-  console.log(`${fileName}: updated ${stats.updated}, missing ${stats.missing}`);
+  console.log(
+    `${fileName}: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
 }
 
 async function syncGrez() {
   const { path, data } = loadCatalog("grez-home.json");
   const payload = await fetchJson("https://www.thegrezway.cl/products.json?limit=250");
-  const priceByUrl = new Map();
+  const fieldsByUrl = new Map();
 
   for (const product of payload.products ?? []) {
     if (/suscripci[oó]n/i.test(product.title)) {
@@ -207,15 +298,92 @@ async function syncGrez() {
       continue;
     }
 
-    priceByUrl.set(
+    fieldsByUrl.set(
       normalizeUrl(`https://www.thegrezway.cl/products/${product.handle}`),
-      formatGrezPrice(variant.price),
+      {
+        price: formatGrezPrice(variant.price),
+        imageUrl: product.images?.[0]?.src ?? null,
+      },
     );
   }
 
-  const stats = applyPricesByUrl(data, priceByUrl, "GREZ");
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "GREZ");
   saveCatalog(path, data);
-  console.log(`GREZ: updated ${stats.updated}, missing ${stats.missing}`);
+  console.log(
+    `GREZ: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
+}
+
+async function syncBananhot() {
+  const { path, data } = loadCatalog("bananhot-home.json");
+  const fieldsByUrl = new Map();
+
+  for (let page = 1; page <= 6; page += 1) {
+    const payload = await fetchJson(
+      `https://bananhot.com/products.json?limit=250&page=${page}`,
+    );
+    const batch = payload.products ?? [];
+    if (batch.length === 0) {
+      break;
+    }
+
+    for (const product of batch) {
+      const variant = product.variants?.[0];
+      if (!variant?.price) {
+        continue;
+      }
+
+      fieldsByUrl.set(
+        normalizeUrl(`https://bananhot.com/products/${product.handle}`),
+        {
+          price: formatUsdPrice(variant.price),
+          imageUrl: product.images?.[0]?.src ?? null,
+        },
+      );
+    }
+  }
+
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "BANANHOT");
+  saveCatalog(path, data);
+  console.log(
+    `BANANHOT: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
+}
+
+async function syncAdahlazorgan() {
+  const { path, data } = loadCatalog("adahlazorgan-home.json");
+  const fieldsByUrl = new Map();
+
+  for (let page = 1; page <= 4; page += 1) {
+    const payload = await fetchJson(
+      `https://adahlazorgan.com/products.json?limit=250&page=${page}`,
+    );
+    const batch = payload.products ?? [];
+    if (batch.length === 0) {
+      break;
+    }
+
+    for (const product of batch) {
+      const variant = product.variants?.[0];
+      if (!variant?.price) {
+        continue;
+      }
+
+      fieldsByUrl.set(
+        normalizeUrl(`https://adahlazorgan.com/products/${product.handle}`),
+        {
+          price: formatUsdPrice(variant.price),
+          imageUrl: product.images?.[0]?.src ?? null,
+        },
+      );
+    }
+  }
+
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "ADAH");
+  saveCatalog(path, data);
+  console.log(
+    `ADAH: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
 }
 
 function normalizeCaption(text) {
@@ -249,34 +417,44 @@ function auditPostsOnExamples() {
       label: "MANEKEN",
       file: "manekenbrand.json",
       catalogFile: "manekenbrand-home.json",
-      profileExternalUrl: "https://manekenbrand.com",
     },
     {
       label: "MADJ",
       file: "madj_store.json",
       catalogFile: "madj-home.json",
-      profileExternalUrl: "https://madj.store",
     },
     {
       label: "DROP'S",
       file: "dropsstore.json",
       catalogFile: "dropsstore-home.json",
-      profileExternalUrl: "https://www.dropsstore.ru",
     },
     {
       label: "GREZ",
       file: "thegrezway.json",
       catalogFile: "grez-home.json",
-      profileExternalUrl: "https://www.thegrezway.cl",
+    },
+    {
+      label: "BANANHOT",
+      file: "bananhot.json",
+      catalogFile: "bananhot-home.json",
+    },
+    {
+      label: "ADAH",
+      file: "adahlazorgan.json",
+      catalogFile: "adahlazorgan-home.json",
     },
   ];
 
   console.log("\nPost product audit:");
 
   for (const example of examples) {
-    const payload = JSON.parse(
-      readFileSync(join(root, "mock-data", example.file), "utf8"),
-    );
+    const mockPath = join(root, "mock-data", example.file);
+    if (!existsSync(mockPath)) {
+      console.warn(`Skipping audit for ${example.label}: mock file missing`);
+      continue;
+    }
+
+    const payload = JSON.parse(readFileSync(mockPath, "utf8"));
     const catalog = JSON.parse(
       readFileSync(join(catalogsDir, example.catalogFile), "utf8"),
     );
@@ -297,18 +475,25 @@ function auditPostsOnExamples() {
       const entry = matched.get(product.id) ?? {
         label: product.label,
         price: product.price ?? "(no price)",
+        imageUrl: product.imageUrl ? "yes" : "(no image)",
         posts: 0,
       };
       entry.posts += 1;
       entry.price = product.price ?? entry.price;
+      entry.imageUrl = product.imageUrl ? "yes" : entry.imageUrl;
       matched.set(product.id, entry);
     }
 
     console.log(`\n${example.label} (${matched.size} products on ${posts.length} posts):`);
     for (const [id, info] of [...matched.entries()].sort((a, b) => b[1].posts - a[1].posts)) {
-      console.log(`  - ${info.label}: ${info.price} (${info.posts} posts)`);
+      console.log(
+        `  - ${info.label}: ${info.price}, image ${info.imageUrl} (${info.posts} posts)`,
+      );
       if (!info.price || info.price === "(no price)") {
         console.warn(`    ⚠ missing price for ${id}`);
+      }
+      if (info.imageUrl !== "yes") {
+        console.warn(`    ⚠ missing image for ${id}`);
       }
     }
   }
@@ -326,4 +511,6 @@ await syncTildaCatalog(
   join(root, "mock-data/drops-products.json"),
 );
 await syncGrez();
+await syncBananhot();
+await syncAdahlazorgan();
 auditPostsOnExamples();

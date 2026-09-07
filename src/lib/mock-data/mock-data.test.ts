@@ -85,6 +85,24 @@ describe("findExampleByProfileUrl", () => {
     expect(example?.fileName).toBe("thegrezway.json");
   });
 
+  it("matches bananhot profile URL", () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/bananhot/",
+    );
+
+    expect(example?.id).toBe("bananhot");
+    expect(example?.fileName).toBe("bananhot.json");
+  });
+
+  it("matches adah profile URL", () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/adah.usa/",
+    );
+
+    expect(example?.id).toBe("adah.usa");
+    expect(example?.fileName).toBe("adahlazorgan.json");
+  });
+
   it("returns null for unknown profile", () => {
     expect(
       findExampleByProfileUrl("https://www.instagram.com/unknown-brand/"),
@@ -134,11 +152,12 @@ describe("loadExamplePosts", () => {
       label: "Магазин",
       url: "https://manekenbrand.com/",
     });
-    expect(buttons[1]).toEqual({
+    expect(buttons[1]).toMatchObject({
       kind: "product",
       label: "Костюм Core Edition Legacy",
       url: "https://manekenbrand.com/catalog/women/firmennye_kostyumy_1/bez_nachesa_3/kostyum_core_edition_legacy_18_s_bryukami_molochnyy/",
       price: "24 500 ₽",
+      imageUrl: expect.stringMatching(/^https:\/\//),
     });
 
     const postWithUrl = posts.find((post) =>
@@ -232,18 +251,68 @@ describe("loadExamplePosts", () => {
 
     expect(posts.length).toBeGreaterThanOrEqual(10);
     expect(posts[0].username).toBe("thegrezwaycl");
-    expect(buildShoppableButtonsForPost(posts[0])).toEqual([
-      {
-        kind: "link",
-        label: "Магазин",
-        url: "https://www.thegrezway.cl/",
-      },
-      {
-        kind: "product",
-        label: "PACK SUEÑO REPARADOR",
-        url: "https://www.thegrezway.cl/products/pack-sueno-reparador-descanso-profundo-apagado-mental-copia",
-        price: "$63.184",
-      },
-    ]);
+    expect(buildShoppableButtonsForPost(posts[0])[1]).toMatchObject({
+      kind: "product",
+      label: "PACK SUEÑO REPARADOR",
+      url: "https://www.thegrezway.cl/products/pack-sueno-reparador-descanso-profundo-apagado-mental-copia",
+      price: "$63.184",
+      imageUrl: expect.stringMatching(/^https:\/\//),
+    });
+  });
+
+  it("loads bananhot posts with catalog buttons", async () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/bananhot/",
+    );
+
+    expect(example).not.toBeNull();
+    const posts = await loadExamplePosts(example!, 12);
+
+    expect(posts.length).toBeGreaterThanOrEqual(10);
+    expect(posts[0].username).toBe("bananhot");
+    expect(buildShoppableButtonsForPost(posts[0])[0]).toMatchObject({
+      label: "Магазин",
+      url: "https://bananhot.com/",
+    });
+
+    const productPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("rosalie bari chevron"),
+    );
+    expect(productPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(productPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "ROSALIE BARI CHEVRON",
+      url: expect.stringContaining("bananhot.com/products/rosalie-bari-chevron"),
+      price: expect.stringMatching(/^\$/),
+      imageUrl: expect.stringMatching(/^https:\/\//),
+    });
+  });
+
+  it("loads adah posts with catalog buttons", async () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/adah.usa/",
+    );
+
+    expect(example).not.toBeNull();
+    const posts = await loadExamplePosts(example!, 12);
+
+    expect(posts.length).toBeGreaterThanOrEqual(10);
+    expect(posts[0].username).toBe("adah.usa");
+    expect(buildShoppableButtonsForPost(posts[0])[0]).toMatchObject({
+      label: "Магазин",
+      url: "https://adahlazorgan.com/",
+    });
+
+    const productPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("brow wax"),
+    );
+    expect(productPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(productPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "BROW WAX",
+      url: expect.stringContaining("adahlazorgan.com/products/brow-wax"),
+      price: expect.stringMatching(/^\$/),
+      imageUrl: expect.stringMatching(/^https:\/\//),
+    });
   });
 });

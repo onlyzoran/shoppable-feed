@@ -11,7 +11,8 @@
         "анорак"
       ],
       "priority": 10,
-      "price": "9 490 ₽"
+      "price": "9 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3664-6337-4637-b336-353838346530/78885891.jpg"
     },
     {
       "id": "поло",
@@ -21,7 +22,8 @@
         "поло"
       ],
       "priority": 10,
-      "price": "9 490 ₽"
+      "price": "9 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3835-6239-4735-b563-303034386634/b0fc1e315d5e9bf9bda9a68b2fcd179e.jpg"
     },
     {
       "id": "зип-олимпийка",
@@ -33,7 +35,8 @@
         "olimpiika"
       ],
       "priority": 10,
-      "price": "12 490 ₽"
+      "price": "12 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3763-6662-4134-a331-356131333737/fc54ed025c43dacdd7149ee044a3cfd6.jpg"
     },
     {
       "id": "шорты",
@@ -43,7 +46,8 @@
         "шорты"
       ],
       "priority": 10,
-      "price": "6 490 ₽"
+      "price": "6 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3661-6136-4163-a133-356563313833/bb7dd82170a85bcd54969030dc3e87c4.jpg"
     },
     {
       "id": "футболка",
@@ -53,7 +57,8 @@
         "футболка"
       ],
       "priority": 10,
-      "price": "3 490 ₽"
+      "price": "3 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6465-3561-4338-b535-303464356633/74954fba1721662d35b44c65af913fc0.jpg"
     },
     {
       "id": "джоггеры",
@@ -63,7 +68,8 @@
         "джоггеры"
       ],
       "priority": 10,
-      "price": "9 490 ₽"
+      "price": "9 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3733-6464-4731-a664-303961386665/9e1d9ca1a3b0042cf8e13b6ee9b2ed3c.jpg"
     },
     {
       "id": "пуховик",
@@ -73,7 +79,8 @@
         "пуховик"
       ],
       "priority": 10,
-      "price": "19 900 ₽"
+      "price": "19 900 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6565-6165-4739-a265-373530356363/48199685.jpg"
     },
     {
       "id": "поло-удлиненное",
@@ -84,7 +91,8 @@
         "udlinennoe"
       ],
       "priority": 10,
-      "price": "9 990 ₽"
+      "price": "9 990 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3061-3238-4931-b530-373864386230/5331a26f04c8adadf8dfa507610e2122.jpg"
     },
     {
       "id": "анорак-мужской",
@@ -95,7 +103,8 @@
         "muzhskoi"
       ],
       "priority": 10,
-      "price": "12 490 ₽"
+      "price": "12 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6334-6638-4939-b735-613164353737/8afea40a5ba46700bf74ca9b9cc9da87.jpg"
     },
     {
       "id": "джоггеры-мужские",
@@ -106,7 +115,8 @@
         "muzhskie"
       ],
       "priority": 10,
-      "price": "12 490 ₽"
+      "price": "12 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6663-6631-4334-b961-616137376431/5d49b9c1dc8fc58837c4833e6e8306cc.jpg"
     },
     {
       "id": "брюки-прямые",
@@ -117,7 +127,8 @@
         "pryamie"
       ],
       "priority": 10,
-      "price": "9 490 ₽"
+      "price": "9 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6637-3938-4833-a362-363839333636/6797699d74703b94d70ed2bde808fb15.jpg"
     },
     {
       "id": "худи",
@@ -127,7 +138,8 @@
         "худи"
       ],
       "priority": 10,
-      "price": "6 293 ₽"
+      "price": "6 293 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3038-3166-4131-a337-646638396561/17708411.jpg"
     },
     {
       "id": "костюм-бархатный",
@@ -138,7 +150,8 @@
         "barhatnii"
       ],
       "priority": 10,
-      "price": "199 900 000 ₽"
+      "price": "199 900 000 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3266-3864-4332-b832-373938616639/42681024.jpg"
     },
     {
       "id": "костюм-твидовый",
@@ -149,7 +162,8 @@
         "tvidovii"
       ],
       "priority": 10,
-      "price": "149 900 000 ₽"
+      "price": "149 900 000 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6339-6133-4830-a337-313936623938/78229926.jpg"
     },
     {
       "id": "футболка-oversize",
@@ -160,7 +174,8 @@
         "oversize"
       ],
       "priority": 10,
-      "price": "3 200 ₽"
+      "price": "3 200 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3331-6463-4337-b464-336435343362/64802379.jpg"
     },
     {
       "id": "топ",
@@ -170,7 +185,8 @@
         "топ"
       ],
       "priority": 10,
-      "price": "2 000 ₽"
+      "price": "2 000 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3735-3930-4463-a434-303236366539/81765078.jpg"
     },
     {
       "id": "пальто-из-шерсти",
@@ -181,7 +197,8 @@
         "iz shersti"
       ],
       "priority": 10,
-      "price": "21 990 ₽"
+      "price": "21 990 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6430-3733-4065-a332-333266623163/88927749.jpg"
     },
     {
       "id": "жилетка-gray",
@@ -192,7 +209,8 @@
         "gray"
       ],
       "priority": 10,
-      "price": "8 393 ₽"
+      "price": "8 393 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3766-6664-4366-b063-386639393762/21700501.jpg"
     },
     {
       "id": "жилетка",
@@ -202,7 +220,8 @@
         "жилетка"
       ],
       "priority": 10,
-      "price": "8 393 ₽"
+      "price": "8 393 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6665-3562-4461-a462-393536353562/26457831.jpg"
     },
     {
       "id": "двубортный-пиджак",
@@ -213,7 +232,8 @@
         "pidzhak"
       ],
       "priority": 10,
-      "price": "4 047 ₽"
+      "price": "4 047 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3837-3739-4731-b532-363430653661/85106312.jpg"
     },
     {
       "id": "юбка-миди",
@@ -224,7 +244,8 @@
         "midi"
       ],
       "priority": 10,
-      "price": "1 944 ₽"
+      "price": "1 944 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6364-3166-4733-b465-333162346533/24650391.jpg"
     },
     {
       "id": "рубашка-в-клетку",
@@ -235,7 +256,8 @@
         "v kletku"
       ],
       "priority": 10,
-      "price": "8 490 ₽"
+      "price": "8 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3132-3365-4465-b130-353034643939/83755694.jpg"
     },
     {
       "id": "платье-monaco",
@@ -246,7 +268,8 @@
         "monaco"
       ],
       "priority": 10,
-      "price": "2 997 ₽"
+      "price": "2 997 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3332-3138-4938-a161-613534326632/24150769.jpg"
     },
     {
       "id": "платье-flower",
@@ -257,7 +280,8 @@
         "flower"
       ],
       "priority": 10,
-      "price": "6 293 ₽"
+      "price": "6 293 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6231-6535-4663-b731-616364663538/74880978.jpg"
     },
     {
       "id": "sexy-soft-лонг",
@@ -268,7 +292,8 @@
         "soft long"
       ],
       "priority": 10,
-      "price": "3 500 ₽"
+      "price": "3 500 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3766-3962-4233-a565-393539633462/61440995.jpg"
     },
     {
       "id": "платье-комбинация",
@@ -280,7 +305,8 @@
         "kombinatsiya"
       ],
       "priority": 10,
-      "price": "2 250 ₽"
+      "price": "2 250 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3765-3061-4965-b263-356562303461/39568295.jpg"
     },
     {
       "id": "комплект-изо-льна-юбка-топ",
@@ -291,7 +317,8 @@
         "izo lna yubkatop"
       ],
       "priority": 10,
-      "price": "4 990 ₽"
+      "price": "4 990 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6637-3334-4164-b039-633133643366/48308609.jpg"
     },
     {
       "id": "рубашка-на-завязках-изо-льна",
@@ -302,7 +329,8 @@
         "na zavyazkah izo lna"
       ],
       "priority": 10,
-      "price": "9 490 ₽"
+      "price": "9 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3136-3230-4832-b363-636664343739/31489484.jpg"
     },
     {
       "id": "шорты-изо-льна",
@@ -313,7 +341,8 @@
         "izo lna"
       ],
       "priority": 10,
-      "price": "7 490 ₽"
+      "price": "7 490 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3665-3734-4735-a433-363233356330/45950194.jpg"
     },
     {
       "id": "брюки-изо-льна",
@@ -324,7 +353,8 @@
         "izo lna"
       ],
       "priority": 10,
-      "price": "7 990 ₽"
+      "price": "7 990 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6664-3233-4662-b333-383166303563/21284432.jpg"
     },
     {
       "id": "рубашка-длинная-изо-льна",
@@ -335,7 +365,8 @@
         "dlinnaya izo lna"
       ],
       "priority": 10,
-      "price": "4 500 ₽"
+      "price": "4 500 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor6264-3631-4139-b536-346165653939/70833467.jpg"
     },
     {
       "id": "юбка-из-денима",
@@ -346,7 +377,8 @@
         "iz denima"
       ],
       "priority": 10,
-      "price": "6 990 ₽"
+      "price": "6 990 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3834-6132-4633-b637-366538343466/678a1a70f98137d15218986aa6698ea1.jpg"
     },
     {
       "id": "бомбер-из-денима",
@@ -357,7 +389,8 @@
         "iz denima"
       ],
       "priority": 10,
-      "price": "12 990 ₽"
+      "price": "12 990 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3930-3636-4364-b264-393332303639/21e191cf0f5224d67f62b282f213caa9.jpg"
     },
     {
       "id": "костюм-олимпийка-и-шорты",
@@ -368,7 +401,8 @@
         "olimpiika i shorti"
       ],
       "priority": 10,
-      "price": "12 980 ₽"
+      "price": "12 980 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3937-3833-4935-b364-353436653539/ac9307d8609cbd9c8b2e6d506c995406.jpg"
     },
     {
       "id": "топ-воздушный-с-открытыми-плечами",
@@ -379,7 +413,8 @@
         "vozdushnii s otkritimi plechami"
       ],
       "priority": 10,
-      "price": "2 694 ₽"
+      "price": "2 694 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3835-6330-4538-b565-396161653263/fc7bd8f9abf45602b3e762cebd0b3439.jpg"
     },
     {
       "id": "юбка-мини-из-тенсела",
@@ -390,7 +425,8 @@
         "mini iz tensela"
       ],
       "priority": 10,
-      "price": "3 894 ₽"
+      "price": "3 894 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3738-3563-4766-b763-353037383162/f88df23d357c1e7fd185c90a2cd36a65.jpg"
     },
     {
       "id": "юбка-макси-из-тенсела",
@@ -401,7 +437,8 @@
         "maksi iz tensela"
       ],
       "priority": 10,
-      "price": "4 194 ₽"
+      "price": "4 194 ₽",
+      "imageUrl": "https://static.tildacdn.com/stor3966-3537-4031-b566-646337336163/78056519.jpg"
     }
   ]
 }

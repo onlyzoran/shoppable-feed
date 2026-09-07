@@ -2,7 +2,13 @@ import { describe, expect, it } from "vitest";
 
 import { buildShoppableButtons } from "./generate-buttons";
 import { matchCatalogProduct } from "./match-catalog-product";
-import { GREZ_CATALOG, MADJ_CATALOG, MANEKENBRAND_CATALOG } from "./store-catalogs";
+import {
+  ADAHLAZORGAN_CATALOG,
+  BANANHOT_CATALOG,
+  GREZ_CATALOG,
+  MADJ_CATALOG,
+  MANEKENBRAND_CATALOG,
+} from "./store-catalogs";
 
 describe("matchCatalogProduct", () => {
   it("находит костюм Champion в подписи", () => {
@@ -79,6 +85,65 @@ describe("matchCatalogProduct for GREZ", () => {
   });
 });
 
+describe("matchCatalogProduct for BANANHOT", () => {
+  it("находит NINA SCARLET RED в подписи", () => {
+    const match = matchCatalogProduct(
+      "The Nina Bikini Set in NINA SCARLET RED — shop at bananhot.com",
+      BANANHOT_CATALOG,
+    );
+
+    expect(match).toEqual(
+      expect.objectContaining({
+        label: "NINA SCARLET RED",
+        url: expect.stringContaining("bananhot.com/products/nina-scarlet-red"),
+      }),
+    );
+  });
+
+  it("находит Nina Bikini Set в подписи", () => {
+    const match = matchCatalogProduct(
+      "The Nina Bikini Set is the ultimate choice for looking effortlessly stunning",
+      BANANHOT_CATALOG,
+    );
+
+    expect(match?.label).toMatch(/^NINA /);
+  });
+
+  it("находит LUNA ROCKROSE в подписи", () => {
+    const match = matchCatalogProduct(
+      "LUNA ROCKROSE bikini season is here — shop at bananhot.com",
+      BANANHOT_CATALOG,
+    );
+
+    expect(match?.label).toBe("LUNA ROCKROSE PAISLEY");
+  });
+});
+
+describe("matchCatalogProduct for ADAH", () => {
+  it("находит BLUSH STICK в подписи", () => {
+    const match = matchCatalogProduct(
+      "My everyday glow: BLUSH STICK in the softest pink — adahlazorgan.com",
+      ADAHLAZORGAN_CATALOG,
+    );
+
+    expect(match).toEqual(
+      expect.objectContaining({
+        label: "BLUSH STICK",
+        url: expect.stringContaining("adahlazorgan.com/products/blush-stick"),
+      }),
+    );
+  });
+
+  it("находит BROW WAX в подписи", () => {
+    const match = matchCatalogProduct(
+      "BROW WAX is the secret to laminated brows without color residue",
+      ADAHLAZORGAN_CATALOG,
+    );
+
+    expect(match?.label).toBe("BROW WAX");
+  });
+});
+
 describe("buildShoppableButtons with GREZ catalog", () => {
   const baseInput = {
     mediaType: "image" as const,
@@ -93,19 +158,19 @@ describe("buildShoppableButtons with GREZ catalog", () => {
       caption: "PACK CONTROL DEL ESTRÉS para cortisol y retención de líquidos",
     });
 
-    expect(buttons).toEqual([
-      {
-        kind: "link",
-        label: "Магазин",
-        url: "https://www.thegrezway.cl/",
-      },
-      {
-        kind: "product",
-        label: "PACK CONTROL DEL ESTRÉS",
-        url: "https://www.thegrezway.cl/products/pack-control-estres-deshinchazon-drenaje-de-liquidos",
-        price: "$58.384",
-      },
-    ]);
+    expect(buttons).toHaveLength(2);
+    expect(buttons[0]).toEqual({
+      kind: "link",
+      label: "Магазин",
+      url: "https://www.thegrezway.cl/",
+    });
+    expect(buttons[1]).toMatchObject({
+      kind: "product",
+      label: "PACK CONTROL DEL ESTRÉS",
+      url: "https://www.thegrezway.cl/products/pack-control-estres-deshinchazon-drenaje-de-liquidos",
+      price: "$58.384",
+      imageUrl: expect.stringMatching(/^https:\/\//),
+    });
   });
 });
 
@@ -123,19 +188,19 @@ describe("buildShoppableButtons with MANEKEN catalog", () => {
       caption: "Технологичная ветровка Urban Veil в трендовом цвете",
     });
 
-    expect(buttons).toEqual([
-      {
-        kind: "link",
-        label: "Магазин",
-        url: "https://manekenbrand.com/",
-      },
-      {
-        kind: "product",
-        label: "Ветровка Urban Veil",
-        url: "https://manekenbrand.com/catalog/new/vetrovka_urban_veil_siniy/",
-        price: "24 000 ₽",
-      },
-    ]);
+    expect(buttons).toHaveLength(2);
+    expect(buttons[0]).toEqual({
+      kind: "link",
+      label: "Магазин",
+      url: "https://manekenbrand.com/",
+    });
+    expect(buttons[1]).toMatchObject({
+      kind: "product",
+      label: "Ветровка Urban Veil",
+      url: "https://manekenbrand.com/catalog/new/vetrovka_urban_veil_siniy/",
+      price: "24 000 ₽",
+      imageUrl: expect.stringMatching(/^https:\/\//),
+    });
   });
 
   it("не добавляет кнопку товара без совпадения в каталоге", () => {
