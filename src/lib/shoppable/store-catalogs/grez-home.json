@@ -1,0 +1,362 @@
+{
+  "storeHostname": "thegrezway.cl",
+  "source": "https://www.thegrezway.cl",
+  "fetchedFrom": "https://www.thegrezway.cl/products.json?limit=50",
+  "products": [
+    {
+      "id": "pack-bienestar-hormonal-40",
+      "label": "PACK BIENESTAR HORMONAL 40+",
+      "url": "https://www.thegrezway.cl/products/pack-vigor-equilibrio-vigor-sexual-balance-hormonal",
+      "keywords": [
+        "equilibrio hormonal para hombres",
+        "PACK BIENESTAR HORMONAL 40+",
+        "pack bienestar hormonal 40+",
+        "BIENESTAR HORMONAL 40+",
+        "bienestar hormonal 40+",
+        "mujeres"
+      ],
+      "priority": 11
+    },
+    {
+      "id": "pack-claridad-mental",
+      "label": "PACK CLARIDAD MENTAL",
+      "url": "https://www.thegrezway.cl/products/pack-claridad-mental-foco-memoria-neuroproteccion",
+      "keywords": [
+        "PACK CLARIDAD MENTAL",
+        "pack claridad mental",
+        "CLARIDAD MENTAL",
+        "claridad mental",
+        "agilidad mental",
+        "concentracion",
+        "memoria",
+        "foco"
+      ],
+      "priority": 11
+    },
+    {
+      "id": "pack-control-del-estres",
+      "label": "PACK CONTROL DEL ESTRÉS",
+      "url": "https://www.thegrezway.cl/products/pack-control-estres-deshinchazon-drenaje-de-liquidos",
+      "keywords": [
+        "PACK CONTROL DEL ESTRÉS",
+        "pack control del estres",
+        "retencion de liquidos",
+        "CONTROL DEL ESTRÉS",
+        "control del estres",
+        "deshinchazon",
+        "cortisol",
+        "estres"
+      ],
+      "priority": 11
+    },
+    {
+      "id": "pack-presion-arterial",
+      "label": "PACK PRESIÓN ARTERIAL",
+      "url": "https://www.thegrezway.cl/products/pack-alivio-tension-presion-relajacion-fisica",
+      "keywords": [
+        "apoyo integral para la presion arterial",
+        "PACK PRESIÓN ARTERIAL",
+        "pack presion arterial",
+        "PRESIÓN ARTERIAL",
+        "presion arterial",
+        "tension"
+      ],
+      "priority": 11
+    },
+    {
+      "id": "pack-proteccion-muscular",
+      "label": "PACK PROTECCIÓN MUSCULAR",
+      "url": "https://www.thegrezway.cl/products/pack-blindaje-vital-prot-vital-musc-vital-plus-adapt-vital-inmuno",
+      "keywords": [
+        "proteccion para sedentarios",
+        "PACK PROTECCIÓN MUSCULAR",
+        "pack proteccion muscular",
+        "PROTECCIÓN MUSCULAR",
+        "proteccion muscular",
+        "musc-vital",
+        "nutricion",
+        "creatina"
+      ],
+      "priority": 11
+    },
+    {
+      "id": "pack-sueno-reparador",
+      "label": "PACK SUEÑO REPARADOR",
+      "url": "https://www.thegrezway.cl/products/pack-sueno-reparador-descanso-profundo-apagado-mental-copia",
+      "keywords": [
+        "continuidad del sueno",
+        "PACK SUEÑO REPARADOR",
+        "pack sueno reparador",
+        "SUEÑO REPARADOR",
+        "sueno reparador",
+        "conciliacion",
+        "pack sueño",
+        "descanso",
+        "sueno"
+      ],
+      "priority": 11
+    },
+    {
+      "id": "pack-tiroides",
+      "label": "PACK TIROIDES",
+      "url": "https://www.thegrezway.cl/products/pack-tiroides-magzi-vital-t-tirox-vital",
+      "keywords": [
+        "conversion de t4 en t3",
+        "PACK TIROIDES",
+        "pack tiroides",
+        "tirox-vital",
+        "produccion",
+        "TIROIDES",
+        "tiroides"
+      ],
+      "priority": 11
+    },
+    {
+      "id": "pack-vientre-plano",
+      "label": "PACK VIENTRE PLANO",
+      "url": "https://www.thegrezway.cl/products/pack-vientre-plano-doble-accion-digestiva",
+      "keywords": [
+        "PACK VIENTRE PLANO",
+        "pack vientre plano",
+        "VIENTRE PLANO",
+        "vientre plano",
+        "estrenimiento",
+        "hinchazon",
+        "digestion"
+      ],
+      "priority": 11
+    },
+    {
+      "id": "adapt-vital-energia",
+      "label": "ADAPT-VITAL ENERGÍA",
+      "url": "https://www.thegrezway.cl/products/adapt-vital-energia",
+      "keywords": [
+        "apoyo para dias fisicamente exigentes",
+        "ADAPT-VITAL ENERGÍA",
+        "adapt-vital energia",
+        "ADAPT VITAL ENERGÍA",
+        "adapt vital energia"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "adapt-vital-gluco",
+      "label": "ADAPT-VITAL GLUCO",
+      "url": "https://www.thegrezway.cl/products/adapt-vital-gluco",
+      "keywords": [
+        "apoyo para controlar los antojos",
+        "ADAPT-VITAL GLUCO",
+        "adapt-vital gluco",
+        "ADAPT VITAL GLUCO",
+        "adapt vital gluco"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "adapt-vital-inmuno",
+      "label": "ADAPT-VITAL INMUNO",
+      "url": "https://www.thegrezway.cl/products/adapt-vital-inmuno",
+      "keywords": [
+        "apoyo extra para las defensas",
+        "ADAPT-VITAL INMUNO",
+        "adapt-vital inmuno",
+        "ADAPT VITAL INMUNO",
+        "adapt vital inmuno"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "adapt-vital-neuro",
+      "label": "ADAPT-VITAL NEURO",
+      "url": "https://www.thegrezway.cl/products/adapt-vital-neuro",
+      "keywords": [
+        "apoyo para dias de alta demanda mental",
+        "ADAPT-VITAL NEURO",
+        "adapt-vital neuro",
+        "ADAPT VITAL NEURO",
+        "adapt vital neuro"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "bicol-vital",
+      "label": "BICOL-VITAL",
+      "url": "https://www.thegrezway.cl/products/bicol-vtl-60-capsulas-30-60-dias",
+      "keywords": [
+        "cabello resistente",
+        "unas fuertes",
+        "BICOL-VITAL",
+        "bicol-vital",
+        "BICOL VITAL",
+        "bicol vital",
+        "piel firme",
+        "colageno",
+        "cabello",
+        "piel"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "elec-vital",
+      "label": "ELEC-VITAL",
+      "url": "https://www.thegrezway.cl/products/elec-vital-90-capsulas-30-dias",
+      "keywords": [
+        "energia para el dia a dia",
+        "electrolitos",
+        "ELEC-VITAL",
+        "elec-vital",
+        "ELEC VITAL",
+        "elec vital",
+        "minerales"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "magzi-vital-t",
+      "label": "MAGZI-VITAL T",
+      "url": "https://www.thegrezway.cl/products/magzi-vital-t-magnesio-bisglicinato-zinc-aminoacidosueno",
+      "keywords": [
+        "conciliacion del sueno",
+        "MAGZI-VITAL T",
+        "magzi-vital t",
+        "MAGZI VITAL T",
+        "magzi vital t",
+        "magzi vital",
+        "magzi-vital",
+        "magnesio"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "multi-vital-q10",
+      "label": "MULTI-VITAL Q10",
+      "url": "https://www.thegrezway.cl/products/multi-vital-q10-vitaminas-q10-inositol-colina-30-capsulas",
+      "keywords": [
+        "defensas preparadas despues de los 35",
+        "MULTI-VITAL Q10",
+        "multi-vital q10",
+        "MULTI VITAL Q10",
+        "multi vital q10",
+        "multivitaminico",
+        "multi vital",
+        "vitaminas"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "musc-vital-ex-crea-vital",
+      "label": "MUSC-VITAL [Ex CREA-VITAL]",
+      "url": "https://www.thegrezway.cl/products/musc-vital-creatina-l-glutamina-hmb-magnesio-polvo-255g",
+      "keywords": [
+        "MUSC-VITAL [Ex CREA-VITAL]",
+        "musc-vital [ex crea-vital]",
+        "MUSC VITAL [Ex CREA VITAL]",
+        "musc vital [ex crea vital]",
+        "mantiene tu mente activa",
+        "protege tus musculos"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "musc-vital-plus",
+      "label": "MUSC-VITAL PLUS",
+      "url": "https://www.thegrezway.cl/products/musc-vital-plus-creatina-monohidrato-l-glutamina-hmb-magnesio-polvo-255g-1",
+      "keywords": [
+        "mantiene tu mente activa con creavitalis®",
+        "protege tus musculos",
+        "MUSC-VITAL PLUS",
+        "musc-vital plus",
+        "MUSC VITAL PLUS",
+        "musc vital plus",
+        "musc vital",
+        "glutamina",
+        "creatina"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "pot-vital-t",
+      "label": "POT-VITAL T",
+      "url": "https://www.thegrezway.cl/products/pot-vital-t-drenaje-de-liquido-retenido",
+      "keywords": [
+        "menos retencion de liquidos",
+        "POT-VITAL T",
+        "pot-vital t",
+        "POT VITAL T",
+        "pot vital t"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "prot-vital",
+      "label": "PROT-VITAL",
+      "url": "https://www.thegrezway.cl/products/prot-vital-colageno-proteinas-enzimas-digestivas-polvo-990-g",
+      "keywords": [
+        "nutricion para la masa muscular",
+        "PROT-VITAL",
+        "prot-vital",
+        "PROT VITAL",
+        "prot vital",
+        "proteina",
+        "colageno"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "redox-vital-aminoacidos-l-glutation-vitaminas-y-minerale",
+      "label": "REDOX-VITAL - Aminoácidos, L-glutation, vitaminas y minerales",
+      "url": "https://www.thegrezway.cl/products/redox-landing",
+      "keywords": [
+        "REDOX-VITAL - Aminoácidos, L-glutation, vitaminas y minerales",
+        "redox-vital - aminoacidos, l-glutation, vitaminas y minerales",
+        "REDOX VITAL   Aminoácidos, L glutation, vitaminas y minerales",
+        "redox vital   aminoacidos, l glutation, vitaminas y minerales"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "redox-vital-ii",
+      "label": "REDOX-VITAL II",
+      "url": "https://www.thegrezway.cl/products/redox-vital-ii-energia-ordenada-regulacion-metabolica",
+      "keywords": [
+        "potencia la proteccion anti-age",
+        "REDOX-VITAL II",
+        "redox-vital ii",
+        "REDOX VITAL II",
+        "redox vital ii",
+        "redox vital",
+        "redox-vital",
+        "berberina"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "sleep-vital",
+      "label": "SLEEP-VITAL",
+      "url": "https://www.thegrezway.cl/products/sleep-vital",
+      "keywords": [
+        "continuidad del sueno",
+        "sueno reparador",
+        "SLEEP-VITAL",
+        "sleep-vital",
+        "SLEEP VITAL",
+        "sleep vital",
+        "descanso",
+        "sueño",
+        "sueno"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "vit",
+      "label": "VIT",
+      "url": "https://www.thegrezway.cl/products/vit-c-vital-500mg-vitamina-c-liposomal",
+      "keywords": [
+        "defensa antioxidante",
+        "VIT",
+        "vit"
+      ],
+      "priority": 10
+    }
+  ]
+}

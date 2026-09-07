@@ -1,4 +1,4 @@
-import type { MediaType, Post } from "@/lib/instagram/types";
+import type { Post } from "@/lib/instagram/types";
 import { formatCount, formatPostDate } from "@/lib/format";
 import {
   CommentIcon,
@@ -11,37 +11,24 @@ import {
 
 import { PostCaption } from "./PostCaption";
 import { PostShoppableButtons } from "./PostShoppableButtons";
+import type { ButtonPlacement } from "./button-placement";
 import styles from "./feed.module.css";
-
-const MEDIA_LABELS: Record<MediaType, string> = {
-  image: "Фото",
-  video: "Видео",
-  carousel: "Карусель",
-};
 
 type PostCardProps = {
   post: Post;
+  buttonPlacement?: ButtonPlacement;
 };
 
-export function PostCard({ post }: PostCardProps) {
+export function PostCard({
+  post,
+  buttonPlacement = "below",
+}: PostCardProps) {
   const formattedDate = formatPostDate(post.postedAt);
+  const showOverlay = buttonPlacement === "overlay";
 
   return (
     <article className={styles.card}>
       <header className={styles.cardHeader}>
-        {post.avatarUrl ? (
-          <img
-            className={styles.avatar}
-            src={post.avatarUrl}
-            alt=""
-            width={36}
-            height={36}
-            loading="lazy"
-          />
-        ) : (
-          <span className={styles.avatar} aria-hidden />
-        )}
-
         <div className={styles.headerMeta}>
           <div className={styles.usernameRow}>
             <span className={styles.username}>{post.username}</span>
@@ -68,12 +55,11 @@ export function PostCard({ post }: PostCardProps) {
       <div className={styles.mediaWrap}>
         {post.mediaType === "video" ? (
           <>
-            <video
+            <img
               className={styles.media}
-              src={post.mediaUrl}
-              muted
-              playsInline
-              preload="metadata"
+              src={post.mediaPosterUrl ?? post.mediaUrl}
+              alt=""
+              loading="lazy"
             />
             <span className={styles.playOverlay}>
               <PlayIcon />
@@ -87,7 +73,9 @@ export function PostCard({ post }: PostCardProps) {
             loading="lazy"
           />
         )}
-        <span className={styles.mediaBadge}>{MEDIA_LABELS[post.mediaType]}</span>
+        {showOverlay ? (
+          <PostShoppableButtons post={post} placement="overlay" show="pin" />
+        ) : null}
       </div>
 
       <div className={styles.engagement}>
@@ -106,7 +94,11 @@ export function PostCard({ post }: PostCardProps) {
       </div>
 
       <PostCaption username={post.username} caption={post.caption} />
-      <PostShoppableButtons post={post} />
+      {showOverlay ? (
+        <PostShoppableButtons post={post} placement="below" show="below" />
+      ) : (
+        <PostShoppableButtons post={post} placement="below" />
+      )}
     </article>
   );
 }

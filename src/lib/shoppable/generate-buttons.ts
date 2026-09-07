@@ -1,7 +1,14 @@
 import type { Post } from "@/lib/instagram/types";
 
+import { buildStoreProductSearchUrl } from "./build-store-url";
 import { detectCommercialCategory } from "./detect-intent";
+import {
+  extractProductHeadline,
+  truncateButtonLabel,
+} from "./extract-product-headline";
 import { extractHashtags, extractUrlsFromText } from "./extract-urls";
+import { matchCatalogProduct } from "./match-catalog-product";
+import { getStoreCatalog } from "./store-catalogs";
 import {
   buildMapsSearchUrl,
   buildWebSearchUrl,
@@ -47,7 +54,6 @@ function collectExplicitUrlButtons(input: ShoppableInput): ShoppableButton[] {
     input.caption,
     input.profileBio ?? "",
     ...(input.profileLinks ?? []),
-    ...(input.profileExternalUrl ? [input.profileExternalUrl] : []),
   ];
 
   const buttons: ShoppableButton[] = [];
@@ -61,6 +67,67 @@ function collectExplicitUrlButtons(input: ShoppableInput): ShoppableButton[] {
 
     for (const url of urls) {
       addButton(buttons, seenUrls, labelForUrl(url), url);
+    }
+  }
+
+  return buttons;
+}
+
+function buildProductSearchButton(input: ShoppableInput): ShoppableButton | null {
+  const storeUrl = input.profileExternalUrl?.trim();
+
+  if (!storeUrl) {
+    return null;
+  }
+
+  const catalog = getStoreCatalog(storeUrl);
+  if (catalog) {
+    const catalogMatch = matchCatalogProduct(input.caption, catalog);
+    if (!catalogMatch) {
+      return null;
+    }
+
+    return {
+      label: truncateButtonLabel(catalogMatch.label),
+      url: catalogMatch.url,
+    };
+  }
+
+  const category = detectCommercialCategory(
+    input.caption,
+    input.profileBio ?? "",
+  );
+  if (category !== "retail") {
+    return null;
+  }
+
+  const headline = extractProductHeadline(input.caption);
+  if (!headline) {
+    return null;
+  }
+
+  return {
+    label: truncateButtonLabel(headline),
+    url: buildStoreProductSearchUrl(storeUrl, headline),
+  };
+}
+
+function collectDirectButtons(input: ShoppableInput): ShoppableButton[] {
+  const buttons = collectExplicitUrlButtons(input);
+  const seenUrls = new Set(buttons.map((button) => button.url));
+
+  const productButton = buildProductSearchButton(input);
+  if (productButton) {
+    addButton(
+      buttons,
+      seenUrls,
+      productButton.label,
+      productButton.url,
+    );
+  } else {
+    const profileUrl = input.profileExternalUrl?.trim();
+    if (profileUrl) {
+      addButton(buttons, seenUrls, labelForUrl(profileUrl), profileUrl);
     }
   }
 
@@ -154,9 +221,9 @@ function buildHeuristicButtons(
 }
 
 export function buildShoppableButtons(input: ShoppableInput): ShoppableButton[] {
-  const explicitButtons = collectExplicitUrlButtons(input);
-  if (explicitButtons.length > 0) {
-    return explicitButtons.slice(0, MAX_SHOPPABLE_BUTTONS);
+  const directButtons = collectDirectButtons(input);
+  if (directButtons.length > 0) {
+    return directButtons.slice(0, MAX_SHOPPABLE_BUTTONS);
   }
 
   const category = detectCommercialCategory(

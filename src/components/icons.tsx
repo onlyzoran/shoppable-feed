@@ -105,6 +105,30 @@ export function RepostIcon({ className, size = 24 }: IconProps) {
   );
 }
 
+export function CalendarIcon({ className, size = 20 }: IconProps) {
+  return (
+    <svg
+      aria-hidden
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <rect
+        x="3"
+        y="4"
+        width="18"
+        height="18"
+        rx="2"
+        stroke="currentColor"
+        strokeWidth="1.75"
+      />
+      <path d="M3 10h18M8 2v4M16 2v4" stroke="currentColor" strokeWidth="1.75" />
+    </svg>
+  );
+}
+
 export function PlayIcon({ className, size = 48 }: IconProps) {
   return (
     <svg

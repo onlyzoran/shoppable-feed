@@ -7,8 +7,12 @@ export function labelForUrl(url: string): string {
     return "Записаться";
   }
 
+  if (/salon|beauty|spa|студия|салон|barber|nails|citynails|chopchop/.test(lower)) {
+    return "Салон";
+  }
+
   if (
-    /shop|store|market|магазин|wildberries|ozon|etsy|amazon|lamoda/.test(
+    /shop|store|market|магазин|wildberries|ozon|etsy|amazon|lamoda|manekenbrand|madj\.store|dropsstore|thegrezway|limestore/.test(
       lower,
     )
   ) {
@@ -19,10 +23,6 @@ export function labelForUrl(url: string): string {
     /tour|travel|trip|aviasales|ostrovok|booking\.com\/hotel|тур/.test(lower)
   ) {
     return "Купить тур";
-  }
-
-  if (/salon|beauty|spa|студия|салон|barber|nails/.test(lower)) {
-    return "Салон";
   }
 
   return "Сайт";

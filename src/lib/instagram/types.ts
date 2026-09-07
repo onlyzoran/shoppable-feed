@@ -7,6 +7,8 @@ export type Post = {
   isVerified: boolean;
   postedAt: string;
   mediaUrl: string;
+  /** Для video/reels — статичный кадр для превью в ленте 4:5 */
+  mediaPosterUrl?: string;
   mediaType: MediaType;
   likesCount: number;
   commentsCount: number;

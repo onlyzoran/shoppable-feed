@@ -1,0 +1,490 @@
+{
+  "storeHostname": "madj.store",
+  "source": "https://madj.store",
+  "fetchedFrom": "store.tildaapi.com",
+  "products": [
+    {
+      "id": "джемпер-поло",
+      "label": "Джемпер-поло",
+      "url": "https://madj.store/catalog/tproduct/566606298-614997613302-dzhemper-polo",
+      "keywords": [
+        "джемпер-поло",
+        "джемпер поло"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "платье-цветок",
+      "label": "Платье Цветок",
+      "url": "https://madj.store/catalog/tproduct/566606298-538924599712-plate-tsvetok",
+      "keywords": [
+        "платье цветок"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "юбка-цветок",
+      "label": "Юбка Цветок",
+      "url": "https://madj.store/catalog/tproduct/566606298-414760415652-yubka-tsvetok",
+      "keywords": [
+        "юбка цветок"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "алладины",
+      "label": "Алладины",
+      "url": "https://madj.store/catalog/tproduct/566606298-606042798922-alladini",
+      "keywords": [
+        "алладины"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "бомбер",
+      "label": "Бомбер",
+      "url": "https://madj.store/catalog/tproduct/566606298-562860137072-bomber",
+      "keywords": [
+        "бомбер"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "анорак",
+      "label": "Анорак",
+      "url": "https://madj.store/catalog/tproduct/566606298-189957934402-anorak",
+      "keywords": [
+        "анорак"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "свитер-с-высоким-воротом",
+      "label": "Свитер с высоким воротом",
+      "url": "https://madj.store/catalog/tproduct/566606298-158062477612-sviter-s-visokim-vorotom",
+      "keywords": [
+        "свитер с высоким воротом"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "джогеры-из-флиса",
+      "label": "Джогеры из флиса",
+      "url": "https://madj.store/catalog/tproduct/566606298-489208131802-dzhogeri-iz-flisa",
+      "keywords": [
+        "джогеры из флиса"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "велофутболка",
+      "label": "Велофутболка",
+      "url": "https://madj.store/catalog/tproduct/566606298-783235549692-velofutbolka",
+      "keywords": [
+        "велофутболка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "юбка-макси-из-вельвета",
+      "label": "Юбка макси из вельвета",
+      "url": "https://madj.store/tproduct/727128691-788986940912-yubka-maksi-iz-velveta",
+      "keywords": [
+        "юбка макси из вельвета"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "платье-макси-из-трикотажа",
+      "label": "Платье макси из трикотажа",
+      "url": "https://madj.store/catalog/tproduct/566606298-799004409112-plate-maksi-iz-trikotazha",
+      "keywords": [
+        "платье макси из трикотажа"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "обвес-0802",
+      "label": "Обвес 0802",
+      "url": "https://madj.store/catalog/tproduct/566606298-895871371892-obves-0802",
+      "keywords": [
+        "обвес 0802"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-из-хлопкового-трикотажа",
+      "label": "Брюки из хлопкового трикотажа",
+      "url": "https://madj.store/catalog/tproduct/566606298-454241893452-bryuki-iz-hlopkovogo-trikotazha",
+      "keywords": [
+        "брюки из хлопкового трикотажа"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "джогеры-из-вельвета",
+      "label": "Джогеры из вельвета",
+      "url": "https://madj.store/catalog/tproduct/566606298-496023589172-dzhogeri-iz-velveta",
+      "keywords": [
+        "джогеры из вельвета"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "рубашка-из-вельвета",
+      "label": "Рубашка из вельвета",
+      "url": "https://madj.store/tproduct/727128691-442753673512-rubashka-iz-velveta",
+      "keywords": [
+        "рубашка из вельвета"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "комбинезон-из-вельвета",
+      "label": "Комбинезон из вельвета",
+      "url": "https://madj.store/tproduct/727128691-968800978292-kombinezon-iz-velveta",
+      "keywords": [
+        "комбинезон из вельвета"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "юбка-баллон",
+      "label": "Юбка баллон",
+      "url": "https://madj.store/catalog/tproduct/566606298-580081336702-yubka-ballon",
+      "keywords": [
+        "юбка баллон"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "плащ-макси-из-хлопка",
+      "label": "Плащ макси из хлопка",
+      "url": "https://madj.store/catalog/tproduct/566606298-342999554542-plasch-maksi-iz-hlopka",
+      "keywords": [
+        "плащ макси из хлопка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "майка-в-рубчик",
+      "label": "Майка в рубчик",
+      "url": "https://madj.store/blog/story/tproduct/640501169-684778421062-maika-v-rubchik",
+      "keywords": [
+        "майка в рубчик"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-палаццо-из-хлопка-с-водоотталкивающей-проп",
+      "label": "Брюки / Палаццо из хлопка с водоотталкивающей пропиткой",
+      "url": "https://madj.store/tproduct/727128691-275256825062-bryuki-palatstso-iz-hlopka-s-vodoottalki",
+      "keywords": [
+        "брюки / палаццо из хлопка с водоотталкивающей пропиткой"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "бомбер-из-хлопка-с-водоотталкивающей-пропиткой",
+      "label": "Бомбер из хлопка с водоотталкивающей пропиткой",
+      "url": "https://madj.store/tproduct/727128691-774369011202-bomber-iz-hlopka-s-vodoottalkivayuschei",
+      "keywords": [
+        "бомбер из хлопка с водоотталкивающей пропиткой"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "сарафан-из-хлопка",
+      "label": "Сарафан из хлопка",
+      "url": "https://madj.store/catalog/tproduct/566606298-464621466482-sarafan-iz-hlopka",
+      "keywords": [
+        "сарафан из хлопка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "рубашка-из-хлопка",
+      "label": "Рубашка из хлопка",
+      "url": "https://madj.store/tproduct/727128691-475191781862-rubashka-iz-hlopka",
+      "keywords": [
+        "рубашка из хлопка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "обвес-0808",
+      "label": "Обвес 0808",
+      "url": "https://madj.store/catalog/tproduct/566606298-697297676872-obves-0808",
+      "keywords": [
+        "обвес 0808"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "платье-узел",
+      "label": "Платье узел",
+      "url": "https://madj.store/catalog/tproduct/566606298-802168364832-plate-uzel",
+      "keywords": [
+        "платье узел"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "платье-с-высоким-разрезом",
+      "label": "Платье с высоким разрезом",
+      "url": "https://madj.store/catalog/tproduct/566606298-447905920882-plate-s-visokim-razrezom",
+      "keywords": [
+        "платье с высоким разрезом"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-алладины",
+      "label": "Брюки-алладины",
+      "url": "https://madj.store/catalog/tproduct/566606298-971291817462-bryuki-alladini",
+      "keywords": [
+        "брюки-алладины",
+        "брюки алладины"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-с-эластичным-поясом",
+      "label": "Брюки с эластичным поясом",
+      "url": "https://madj.store/catalog/tproduct/566606298-999251103002-bryuki-s-elastichnim-poyasom",
+      "keywords": [
+        "брюки с эластичным поясом"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "пиджак-кимоно",
+      "label": "Пиджак-кимоно",
+      "url": "https://madj.store/catalog/tproduct/566606298-355432534102-pidzhak-kimono",
+      "keywords": [
+        "пиджак-кимоно",
+        "пиджак кимоно"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-из-хлопка",
+      "label": "Брюки из хлопка",
+      "url": "https://madj.store/catalog/tproduct/566606298-563928424192-bryuki-iz-hlopka",
+      "keywords": [
+        "брюки из хлопка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "стеганый-жилет",
+      "label": "Стеганый жилет",
+      "url": "https://madj.store/catalog/tproduct/566606298-808507811822-steganii-zhilet",
+      "keywords": [
+        "стеганый жилет"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "плащ-балмакаан",
+      "label": "Плащ / Балмакаан",
+      "url": "https://madj.store/catalog/tproduct/566606298-943601871011-plasch-balmakaan",
+      "keywords": [
+        "плащ / балмакаан"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "комбинезон-со-стрелками",
+      "label": "Комбинезон со стрелками",
+      "url": "https://madj.store/tproduct/727128691-976718060541-kombinezon-so-strelkami",
+      "keywords": [
+        "комбинезон со стрелками"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "пиджак-из-костюмной-ткани",
+      "label": "Пиджак из костюмной ткани",
+      "url": "https://madj.store/tproduct/727128691-194307780771-pidzhak-iz-kostyumnoi-tkani",
+      "keywords": [
+        "пиджак из костюмной ткани"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "топ-из-хлопкового-трикотажа",
+      "label": "Топ из хлопкового трикотажа",
+      "url": "https://madj.store/catalog/tproduct/566606298-771472466922-top-iz-hlopkovogo-trikotazha",
+      "keywords": [
+        "топ из хлопкового трикотажа"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "водолазка-из-хлопкового-трикотажа",
+      "label": "Водолазка из хлопкового трикотажа",
+      "url": "https://madj.store/catalog/tproduct/566606298-642313050732-vodolazka-iz-hlopkovogo-trikotazha",
+      "keywords": [
+        "водолазка из хлопкового трикотажа"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "пиджак-из-вельвета",
+      "label": "Пиджак из вельвета",
+      "url": "https://madj.store/tproduct/727128691-296117604032-pidzhak-iz-velveta",
+      "keywords": [
+        "пиджак из вельвета"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "блузка-из-хлопка",
+      "label": "Блузка из хлопка",
+      "url": "https://madj.store/catalog/tproduct/566606298-829846689032-bluzka-iz-hlopka",
+      "keywords": [
+        "блузка из хлопка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "юбка-колокол",
+      "label": "Юбка-колокол",
+      "url": "https://madj.store/catalog/tproduct/566606298-922820158042-yubka-kolokol",
+      "keywords": [
+        "юбка-колокол",
+        "юбка колокол"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "обвес-0804",
+      "label": "Обвес 0804",
+      "url": "https://madj.store/catalog/tproduct/566606298-670454133042-obves-0804",
+      "keywords": [
+        "обвес 0804"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "сумка-из-текстиля",
+      "label": "⁠ Сумка из текстиля",
+      "url": "https://madj.store/catalog/tproduct/566606298-991805488462--sumka-iz-tekstilya",
+      "keywords": [
+        "⁠ сумка из текстиля"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "обвес-0803",
+      "label": "Обвес 0803",
+      "url": "https://madj.store/catalog/tproduct/566606298-595117169162-obves-0803",
+      "keywords": [
+        "обвес 0803"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "сарафан-льняной",
+      "label": "Сарафан льняной",
+      "url": "https://madj.store/catalog/tproduct/566606298-784844164321-sarafan-lnyanoi",
+      "keywords": [
+        "сарафан льняной"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "сарафан-из-вареного-хлопка",
+      "label": "Сарафан из вареного хлопка",
+      "url": "https://madj.store/catalog/tproduct/566606298-382876173062-sarafan-iz-varenogo-hlopka",
+      "keywords": [
+        "сарафан из вареного хлопка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "рубашка-льняная",
+      "label": "Рубашка льняная",
+      "url": "https://madj.store/blog/story/tproduct/640501169-678487816602-rubashka-lnyanaya",
+      "keywords": [
+        "рубашка льняная"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "рубашка-из-вареного-хлопка",
+      "label": "Рубашка из вареного хлопка",
+      "url": "https://madj.store/catalog/tproduct/566606298-756246151892-rubashka-iz-varenogo-hlopka",
+      "keywords": [
+        "рубашка из вареного хлопка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "шорты-из-вареного-хлопка",
+      "label": "Шорты из вареного хлопка",
+      "url": "https://madj.store/catalog/tproduct/566606298-904155110752-shorti-iz-varenogo-hlopka",
+      "keywords": [
+        "шорты из вареного хлопка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-палаццо",
+      "label": "Брюки / Палаццо",
+      "url": "https://madj.store/catalog/tproduct/566606298-813412242931-bryuki-palatstso",
+      "keywords": [
+        "брюки / палаццо"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-палаццо-с-клапаном-лацбант",
+      "label": "Брюки / Палаццо с клапаном - лацбант",
+      "url": "https://madj.store/catalog/tproduct/566606298-272997335841-bryuki-palatstso-s-klapanom-latsbant",
+      "keywords": [
+        "брюки / палаццо с клапаном - лацбант",
+        "брюки / палаццо с клапаном   лацбант"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-кюлоты-с-клапаном-лацбант",
+      "label": "Брюки / Кюлоты с клапаном - лацбант",
+      "url": "https://madj.store/blog/story/tproduct/640501169-950872387731-bryuki-kyuloti-s-klapanom-latsbant",
+      "keywords": [
+        "брюки / кюлоты с клапаном - лацбант",
+        "брюки / кюлоты с клапаном   лацбант"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "лонгслив",
+      "label": "Лонгслив",
+      "url": "https://madj.store/catalog/tproduct/566606298-923614138491-longsliv",
+      "keywords": [
+        "лонгслив"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "легинсы-с-высокой-посадкой",
+      "label": "Легинсы с высокой посадкой",
+      "url": "https://madj.store/catalog/tproduct/566606298-191657442861-leginsi-s-visokoi-posadkoi",
+      "keywords": [
+        "легинсы с высокой посадкой"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "топ-льняной",
+      "label": "Топ льняной",
+      "url": "https://madj.store/blog/story/tproduct/640501169-328439932481-top-lnyanoi",
+      "keywords": [
+        "топ льняной"
+      ],
+      "priority": 10
+    }
+  ]
+}

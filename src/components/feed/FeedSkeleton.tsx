@@ -8,7 +8,6 @@ export function FeedSkeleton() {
       {Array.from({ length: SKELETON_COUNT }, (_, index) => (
         <div className={styles.skeletonCard} key={index}>
           <div className={styles.skeletonHeader}>
-            <div className={styles.skeletonCircle} />
             <div className={styles.skeletonLines}>
               <div className={`${styles.skeletonLine} ${styles.skeletonLineShort}`} />
               <div className={`${styles.skeletonLine} ${styles.skeletonLineShort}`} />

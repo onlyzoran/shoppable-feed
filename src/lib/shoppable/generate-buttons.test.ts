@@ -79,6 +79,42 @@ describe("buildShoppableButtons", () => {
     );
   });
 
+  it("генерирует кнопку магазина для retail-интента на английском", () => {
+    const buttons = buildShoppableButtons({
+      caption:
+        "POLKA DOT PRINT\n\nDiscover new arrivals from the LIMÉ underwear collection.",
+      mediaType: "carousel",
+      username: "limestorecom",
+      profileExternalUrl: "https://limestore.com/ru_ru",
+    });
+
+    expect(buttons).toHaveLength(1);
+    expect(buttons[0]).toEqual({
+      label: "POLKA DOT PRINT",
+      url: "https://limestore.com/ru_ru/search?q=POLKA+DOT+PRINT&type=product",
+    });
+  });
+
+  it("добавляет кнопку коллекции поверх URL магазина из bio", () => {
+    const buttons = buildShoppableButtons({
+      caption: "SNAKE PRINT\n\nDiscover statement shoes and bags in LIMÉ.",
+      mediaType: "carousel",
+      username: "limestorecom",
+      profileBio: "Shop online at https://limestore.com/ru_ru",
+      profileExternalUrl: "https://limestore.com/ru_ru",
+    });
+
+    expect(buttons).toHaveLength(2);
+    expect(buttons[0]).toMatchObject({
+      label: "Магазин",
+      url: "https://limestore.com/ru_ru",
+    });
+    expect(buttons[1]).toEqual({
+      label: "SNAKE PRINT",
+      url: "https://limestore.com/ru_ru/search?q=SNAKE+PRINT&type=product",
+    });
+  });
+
   it("возвращает пустой список без коммерческого интента", () => {
     const buttons = buildShoppableButtons({
       caption: "Красивый закат на море. Просто делюсь настроением.",

@@ -1,3 +1,7 @@
+import { findExampleByProfileUrl } from "@/lib/mock-data/examples";
+import { applyExampleProfile } from "@/lib/mock-data/apply-example-profile";
+import { loadExamplePosts } from "@/lib/mock-data/load-example-posts";
+
 import { InstagramFetchError } from "./errors";
 import {
   mapPostsFromProfile,
@@ -47,8 +51,14 @@ export async function fetchLatestPosts(
     throw new InstagramFetchError(message, "INVALID_URL", 400);
   }
 
-  const fetchImpl: FetchFn = options.fetch ?? fetch;
   const limit = resolveLimit(options.limit);
+  const example = findExampleByProfileUrl(profileUrl);
+
+  if (example?.fileName) {
+    return loadExamplePosts(example, limit);
+  }
+
+  const fetchImpl: FetchFn = options.fetch ?? fetch;
   const normalizedUrl = normalizeInstagramProfileUrl(username);
 
   let response: Response;
@@ -119,5 +129,5 @@ export async function fetchLatestPosts(
     );
   }
 
-  return posts;
+  return example ? applyExampleProfile(posts, example) : posts;
 }

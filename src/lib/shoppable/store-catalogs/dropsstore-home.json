@@ -1,0 +1,370 @@
+{
+  "storeHostname": "dropsstore.ru",
+  "source": "https://www.dropsstore.ru",
+  "fetchedFrom": "store.tildaapi.com",
+  "products": [
+    {
+      "id": "анорак",
+      "label": "Анорак",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/516064882282-anorak",
+      "keywords": [
+        "анорак"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "поло",
+      "label": "Поло",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/811746918502-polo",
+      "keywords": [
+        "поло"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "зип-олимпийка",
+      "label": "Зип-олимпийка",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/769468673063-zip-olimpiika",
+      "keywords": [
+        "зип-олимпийка",
+        "зип олимпийка",
+        "olimpiika"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "шорты",
+      "label": "Шорты",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/102424877383-shorti",
+      "keywords": [
+        "шорты"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "футболка",
+      "label": "Футболка",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/251057803683-futbolka",
+      "keywords": [
+        "футболка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "джоггеры",
+      "label": "Джоггеры",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/201586878313-dzhoggeri",
+      "keywords": [
+        "джоггеры"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "пуховик",
+      "label": "Пуховик",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/931626454642-puhovik",
+      "keywords": [
+        "пуховик"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "поло-удлиненное",
+      "label": "Поло удлиненное",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/998292636432-polo-udlinennoe",
+      "keywords": [
+        "поло удлиненное",
+        "udlinennoe"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "анорак-мужской",
+      "label": "Анорак мужской",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/483846399542-anorak-muzhskoi",
+      "keywords": [
+        "анорак мужской",
+        "muzhskoi"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "джоггеры-мужские",
+      "label": "Джоггеры мужские",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/856845830602-dzhoggeri-muzhskie",
+      "keywords": [
+        "джоггеры мужские",
+        "muzhskie"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-прямые",
+      "label": "Брюки прямые",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/232768245372-bryuki-pryamie",
+      "keywords": [
+        "брюки прямые",
+        "pryamie"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "худи",
+      "label": "Худи",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/774687500792-hudi",
+      "keywords": [
+        "худи"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "костюм-бархатный",
+      "label": "Костюм бархатный",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/501835396382-kostyum-barhatnii",
+      "keywords": [
+        "костюм бархатный",
+        "barhatnii"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "костюм-твидовый",
+      "label": "Костюм твидовый",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/384113135832-kostyum-tvidovii",
+      "keywords": [
+        "костюм твидовый",
+        "tvidovii"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "футболка-oversize",
+      "label": "Футболка oversize",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/170089501042-futbolka-oversize",
+      "keywords": [
+        "футболка oversize",
+        "oversize"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "топ",
+      "label": "Топ",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/218302495622-top",
+      "keywords": [
+        "топ"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "пальто-из-шерсти",
+      "label": "Пальто из шерсти",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/542003582342-palto-iz-shersti",
+      "keywords": [
+        "пальто из шерсти",
+        "iz shersti"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "жилетка-gray",
+      "label": "Жилетка Gray",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/168093550702-zhiletka-gray",
+      "keywords": [
+        "жилетка gray",
+        "gray"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "жилетка",
+      "label": "Жилетка",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/163542828892-zhiletka",
+      "keywords": [
+        "жилетка"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "двубортный-пиджак",
+      "label": "Двубортный пиджак",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/390342775102-dvubortnii-pidzhak",
+      "keywords": [
+        "двубортный пиджак",
+        "pidzhak"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "юбка-миди",
+      "label": "Юбка миди",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/406518414742-yubka-midi",
+      "keywords": [
+        "юбка миди",
+        "midi"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "рубашка-в-клетку",
+      "label": "Рубашка в клетку",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/754940801012-rubashka-v-kletku",
+      "keywords": [
+        "рубашка в клетку",
+        "v kletku"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "платье-monaco",
+      "label": "Платье Monaco",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/124903112012-plate-monaco",
+      "keywords": [
+        "платье monaco",
+        "monaco"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "платье-flower",
+      "label": "Платье flower",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/736417691722-plate-flower",
+      "keywords": [
+        "платье flower",
+        "flower"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "sexy-soft-лонг",
+      "label": "Sexy Soft лонг",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/418158574102-sexy-soft-long",
+      "keywords": [
+        "sexy soft лонг",
+        "soft long"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "платье-комбинация",
+      "label": "Платье-комбинация",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/899925794062-plate-kombinatsiya",
+      "keywords": [
+        "платье-комбинация",
+        "платье комбинация",
+        "kombinatsiya"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "комплект-изо-льна-юбка-топ",
+      "label": "Комплект изо льна (юбка+топ)",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/124558981692-komplekt-izo-lna-yubkatop",
+      "keywords": [
+        "комплект изо льна (юбка+топ)",
+        "izo lna yubkatop"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "рубашка-на-завязках-изо-льна",
+      "label": "Рубашка на завязках изо льна",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/190602547382-rubashka-na-zavyazkah-izo-lna",
+      "keywords": [
+        "рубашка на завязках изо льна",
+        "na zavyazkah izo lna"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "шорты-изо-льна",
+      "label": "Шорты изо льна",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/911933062552-shorti-izo-lna",
+      "keywords": [
+        "шорты изо льна",
+        "izo lna"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "брюки-изо-льна",
+      "label": "Брюки изо льна",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/546326711052-bryuki-izo-lna",
+      "keywords": [
+        "брюки изо льна",
+        "izo lna"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "рубашка-длинная-изо-льна",
+      "label": "Рубашка длинная изо льна",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/674781415302-rubashka-dlinnaya-izo-lna",
+      "keywords": [
+        "рубашка длинная изо льна",
+        "dlinnaya izo lna"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "юбка-из-денима",
+      "label": "Юбка из денима",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/176478014952-yubka-iz-denima",
+      "keywords": [
+        "юбка из денима",
+        "iz denima"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "бомбер-из-денима",
+      "label": "Бомбер из денима",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/270526225692-bomber-iz-denima",
+      "keywords": [
+        "бомбер из денима",
+        "iz denima"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "костюм-олимпийка-и-шорты",
+      "label": "Костюм: олимпийка и шорты",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/578950770032-kostyum-olimpiika-i-shorti",
+      "keywords": [
+        "костюм: олимпийка и шорты",
+        "olimpiika i shorti"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "топ-воздушный-с-открытыми-плечами",
+      "label": "Топ воздушный с открытыми плечами",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/770533736062-top-vozdushnii-s-otkritimi-plechami",
+      "keywords": [
+        "топ воздушный с открытыми плечами",
+        "vozdushnii s otkritimi plechami"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "юбка-мини-из-тенсела",
+      "label": "Юбка мини из тенсела",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/432742459532-yubka-mini-iz-tensela",
+      "keywords": [
+        "юбка мини из тенсела",
+        "mini iz tensela"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "юбка-макси-из-тенсела",
+      "label": "Юбка макси из тенсела",
+      "url": "https://www.dropsstore.ru/catalog/tproduct/137277353552-yubka-maksi-iz-tensela",
+      "keywords": [
+        "юбка макси из тенсела",
+        "maksi iz tensela"
+      ],
+      "priority": 10
+    }
+  ]
+}

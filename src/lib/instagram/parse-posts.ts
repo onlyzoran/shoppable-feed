@@ -217,6 +217,8 @@ function mapNodeToPost(
     return null;
   }
 
+  const isVideo = Boolean(node.video_url ?? node.is_video);
+
   const caption =
     node.edge_media_to_caption?.edges?.[0]?.node?.text ??
     node.caption?.text ??
@@ -240,6 +242,7 @@ function mapNodeToPost(
     isVerified: Boolean(user.is_verified),
     postedAt,
     mediaUrl,
+    mediaPosterUrl: isVideo ? node.display_url : undefined,
     mediaType: resolveMediaType(node),
     likesCount,
     commentsCount,
