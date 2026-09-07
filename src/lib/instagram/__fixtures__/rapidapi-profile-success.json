@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "data": {
+    "user_id": "787132",
+    "username": "natgeo",
+    "full_name": "National Geographic",
+    "biography": "Experience the world through the eyes of National Geographic photographers.",
+    "follower_count": 284000000,
+    "following_count": 134,
+    "media_count": 28500,
+    "is_private": false,
+    "is_verified": true,
+    "external_url": "https://www.nationalgeographic.com",
+    "profile_pic_url": "https://cdn.example.com/natgeo-avatar.jpg",
+    "profile_pic_url_hd": "https://cdn.example.com/natgeo-avatar-hd.jpg"
+  },
+  "credits_used": 1,
+  "cache_hit": false
+}

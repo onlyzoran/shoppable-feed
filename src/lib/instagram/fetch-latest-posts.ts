@@ -1,13 +1,9 @@
+import { resolveInstagramFetchConfig } from "./config";
+import { fetchLatestPostsDirect } from "./fetch-direct";
 import { InstagramFetchError } from "./errors";
-import {
-  mapPostsFromProfile,
-  parseInstagramProfileHtml,
-} from "./parse-posts";
-import {
-  normalizeInstagramProfileUrl,
-  parseInstagramProfileUrl,
-} from "./parse-profile-url";
-import type { FetchLatestPostsOptions, FetchFn, Post } from "./types";
+import { parseInstagramProfileUrl } from "./parse-profile-url";
+import { fetchLatestPostsRapidApi } from "./providers/rapidapi-pullapi";
+import type { FetchLatestPostsOptions, Post } from "./types";
 
 const DEFAULT_LIMIT = 12;
 const MIN_LIMIT = 10;
@@ -21,14 +17,46 @@ function resolveLimit(limit?: number): number {
   return Math.min(MAX_LIMIT, Math.max(MIN_LIMIT, limit));
 }
 
-function isNotFoundHtml(html: string): boolean {
-  const normalized = html.toLowerCase();
+function isFallbackEligible(error: unknown): boolean {
   return (
-    normalized.includes("sorry, this page isn't available") ||
-    normalized.includes("page not found") ||
-    normalized.includes('"user":null') ||
-    normalized.includes('"user": null')
+    error instanceof InstagramFetchError &&
+    error.fallbackEligible === true
   );
+}
+
+function missingRapidApiKeyError(): InstagramFetchError {
+  return new InstagramFetchError(
+    "RAPIDAPI_KEY не настроен для резервного источника Instagram",
+    "FETCH_ERROR",
+    502,
+  );
+}
+
+function bothSourcesFailedError(): InstagramFetchError {
+  return new InstagramFetchError(
+    "Не удалось загрузить посты: Instagram недоступен, резервный источник (RapidAPI) также не ответил",
+    "FETCH_ERROR",
+    502,
+  );
+}
+
+async function fetchViaRapidApi(
+  username: string,
+  limit: number,
+  options: FetchLatestPostsOptions,
+): Promise<Post[]> {
+  const config = resolveInstagramFetchConfig(options);
+
+  if (!config.rapidApiKey) {
+    throw missingRapidApiKeyError();
+  }
+
+  return fetchLatestPostsRapidApi(username, {
+    fetch: options.fetch,
+    limit,
+    rapidApiKey: config.rapidApiKey,
+    rapidApiHost: config.rapidApiHost,
+  });
 }
 
 export async function fetchLatestPosts(
@@ -47,77 +75,42 @@ export async function fetchLatestPosts(
     throw new InstagramFetchError(message, "INVALID_URL", 400);
   }
 
-  const fetchImpl: FetchFn = options.fetch ?? fetch;
+  const config = resolveInstagramFetchConfig(options);
   const limit = resolveLimit(options.limit);
-  const normalizedUrl = normalizeInstagramProfileUrl(username);
 
-  let response: Response;
+  if (config.mode === "rapidapi") {
+    return fetchViaRapidApi(username, limit, options);
+  }
+
+  if (config.mode === "direct") {
+    return fetchLatestPostsDirect(username, { fetch: options.fetch, limit });
+  }
 
   try {
-    response = await fetchImpl(normalizedUrl, {
-      headers: {
-        Accept:
-          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9",
-        "User-Agent":
-          "Mozilla/5.0 (compatible; ShoppableFeedBot/1.0; +https://github.com/onlyzoran/shoppable-feed)",
-      },
+    return await fetchLatestPostsDirect(username, {
+      fetch: options.fetch,
+      limit,
     });
-  } catch {
-    throw new InstagramFetchError(
-      "Не удалось загрузить профиль Instagram",
-      "FETCH_ERROR",
-      502,
-    );
+  } catch (directError) {
+    if (!isFallbackEligible(directError)) {
+      throw directError;
+    }
+
+    try {
+      return await fetchViaRapidApi(username, limit, options);
+    } catch (rapidApiError) {
+      if (
+        rapidApiError instanceof InstagramFetchError &&
+        rapidApiError.code !== "FETCH_ERROR"
+      ) {
+        throw rapidApiError;
+      }
+
+      if (!config.rapidApiKey) {
+        throw missingRapidApiKeyError();
+      }
+
+      throw bothSourcesFailedError();
+    }
   }
-
-  if (response.status === 404) {
-    throw new InstagramFetchError(
-      `Профиль @${username} не найден`,
-      "NOT_FOUND",
-      404,
-    );
-  }
-
-  if (!response.ok) {
-    throw new InstagramFetchError(
-      `Instagram вернул статус ${response.status}`,
-      "FETCH_ERROR",
-      502,
-    );
-  }
-
-  const html = await response.text();
-
-  if (isNotFoundHtml(html)) {
-    throw new InstagramFetchError(
-      `Профиль @${username} не найден`,
-      "NOT_FOUND",
-      404,
-    );
-  }
-
-  let payload;
-
-  try {
-    payload = parseInstagramProfileHtml(html, username);
-  } catch (error) {
-    const message =
-      error instanceof Error
-        ? error.message
-        : "Не удалось разобрать ответ Instagram";
-    throw new InstagramFetchError(message, "PARSE_ERROR", 502);
-  }
-
-  const posts = mapPostsFromProfile(payload, username, limit);
-
-  if (posts.length === 0) {
-    throw new InstagramFetchError(
-      `У профиля @${username} нет доступных постов`,
-      "NOT_FOUND",
-      404,
-    );
-  }
-
-  return posts;
 }
