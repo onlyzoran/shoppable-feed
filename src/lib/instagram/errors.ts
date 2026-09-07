@@ -7,6 +7,7 @@ export type InstagramErrorCode =
 export class InstagramFetchError extends Error {
   readonly code: InstagramErrorCode;
   readonly statusCode: number;
+  fallbackEligible = false;
 
   constructor(
     message: string,

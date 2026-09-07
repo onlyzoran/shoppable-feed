@@ -1,0 +1,145 @@
+{
+  "success": true,
+  "data": {
+    "username": "natgeo",
+    "posts": [
+      {
+        "post_id": "rapid-image-1",
+        "shortcode": "RapidImg001",
+        "post_type": "image",
+        "caption": "Northern Lights over Iceland",
+        "like_count": 1250000,
+        "comment_count": 4500,
+        "timestamp": 1710460800,
+        "display_url": "https://cdn.example.com/rapid/image-1.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": null
+      },
+      {
+        "post_id": "rapid-video-2",
+        "shortcode": "RapidVid002",
+        "post_type": "video",
+        "caption": "Underwater coral reef",
+        "like_count": 850000,
+        "comment_count": 2100,
+        "timestamp": 1710374400,
+        "display_url": "https://cdn.example.com/rapid/video-2-thumb.jpg",
+        "video_url": "https://cdn.example.com/rapid/video-2.mp4",
+        "is_video": true,
+        "carousel_media": null
+      },
+      {
+        "post_id": "rapid-carousel-3",
+        "shortcode": "RapidCar003",
+        "post_type": "carousel",
+        "caption": "Wildlife gallery",
+        "like_count": 540000,
+        "comment_count": 800,
+        "timestamp": 1710288000,
+        "display_url": "https://cdn.example.com/rapid/carousel-3.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": [
+          { "display_url": "https://cdn.example.com/rapid/carousel-3a.jpg" },
+          { "display_url": "https://cdn.example.com/rapid/carousel-3b.jpg" }
+        ]
+      },
+      {
+        "post_id": "rapid-image-4",
+        "shortcode": "RapidImg004",
+        "post_type": "image",
+        "caption": "Fourth post",
+        "like_count": 210000,
+        "comment_count": 300,
+        "timestamp": 1710201600,
+        "display_url": "https://cdn.example.com/rapid/image-4.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": null
+      },
+      {
+        "post_id": "rapid-image-5",
+        "shortcode": "RapidImg005",
+        "post_type": "image",
+        "caption": "Fifth post",
+        "like_count": 180000,
+        "comment_count": 250,
+        "timestamp": 1710115200,
+        "display_url": "https://cdn.example.com/rapid/image-5.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": null
+      },
+      {
+        "post_id": "rapid-image-6",
+        "shortcode": "RapidImg006",
+        "post_type": "image",
+        "caption": "Sixth post",
+        "like_count": 150000,
+        "comment_count": 200,
+        "timestamp": 1710028800,
+        "display_url": "https://cdn.example.com/rapid/image-6.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": null
+      },
+      {
+        "post_id": "rapid-image-7",
+        "shortcode": "RapidImg007",
+        "post_type": "image",
+        "caption": "Seventh post",
+        "like_count": 120000,
+        "comment_count": 180,
+        "timestamp": 1709942400,
+        "display_url": "https://cdn.example.com/rapid/image-7.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": null
+      },
+      {
+        "post_id": "rapid-image-8",
+        "shortcode": "RapidImg008",
+        "post_type": "image",
+        "caption": "Eighth post",
+        "like_count": 90000,
+        "comment_count": 150,
+        "timestamp": 1709856000,
+        "display_url": "https://cdn.example.com/rapid/image-8.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": null
+      },
+      {
+        "post_id": "rapid-image-9",
+        "shortcode": "RapidImg009",
+        "post_type": "image",
+        "caption": "Ninth post",
+        "like_count": 80000,
+        "comment_count": 120,
+        "timestamp": 1709769600,
+        "display_url": "https://cdn.example.com/rapid/image-9.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": null
+      },
+      {
+        "post_id": "rapid-image-10",
+        "shortcode": "RapidImg010",
+        "post_type": "image",
+        "caption": "Tenth post",
+        "like_count": 70000,
+        "comment_count": 100,
+        "timestamp": 1709683200,
+        "display_url": "https://cdn.example.com/rapid/image-10.jpg",
+        "video_url": null,
+        "is_video": false,
+        "carousel_media": null
+      }
+    ],
+    "has_next_page": true,
+    "end_cursor": "cursor-example"
+  },
+  "credits_used": 1,
+  "cache_hit": false
+}

@@ -20,7 +20,12 @@ export type Post = {
 
 export type FetchFn = typeof fetch;
 
+import type { InstagramFetchMode } from "./config";
+
 export type FetchLatestPostsOptions = {
   fetch?: FetchFn;
   limit?: number;
+  fetchMode?: InstagramFetchMode;
+  rapidApiKey?: string;
+  rapidApiHost?: string;
 };
