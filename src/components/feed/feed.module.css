@@ -474,7 +474,7 @@
   line-height: 1.25;
 }
 
-.productPin {
+.overlayPin {
   position: absolute;
   z-index: 4;
   top: 50%;
@@ -486,7 +486,7 @@
   color: inherit;
 }
 
-.productPinIcon {
+.overlayPinIcon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -501,8 +501,8 @@
     box-shadow 0.15s ease;
 }
 
-.productPin:hover .productPinIcon,
-.productPin:focus-visible .productPinIcon {
+.overlayPin:hover .overlayPinIcon,
+.overlayPin:focus-visible .overlayPinIcon {
   transform: scale(1.05);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.32);
 }
@@ -530,9 +530,9 @@
     transform 0.15s ease;
 }
 
-.productPin:hover .productPinCard,
-.productPin:focus-visible .productPinCard,
-.productPin:focus-within .productPinCard {
+.overlayPin:hover .productPinCard,
+.overlayPin:focus-visible .productPinCard,
+.overlayPin:focus-within .productPinCard {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -585,42 +585,21 @@
 }
 
 .ctaProductPin {
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
+  composes: overlayPin;
   justify-content: center;
-  text-decoration: none;
-  color: inherit;
 }
 
 .ctaProductPinIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
-  color: #111;
+  composes: overlayPinIcon;
   font-size: 1.625rem;
   font-weight: 300;
   line-height: 1;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.28);
-  transition:
-    background 0.15s ease,
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
 }
 
 .ctaProductPin:hover .ctaProductPinIcon,
 .ctaProductPin:focus-visible .ctaProductPinIcon {
-  background: #fff;
-  transform: scale(1.06);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.32);
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.32);
 }
 
 .ctaProductPinTooltip {
@@ -649,33 +628,18 @@
 
 .ctaProductPin:hover .ctaProductPinTooltip,
 .ctaProductPin:focus-visible .ctaProductPinTooltip,
-.ctaBookingPin:hover .ctaProductPinTooltip,
-.ctaBookingPin:focus-visible .ctaProductPinTooltip {
+.overlayPin:hover .ctaProductPinTooltip,
+.overlayPin:focus-visible .ctaProductPinTooltip {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(-2px);
-}
-
-.ctaBookingPin {
-  composes: ctaProductPin;
-}
-
-.ctaBookingPinIcon {
-  composes: ctaProductPinIcon;
-  background: rgba(255, 255, 255, 0.95);
-  color: #0095f6;
-}
-
-.ctaBookingPin:hover .ctaBookingPinIcon,
-.ctaBookingPin:focus-visible .ctaBookingPinIcon {
-  background: #fff;
-  color: #0081d6;
 }
 
 .ctaButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   padding: 7px 12px;
   border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
   border-radius: 999px;
@@ -695,6 +659,11 @@
   background: color-mix(in srgb, var(--accent) 16%, var(--surface));
   border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
   color: var(--foreground);
+}
+
+.ctaButtonIcon {
+  flex-shrink: 0;
+  color: inherit;
 }
 
 .captionUsername {

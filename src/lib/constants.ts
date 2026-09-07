@@ -1,1 +1,1 @@
-export const APP_NAME = "shoppable-feed";
+export const APP_NAME = "Shoppable Feed";

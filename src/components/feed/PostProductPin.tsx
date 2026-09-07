@@ -16,13 +16,13 @@ export function PostProductPin({
 
   return (
     <a
-      className={styles.productPin}
+      className={styles.overlayPin}
       href={button.url}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={button.label}
     >
-      <span className={styles.productPinIcon} aria-hidden>
+      <span className={styles.overlayPinIcon} aria-hidden>
         <ShoppingBagIcon size={18} />
       </span>
       <span className={styles.productPinCard}>

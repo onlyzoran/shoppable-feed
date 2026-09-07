@@ -66,7 +66,7 @@ export function PostShoppableButtons({
             <a
               key={button.url}
               className={
-                isBooking ? styles.ctaBookingPin : styles.ctaProductPin
+                isBooking ? styles.overlayPin : styles.ctaProductPin
               }
               href={button.url}
               target="_blank"
@@ -76,13 +76,11 @@ export function PostShoppableButtons({
             >
               <span
                 className={
-                  isBooking
-                    ? styles.ctaBookingPinIcon
-                    : styles.ctaProductPinIcon
+                  isBooking ? styles.overlayPinIcon : styles.ctaProductPinIcon
                 }
                 aria-hidden
               >
-                {isBooking ? <CalendarIcon size={22} /> : "+"}
+                {isBooking ? <CalendarIcon size={18} /> : "+"}
               </span>
               <span className={styles.ctaProductPinTooltip}>
                 {button.label}
@@ -96,17 +94,24 @@ export function PostShoppableButtons({
 
   return (
     <div className={styles.ctaRow}>
-      {buttons.map((button) => (
-        <a
-          key={button.url}
-          className={styles.ctaButton}
-          href={button.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {button.label}
-        </a>
-      ))}
+      {buttons.map((button) => {
+        const isBooking = button.label === "Записаться";
+
+        return (
+          <a
+            key={button.url}
+            className={styles.ctaButton}
+            href={button.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {isBooking ? (
+              <CalendarIcon className={styles.ctaButtonIcon} size={16} />
+            ) : null}
+            {button.label}
+          </a>
+        );
+      })}
     </div>
   );
 }
