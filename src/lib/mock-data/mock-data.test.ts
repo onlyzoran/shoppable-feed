@@ -103,6 +103,15 @@ describe("findExampleByProfileUrl", () => {
     expect(example?.fileName).toBe("adahlazorgan.json");
   });
 
+  it("matches wildflowercases profile URL", () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/wildflowercases/",
+    );
+
+    expect(example?.id).toBe("wildflowercases");
+    expect(example?.fileName).toBe("wildflowercases.json");
+  });
+
   it("returns null for unknown profile", () => {
     expect(
       findExampleByProfileUrl("https://www.instagram.com/unknown-brand/"),
@@ -314,5 +323,47 @@ describe("loadExamplePosts", () => {
       price: expect.stringMatching(/^\$/),
       imageUrl: expect.stringMatching(/^https:\/\//),
     });
+  });
+
+  it("loads wildflower posts with catalog buttons", async () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/wildflowercases/",
+    );
+
+    expect(example).not.toBeNull();
+    const posts = await loadExamplePosts(example!, 12);
+
+    expect(posts.length).toBeGreaterThanOrEqual(10);
+    expect(posts[0].username).toBe("wildflowercases");
+    expect(buildShoppableButtonsForPost(posts[0])[0]).toMatchObject({
+      label: "Магазин",
+      url: "https://www.wildflowercases.com/",
+    });
+
+    const ahoyPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("ahoy babe"),
+    );
+    expect(ahoyPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(ahoyPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "Ahoy Babe",
+      url: expect.stringContaining(
+        "wildflowercases.com/products/ahoy-babe-nautical-iphone-case",
+      ),
+      price: "$37",
+      imageUrl: expect.stringMatching(/^https:\/\//),
+    });
+
+    const polkaPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("polkadot"),
+    );
+    expect(polkaPost).toBeDefined();
+    expect(
+      buildShoppableButtonsForPost(polkaPost!).some(
+        (button) =>
+          button.kind === "product" &&
+          button.label === "Polka Dot | Turquoise and Black",
+      ),
+    ).toBe(true);
   });
 });

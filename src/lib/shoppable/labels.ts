@@ -12,7 +12,7 @@ export function labelForUrl(url: string): string {
   }
 
   if (
-    /shop|store|market|магазин|wildberries|ozon|etsy|amazon|lamoda|manekenbrand|madj\.store|dropsstore|thegrezway|bananhot|adahlazorgan|limestore/.test(
+    /shop|store|market|магазин|wildberries|ozon|etsy|amazon|lamoda|manekenbrand|madj\.store|dropsstore|thegrezway|bananhot|adahlazorgan|wildflowercases|limestore/.test(
       lower,
     )
   ) {

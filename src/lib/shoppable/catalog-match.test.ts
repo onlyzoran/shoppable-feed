@@ -9,6 +9,7 @@ import {
   GREZ_CATALOG,
   MADJ_CATALOG,
   MANEKENBRAND_CATALOG,
+  WILDFLOWERCASES_CATALOG,
 } from "./store-catalogs";
 
 describe("matchCatalogProduct", () => {
@@ -224,6 +225,55 @@ describe("buildShoppableButtons with GREZ catalog", () => {
       price: "$58.384",
       imageUrl: expect.stringMatching(/^https:\/\//),
     });
+  });
+});
+
+describe("matchCatalogProduct for WILDFLOWER", () => {
+  it("находит Ahoy Babe в подписи", () => {
+    const match = matchCatalogProduct(
+      "NEW RELEASE 💜 Ahoy Babe x WF — shop now at wildflowercases.com",
+      WILDFLOWERCASES_CATALOG,
+    );
+
+    expect(match).toEqual(
+      expect.objectContaining({
+        label: "Ahoy Babe",
+        url: expect.stringContaining(
+          "wildflowercases.com/products/ahoy-babe-nautical-iphone-case",
+        ),
+        price: "$37",
+        imageUrl: expect.stringMatching(/^https:\/\//),
+      }),
+    );
+  });
+
+  it("находит Vanilla Mace в подписи", () => {
+    const match = matchCatalogProduct(
+      "Vanilla Mace x Wildflower Cases phone case collaboration is live 💜",
+      WILDFLOWERCASES_CATALOG,
+    );
+
+    expect(match?.label).toBe("Vanilla Mace");
+  });
+
+  it("находит Polka Dot | Turquoise and Black в подписи", () => {
+    const match = matchCatalogProduct(
+      "Polka Dot | Turquoise and Black iPhone Case — From $35 at wildflowercases.com",
+      WILDFLOWERCASES_CATALOG,
+    );
+
+    expect(match?.label).toBe("Polka Dot | Turquoise and Black");
+  });
+
+  it("находит Ahoy Babe и Polka Dot без ложных совпадений по цвету", () => {
+    const caption =
+      "unboxing the new Ahoy Babe and Turquoise & Black Polkadot cases available now on wildflowercases.com";
+    const matches = matchCatalogProducts(caption, WILDFLOWERCASES_CATALOG);
+
+    expect(matches.map((product) => product.label)).toEqual([
+      "Ahoy Babe",
+      "Polka Dot | Turquoise and Black",
+    ]);
   });
 });
 

@@ -386,6 +386,44 @@ async function syncAdahlazorgan() {
   );
 }
 
+async function syncWildflowercases() {
+  const { path, data } = loadCatalog("wildflowercases-home.json");
+  const fieldsByUrl = new Map();
+
+  for (let page = 1; page <= 6; page += 1) {
+    const payload = await fetchJson(
+      `https://www.wildflowercases.com/products.json?limit=250&page=${page}`,
+    );
+    const batch = payload.products ?? [];
+    if (batch.length === 0) {
+      break;
+    }
+
+    for (const product of batch) {
+      const variant = product.variants?.[0];
+      if (!variant?.price) {
+        continue;
+      }
+
+      fieldsByUrl.set(
+        normalizeUrl(
+          `https://www.wildflowercases.com/products/${product.handle}`,
+        ),
+        {
+          price: formatUsdPrice(variant.price),
+          imageUrl: product.images?.[0]?.src ?? null,
+        },
+      );
+    }
+  }
+
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "WILDFLOWER");
+  saveCatalog(path, data);
+  console.log(
+    `WILDFLOWER: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
+}
+
 function normalizeCaption(text) {
   return text.toLowerCase().replace(/\s+/g, " ");
 }
@@ -442,6 +480,11 @@ function auditPostsOnExamples() {
       label: "ADAH",
       file: "adahlazorgan.json",
       catalogFile: "adahlazorgan-home.json",
+    },
+    {
+      label: "WILDFLOWER",
+      file: "wildflowercases.json",
+      catalogFile: "wildflowercases-home.json",
     },
   ];
 
@@ -513,4 +556,5 @@ await syncTildaCatalog(
 await syncGrez();
 await syncBananhot();
 await syncAdahlazorgan();
+await syncWildflowercases();
 auditPostsOnExamples();

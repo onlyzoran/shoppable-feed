@@ -77,6 +77,16 @@ export const EXAMPLE_SOURCES: ExampleSource[] = [
     profileExternalUrl: "https://adahlazorgan.com",
     profileLinks: ["https://adahlazorgan.com"],
   },
+  {
+    id: "wildflowercases",
+    label: "WILDFLOWER",
+    profileUrl: "https://www.instagram.com/wildflowercases/",
+    fileName: "wildflowercases.json",
+    profileBio:
+      "Limited edition fashion phone cases — https://www.wildflowercases.com",
+    profileExternalUrl: "https://www.wildflowercases.com",
+    profileLinks: ["https://www.wildflowercases.com"],
+  },
 ];
 
 export function findExampleByProfileUrl(profileUrl: string): ExampleSource | null {

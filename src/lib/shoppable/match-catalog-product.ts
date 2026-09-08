@@ -22,6 +22,23 @@ function significantWords(keyword: string): string[] {
     .filter((word) => word.length >= 3 && !STOP_WORDS.has(word));
 }
 
+function findWordBoundaryIndex(
+  caption: string,
+  word: string,
+  fromIndex = 0,
+): number {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = caption
+    .slice(fromIndex)
+    .match(new RegExp(`(?<![a-z0-9])${escaped}(?![a-z0-9])`, "i"));
+
+  if (!match || match.index === undefined) {
+    return -1;
+  }
+
+  return fromIndex + match.index;
+}
+
 function captionIncludesFlexiblePhrase(
   caption: string,
   keyword: string,
@@ -34,7 +51,7 @@ function captionIncludesFlexiblePhrase(
 
   let previousEnd = 0;
   for (const word of words) {
-    const index = caption.indexOf(word, previousEnd);
+    const index = findWordBoundaryIndex(caption, word, previousEnd);
     if (index === -1) {
       return false;
     }
@@ -81,7 +98,8 @@ function findKeywordPosition(caption: string, keyword: string): number {
 
   const words = significantWords(normalizedKeyword);
   if (words.length >= 2) {
-    return caption.indexOf(words[0]);
+    const index = findWordBoundaryIndex(caption, words[0]);
+    return index >= 0 ? index : Number.POSITIVE_INFINITY;
   }
 
   return Number.POSITIVE_INFINITY;
