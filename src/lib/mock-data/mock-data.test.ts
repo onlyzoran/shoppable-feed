@@ -130,6 +130,24 @@ describe("findExampleByProfileUrl", () => {
     expect(example?.fileName).toBe("brooklinen.json");
   });
 
+  it("matches allbirds profile URL", () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/allbirds/",
+    );
+
+    expect(example?.id).toBe("allbirds");
+    expect(example?.fileName).toBe("allbirds.json");
+  });
+
+  it("matches away profile URL", () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/away/",
+    );
+
+    expect(example?.id).toBe("away");
+    expect(example?.fileName).toBe("awaytravel.json");
+  });
+
   it("returns null for unknown profile", () => {
     expect(
       findExampleByProfileUrl("https://www.instagram.com/unknown-brand/"),
@@ -158,6 +176,21 @@ describe("mapVendorPayloadToPosts", () => {
 
     expect(reel).toBeDefined();
     expect(reel?.mediaUrl).toMatch(/\.mp4|cdninstagram\.com/);
+  });
+
+  it("maps video carousels with a poster preview image", () => {
+    const payload = readMockPayload("awaytravel.json");
+    const posts = mapVendorPayloadToPosts(payload, "away", 60);
+    const laborDayPost = posts.find(
+      (post) => post.id === "b34f9f4a9a33420194b2e22c4e4a72963204ecac",
+    );
+
+    expect(laborDayPost).toMatchObject({
+      mediaType: "carousel",
+      caption: expect.stringContaining("One last getaway"),
+    });
+    expect(laborDayPost?.mediaUrl).toMatch(/\.jpg|cdninstagram\.com/);
+    expect(laborDayPost?.mediaUrl).not.toMatch(/\.mp4/);
   });
 });
 
@@ -468,5 +501,103 @@ describe("loadExamplePosts", () => {
       "Desert Stripe Avocado",
       "Heritage Wool Throw",
     ]);
+  });
+
+  it("loads allbirds posts with catalog buttons", async () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/allbirds/",
+    );
+
+    expect(example).not.toBeNull();
+    const posts = await loadExamplePosts(example!, 20);
+
+    expect(posts.length).toBeGreaterThanOrEqual(10);
+    expect(posts[0].username).toBe("allbirds");
+    expect(buildShoppableButtonsForPost(posts[0])[0]).toMatchObject({
+      label: "Магазин",
+      url: "https://www.allbirds.com/",
+    });
+
+    const varsityPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("varsity jersey"),
+    );
+    expect(varsityPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(varsityPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "Runner NZ Jersey",
+      url: expect.stringContaining("allbirds.com/products/"),
+      price: "$110",
+      imageUrl: expect.stringMatching(/^https:\/\//),
+    });
+
+    const canvasPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("canvas cruiser"),
+    );
+    expect(canvasPost).toBeDefined();
+    expect(
+      buildShoppableButtonsForPost(canvasPost!).some(
+        (button) =>
+          button.kind === "product" && button.label === "Canvas Cruiser",
+      ),
+    ).toBe(true);
+
+    const breezerPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("breezer point"),
+    );
+    expect(breezerPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(breezerPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "Breezer Point",
+      url: expect.stringContaining("allbirds.com/products/"),
+      price: "$125",
+    });
+  });
+
+  it("loads away posts with catalog buttons", async () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/away/",
+    );
+
+    expect(example).not.toBeNull();
+    const posts = await loadExamplePosts(example!, 20);
+
+    expect(posts.length).toBeGreaterThanOrEqual(10);
+    expect(posts[0].username).toBe("away");
+    expect(buildShoppableButtonsForPost(posts[0])[0]).toMatchObject({
+      label: "Магазин",
+      url: "https://www.awaytravel.com/",
+    });
+
+    const topsidePost = posts.find((post) =>
+      post.caption.toLowerCase().includes("topside in cherry red"),
+    );
+    expect(topsidePost).toBeDefined();
+    expect(
+      buildShoppableButtonsForPost(topsidePost!).some(
+        (button) =>
+          button.kind === "product" &&
+          button.label.startsWith("Topside"),
+      ),
+    ).toBe(true);
+
+    const garmentPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("garment roller"),
+    );
+    expect(garmentPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(garmentPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "Softside Garment Roller",
+      url: expect.stringContaining("awaytravel.com/products/"),
+    });
+
+    const carryOnPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("carry-on filled with cash"),
+    );
+    expect(carryOnPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(carryOnPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "The Carry-On",
+      url: expect.stringContaining("awaytravel.com/products/"),
+    });
   });
 });

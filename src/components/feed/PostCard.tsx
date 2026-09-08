@@ -80,7 +80,7 @@ export function PostCard({
           ) : (
             <img
               className={styles.media}
-              src={post.mediaUrl}
+              src={post.mediaPosterUrl ?? post.mediaUrl}
               alt=""
               loading="lazy"
             />

@@ -1,0 +1,2015 @@
+{
+  "storeHostname": "awaytravel.com",
+  "source": "https://www.awaytravel.com",
+  "fetchedFrom": "https://www.awaytravel.com/products.json?limit=250&page=*",
+  "products": [
+    {
+      "id": "carry-on-boot-bag-55l",
+      "label": "Carry-On Boot Bag 55L",
+      "url": "https://www.awaytravel.com/products/carry-on-boot-bag-55l-navy-blue",
+      "keywords": [
+        "Carry-On Boot Bag 55L",
+        "carry-on boot bag 55l"
+      ],
+      "priority": 12,
+      "price": "$236",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_SkiBootBag_Navy_01_95458476-6384-4034-a69e-3fae9a34173e.jpg?v=1739239969"
+    },
+    {
+      "id": "custom-carry-on-wheel-set",
+      "label": "Custom Carry-On Wheel Set",
+      "url": "https://www.awaytravel.com/products/custom-carry-on-wheel-set-olive-green",
+      "keywords": [
+        "Custom Carry-On Wheel Set",
+        "custom carry-on wheel set"
+      ],
+      "priority": 12,
+      "price": "$60",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Custom_Wheels_Olive_01.jpg?v=1762265315"
+    },
+    {
+      "id": "mini-everywhere-bag",
+      "label": "Mini Everywhere Bag",
+      "url": "https://www.awaytravel.com/products/mini-everywhere-bag-espresso-brown",
+      "keywords": [
+        "Mini Everywhere Bag",
+        "mini everywhere bag"
+      ],
+      "priority": 12,
+      "price": "$156",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/2234c20f-7177-4f01-9070-be21b917e799.jpg?v=1739290340"
+    },
+    {
+      "id": "softside-bigger-carry-on",
+      "label": "Softside Bigger Carry-On",
+      "url": "https://www.awaytravel.com/products/softside-bigger-carry-on-cloud-gray",
+      "keywords": [
+        "Softside Bigger Carry-On",
+        "softside bigger carry-on"
+      ],
+      "priority": 12,
+      "price": "$196",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/a82e8cf4-639a-40c6-aef0-9a09b67c5b33_c2a9d1bc-9652-4741-842b-e1f1e7b8c8bf.jpg?v=1739239621"
+    },
+    {
+      "id": "softside-carry-on",
+      "label": "Softside Carry-On",
+      "url": "https://www.awaytravel.com/products/softside-carry-on-cloud-gray",
+      "keywords": [
+        "Softside Carry-On",
+        "softside carry-on"
+      ],
+      "priority": 12,
+      "price": "$180",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Softside_Cloud_CAR_02.jpg?v=1744407365"
+    },
+    {
+      "id": "softside-compact-carry-on",
+      "label": "Softside Compact Carry-On",
+      "url": "https://www.awaytravel.com/products/softside-compact-carry-on-olive-green",
+      "keywords": [
+        "Softside Compact Carry-On",
+        "softside compact carry-on"
+      ],
+      "priority": 12,
+      "price": "$164",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Softside_Compact_Olive_02.jpg?v=1744684109"
+    },
+    {
+      "id": "the-aluminum-edge-bigger-carry-on",
+      "label": "The Aluminum Edge Bigger Carry-On",
+      "url": "https://www.awaytravel.com/products/aluminum-edge-bigger-carry-on-navy-blue",
+      "keywords": [
+        "The Aluminum Edge Bigger Carry-On",
+        "the aluminum edge bigger carry-on",
+        "Aluminum Edge Bigger Carry-On",
+        "aluminum edge bigger carry-on"
+      ],
+      "priority": 12,
+      "price": "$378",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_AluminumFrame_Navy_BCO_3.4Front.jpg?v=1758216395"
+    },
+    {
+      "id": "the-aluminum-edge-carry-on",
+      "label": "The Aluminum Edge Carry-On",
+      "url": "https://www.awaytravel.com/products/aluminum-edge-carry-on-navy-blue",
+      "keywords": [
+        "The Aluminum Edge Carry-On",
+        "the aluminum edge carry-on",
+        "Aluminum Edge Carry-On",
+        "aluminum edge carry-on"
+      ],
+      "priority": 12,
+      "price": "$361",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_AluminumFrame_Navy_CAR_01.jpg?v=1776178484"
+    },
+    {
+      "id": "the-bigger-carry-on",
+      "label": "The Bigger Carry-On",
+      "url": "https://www.awaytravel.com/products/bigger-carry-on-alien-green",
+      "keywords": [
+        "The Bigger Carry-On",
+        "the bigger carry-on",
+        "Bigger Carry-On",
+        "bigger carry-on",
+        "Bigger Carry On",
+        "bigger carry on"
+      ],
+      "priority": 12,
+      "price": "$295",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/BCO_-_Alien_-_6x5_c5c03d9a-71c4-4ee5-9564-ddfabb706d36.jpg?v=1781015595"
+    },
+    {
+      "id": "the-bigger-carry-on-flex",
+      "label": "The Bigger Carry-On Flex",
+      "url": "https://www.awaytravel.com/products/bigger-carry-on-flex-pink-sand",
+      "keywords": [
+        "The Bigger Carry-On Flex",
+        "the bigger carry-on flex",
+        "Bigger Carry-On Flex",
+        "bigger carry-on flex",
+        "Carry-On Flex",
+        "carry-on flex"
+      ],
+      "priority": 12,
+      "price": "$295",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Summer_Flex_BCO_IslandPink-Apricot_01.jpg?v=1782495696"
+    },
+    {
+      "id": "the-bigger-carry-on-aluminum-edition",
+      "label": "The Bigger Carry-On: Aluminum Edition",
+      "url": "https://www.awaytravel.com/products/the-bigger-carry-on-aluminum-edition-in-rose-gold-with-usb-charger",
+      "keywords": [
+        "The Bigger Carry-On: Aluminum Edition",
+        "the bigger carry-on: aluminum edition",
+        "Bigger Carry-On: Aluminum Edition",
+        "bigger carry-on: aluminum edition"
+      ],
+      "priority": 12,
+      "price": "$598",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Aluminum_Rose_BCO_02.jpg?v=1742492551"
+    },
+    {
+      "id": "the-carry-on",
+      "label": "The Carry-On",
+      "url": "https://www.awaytravel.com/products/carry-on-tidal-blue",
+      "keywords": [
+        "Away carry-on",
+        "away carry-on",
+        "The Carry-On",
+        "the carry-on",
+        "Carry-On",
+        "carry-on",
+        "Carry On",
+        "carry on"
+      ],
+      "priority": 12,
+      "price": "$278",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_School_PC_CAR_TidalBlue_02.jpg?v=1783436924"
+    },
+    {
+      "id": "the-carry-on-flex",
+      "label": "The Carry-On Flex",
+      "url": "https://www.awaytravel.com/products/the-carry-on-flex-in-coast-blue",
+      "keywords": [
+        "The Carry-On Flex",
+        "the carry-on flex",
+        "Carry-On Flex",
+        "carry-on flex"
+      ],
+      "priority": 12,
+      "price": "$260",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/ca6bcc70-32ca-4e47-9452-73773ef162cf_423c89e1-cd52-4036-9c38-58e6954e76a1.jpg?v=1736349734"
+    },
+    {
+      "id": "the-carry-on-aluminum-edition",
+      "label": "The Carry-On: Aluminum Edition",
+      "url": "https://www.awaytravel.com/products/aluminum-carry-on-rose-gold",
+      "keywords": [
+        "The Carry-On: Aluminum Edition",
+        "the carry-on: aluminum edition",
+        "Carry-On: Aluminum Edition",
+        "carry-on: aluminum edition"
+      ],
+      "priority": 12,
+      "price": "$562",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Aluminum_Rose_CAR_02_b21b55c9-497c-4049-87b9-d33b79b66881.jpg?v=1742829518"
+    },
+    {
+      "id": "the-commuter-backpack",
+      "label": "The Commuter Backpack",
+      "url": "https://www.awaytravel.com/products/commuter-backpack-olive-green",
+      "keywords": [
+        "The Commuter Backpack",
+        "the commuter backpack",
+        "Commuter Backpack",
+        "commuter backpack"
+      ],
+      "priority": 12,
+      "price": "$182",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/0ed8e10b-9657-4b88-949d-556965b16172_e8231eab-29de-442c-b8d0-0c3dbd903b4d.jpg?v=1739239549"
+    },
+    {
+      "id": "the-everywhere-bag",
+      "label": "The Everywhere Bag",
+      "url": "https://www.awaytravel.com/products/everywhere-bag-coast-blue",
+      "keywords": [
+        "The Everywhere Bag",
+        "the everywhere bag",
+        "Everywhere Bag",
+        "everywhere bag"
+      ],
+      "priority": 12,
+      "price": "$158",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_EverywhereBag_Standard_Coast_01_bb236c8f-a0fe-4eaa-bc3e-9462836528c3.jpg?v=1739290283"
+    },
+    {
+      "id": "the-executive-bigger-carry-on",
+      "label": "The Executive Bigger Carry-On",
+      "url": "https://www.awaytravel.com/products/executive-bigger-carry-on-cloud-gray",
+      "keywords": [
+        "The Executive Bigger Carry-On",
+        "the executive bigger carry-on",
+        "Executive Bigger Carry-On",
+        "executive bigger carry-on"
+      ],
+      "priority": 12,
+      "price": "$276",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/8f7a7d18-dc01-4aa1-adcc-be0adfcf30b2.jpg?v=1739239606"
+    },
+    {
+      "id": "the-executive-carry-on",
+      "label": "The Executive Carry-On",
+      "url": "https://www.awaytravel.com/products/executive-carry-on-cloud-gray",
+      "keywords": [
+        "The Executive Carry-On",
+        "the executive carry-on",
+        "Executive Carry-On",
+        "executive carry-on"
+      ],
+      "priority": 12,
+      "price": "$260",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/723f29d2-8f72-48ae-bbcd-22e4990a5a24.jpg?v=1739239641"
+    },
+    {
+      "id": "the-kids-carry-on",
+      "label": "The Kids Carry-On",
+      "url": "https://www.awaytravel.com/products/kids-carry-on-alien-green",
+      "keywords": [
+        "The Kids Carry-On",
+        "the kids carry-on",
+        "Kids Carry-On",
+        "kids carry-on"
+      ],
+      "priority": 12,
+      "price": "$236",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/06TS26-PR_PDP_ToyStory_PC_Alien_Kids_01.jpg?v=1780589319"
+    },
+    {
+      "id": "the-large-flex",
+      "label": "The Large Flex",
+      "url": "https://www.awaytravel.com/products/the-large-flex-in-jet-black",
+      "keywords": [
+        "The Large Flex",
+        "the large flex",
+        "Large Flex",
+        "large flex"
+      ],
+      "priority": 12,
+      "price": "$340",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/e94abaf2-85b5-416f-8fdc-323ee2a24bff_1fff741c-dcc3-42e7-80c4-1948fd860cba.jpg?v=1736350379"
+    },
+    {
+      "id": "the-medium-flex",
+      "label": "The Medium Flex",
+      "url": "https://www.awaytravel.com/products/medium-flex-clay-pink",
+      "keywords": [
+        "The Medium Flex",
+        "the medium flex",
+        "Medium Flex",
+        "medium flex"
+      ],
+      "priority": 12,
+      "price": "$316",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Flex_Clay_Medium_01_fae1f564-8ec9-4f35-9fec-b885175acb02.jpg?v=1750941151"
+    },
+    {
+      "id": "the-micro-everywhere-bag",
+      "label": "The Micro Everywhere Bag",
+      "url": "https://www.awaytravel.com/products/micro-everywhere-bag-salt-white",
+      "keywords": [
+        "The Micro Everywhere Bag",
+        "the micro everywhere bag",
+        "Micro Everywhere Bag",
+        "micro everywhere bag"
+      ],
+      "priority": 12,
+      "price": "$35",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/149180a7-8e4b-44c2-9bb5-22e52f926c73_f5df2c73-0d68-4e52-9ab9-6f84ff779c30.jpg?v=1739239555"
+    },
+    {
+      "id": "the-original-bigger-carry-on",
+      "label": "The Original Bigger Carry-On",
+      "url": "https://www.awaytravel.com/products/original-bigger-carry-on-coast-blue",
+      "keywords": [
+        "The Original Bigger Carry-On",
+        "the original bigger carry-on",
+        "Original Bigger Carry-On",
+        "original bigger carry-on"
+      ],
+      "priority": 12,
+      "price": "$315",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_PC_Coast_BCO_01.jpg?v=1739290192"
+    },
+    {
+      "id": "the-quilted-everywhere-bag",
+      "label": "The Quilted Everywhere Bag",
+      "url": "https://www.awaytravel.com/products/quilted-everywhere-bag-jet-black",
+      "keywords": [
+        "The Quilted Everywhere Bag",
+        "the quilted everywhere bag",
+        "Quilted Everywhere Bag",
+        "quilted everywhere bag"
+      ],
+      "priority": 12,
+      "price": "$225",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/585081c9-ed0c-41f0-a4c8-a6f2d6d79cc2_7ce7a4a8-148e-4225-bd12-13ba429925ea.jpg?v=1739239529"
+    },
+    {
+      "id": "topside-bigger-carry-on",
+      "label": "Topside Bigger Carry-On",
+      "url": "https://www.awaytravel.com/products/topside-bigger-carry-on-cherry-red",
+      "keywords": [
+        "Topside Bigger Carry-On",
+        "topside bigger carry-on",
+        "Topside in Cherry Red",
+        "topside in cherry red",
+        "Topside collection",
+        "topside collection",
+        "Topside",
+        "topside"
+      ],
+      "priority": 12,
+      "price": "$398",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Topside_Cherry_BCO_01.jpg?v=1785340585"
+    },
+    {
+      "id": "topside-carry-on",
+      "label": "Topside Carry-On",
+      "url": "https://www.awaytravel.com/products/topside-carry-on-cherry-red",
+      "keywords": [
+        "Topside in Cherry Red",
+        "topside in cherry red",
+        "Topside collection",
+        "topside collection",
+        "Topside Carry-On",
+        "topside carry-on"
+      ],
+      "priority": 12,
+      "price": "$378",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Topside_Cherry_CAR_01.jpg?v=1785340585"
+    },
+    {
+      "id": "topside-medium-trunk",
+      "label": "Topside Medium Trunk",
+      "url": "https://www.awaytravel.com/products/topside-medium-trunk-cherry-red",
+      "keywords": [
+        "Topside Medium Trunk",
+        "topside medium trunk",
+        "Topside collection",
+        "topside collection"
+      ],
+      "priority": 12,
+      "price": "$478",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Topside_Cherry_MED_01.jpg?v=1785340585"
+    },
+    {
+      "id": "compression-packing-cubes",
+      "label": "Compression Packing Cubes",
+      "url": "https://www.awaytravel.com/products/compression-packing-cubes-blush-pink",
+      "keywords": [
+        "Compression Packing Cubes",
+        "compression packing cubes"
+      ],
+      "priority": 11,
+      "price": "$88",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_PackingCubes_Compression_Blush_01.jpg?v=1782226760"
+    },
+    {
+      "id": "extra-large-toiletry-bag",
+      "label": "Extra Large Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/extra-large-toiletry-bag-coast-blue",
+      "keywords": [
+        "Extra Large Toiletry Bag",
+        "extra large toiletry bag"
+      ],
+      "priority": 11,
+      "price": "$95",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_ToiletryBag_XL_Coast_01.jpg?v=1755176203"
+    },
+    {
+      "id": "featherlight-weekender",
+      "label": "Featherlight Weekender",
+      "url": "https://www.awaytravel.com/products/featherlight-weekender-island-pink",
+      "keywords": [
+        "Featherlight Collection",
+        "featherlight collection",
+        "Featherlight Weekender",
+        "featherlight weekender"
+      ],
+      "priority": 11,
+      "price": "$118",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_IslandPink_Featherlight_Weekender_01.jpg?v=1767895569"
+    },
+    {
+      "id": "insider-packing-cubes",
+      "label": "Insider Packing Cubes",
+      "url": "https://www.awaytravel.com/products/packing-cubes-four-tidal-blue",
+      "keywords": [
+        "Insider Packing Cubes",
+        "insider packing cubes"
+      ],
+      "priority": 11,
+      "price": "$48",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_School_PackingCubes_TidalBlue_01.jpg?v=1784115010"
+    },
+    {
+      "id": "kids-packing-cubes",
+      "label": "Kids Packing Cubes",
+      "url": "https://www.awaytravel.com/products/kids-packing-cubes-jessie-red",
+      "keywords": [
+        "Kids Packing Cubes",
+        "kids packing cubes"
+      ],
+      "priority": 11,
+      "price": "$48",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/06TS26-PR_PDP_ToyStory_PackingCubes_Jessie_01.jpg?v=1780589320"
+    },
+    {
+      "id": "large-featherlight-backpack",
+      "label": "Large Featherlight Backpack",
+      "url": "https://www.awaytravel.com/products/featherlight-backpack-large-camel-brown",
+      "keywords": [
+        "Large Featherlight Backpack",
+        "large featherlight backpack"
+      ],
+      "priority": 11,
+      "price": "$106",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Backpack_Large_Camel_02.jpg?v=1770068271"
+    },
+    {
+      "id": "large-featherlight-crossbody",
+      "label": "Large Featherlight Crossbody",
+      "url": "https://www.awaytravel.com/products/featherlight-crossbody-large-salt-white",
+      "keywords": [
+        "Large Featherlight Crossbody",
+        "large featherlight crossbody"
+      ],
+      "priority": 11,
+      "price": "$78",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/bdb97472-cf71-4f2a-8648-44856957e5f8.jpg?v=1739239502"
+    },
+    {
+      "id": "large-featherlight-tote",
+      "label": "Large Featherlight Tote",
+      "url": "https://www.awaytravel.com/products/featherlight-tote-large-misty-purple",
+      "keywords": [
+        "Large Featherlight Tote",
+        "large featherlight tote"
+      ],
+      "priority": 11,
+      "price": "$94",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Tote_Purple_02.jpg?v=1741125669"
+    },
+    {
+      "id": "large-toiletry-bag",
+      "label": "Large Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/large-toiletry-bag-cherry-red",
+      "keywords": [
+        "Large Toiletry Bag",
+        "large toiletry bag"
+      ],
+      "priority": 11,
+      "price": "$85",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_ToiletryBag_Large_Cherry_01_5dececee-226e-42d9-8ba2-7ccfe29b9ebe.jpg?v=1759940217"
+    },
+    {
+      "id": "medium-tech-case",
+      "label": "Medium Tech Case",
+      "url": "https://www.awaytravel.com/products/medium-tech-case-coast-blue",
+      "keywords": [
+        "Medium Tech Case",
+        "medium tech case"
+      ],
+      "priority": 11,
+      "price": "$78",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_TechCase_Medium_Coast_01.jpg?v=1784115002"
+    },
+    {
+      "id": "micro-weekender-charm",
+      "label": "Micro Weekender Charm",
+      "url": "https://www.awaytravel.com/products/micro-weekender-charm-island-pink",
+      "keywords": [
+        "Micro Weekender Charm",
+        "micro weekender charm"
+      ],
+      "priority": 11,
+      "price": "$38",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_IslandPink_Charm_01.jpg?v=1767895569"
+    },
+    {
+      "id": "softside-large",
+      "label": "Softside Large",
+      "url": "https://www.awaytravel.com/products/softside-large-cloud-gray",
+      "keywords": [
+        "Softside Large",
+        "softside large"
+      ],
+      "priority": 11,
+      "price": "$260",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/840917fc-657b-463b-8a80-ad81749bd8b2_6ec567ad-da08-494a-9a83-a5829994b25d.jpg?v=1739239671"
+    },
+    {
+      "id": "softside-medium",
+      "label": "Softside Medium",
+      "url": "https://www.awaytravel.com/products/softside-medium-cloud-gray",
+      "keywords": [
+        "Softside Medium",
+        "softside medium"
+      ],
+      "priority": 11,
+      "price": "$236",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/0d058555-59e6-441d-8b47-57f785d6fec4_e5005378-7166-4f36-9a9e-df278fe2f667.jpg?v=1739239515"
+    },
+    {
+      "id": "stadium-bag",
+      "label": "Stadium Bag",
+      "url": "https://www.awaytravel.com/products/stadium-bag-on-tour",
+      "keywords": [
+        "Stadium Bag",
+        "stadium bag"
+      ],
+      "priority": 11,
+      "price": "$88",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_StadiumBag_Black_Pride_01.jpg?v=1780072385"
+    },
+    {
+      "id": "the-aluminum-edge-large",
+      "label": "The Aluminum Edge Large",
+      "url": "https://www.awaytravel.com/products/aluminum-edge-large-navy-blue",
+      "keywords": [
+        "The Aluminum Edge Large",
+        "the aluminum edge large",
+        "Aluminum Edge Large",
+        "aluminum edge large"
+      ],
+      "priority": 11,
+      "price": "$446",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_AluminumFrame_Navy_Large_01.jpg?v=1776178234"
+    },
+    {
+      "id": "the-aluminum-edge-medium",
+      "label": "The Aluminum Edge Medium",
+      "url": "https://www.awaytravel.com/products/aluminum-edge-medium-navy-blue",
+      "keywords": [
+        "The Aluminum Edge Medium",
+        "the aluminum edge medium",
+        "Aluminum Edge Medium",
+        "aluminum edge medium"
+      ],
+      "priority": 11,
+      "price": "$420",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_AluminumFrame_Navy_Medium_01.jpg?v=1776178485"
+    },
+    {
+      "id": "the-insider-packing-cubes",
+      "label": "The Insider Packing Cubes",
+      "url": "https://www.awaytravel.com/products/packing-cubes-garnet",
+      "keywords": [
+        "The Insider Packing Cubes",
+        "the insider packing cubes",
+        "Insider Packing Cubes",
+        "insider packing cubes"
+      ],
+      "priority": 11,
+      "price": "$45",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/74a8a9c3-31c9-4725-b410-b38c2d15ab40.jpg?v=1736351339"
+    },
+    {
+      "id": "the-large",
+      "label": "The Large",
+      "url": "https://www.awaytravel.com/products/large-taffy-purple",
+      "keywords": [
+        "Large suitcase",
+        "large suitcase",
+        "The Large",
+        "the large",
+        "Large",
+        "large"
+      ],
+      "priority": 11,
+      "price": "$375",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/c7717674-936a-44d8-ab74-f7ef90a8b291.jpg?v=1739239947"
+    },
+    {
+      "id": "the-large-tech-case",
+      "label": "The Large Tech Case",
+      "url": "https://www.awaytravel.com/products/large-tech-case-jet-black",
+      "keywords": [
+        "The Large Tech Case",
+        "the large tech case",
+        "Large Tech Case",
+        "large tech case"
+      ],
+      "priority": 11,
+      "price": "$78",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_TechCase_Large_Black_01_3b4ab918-a81a-47fe-ab59-944aa772b6d5.jpg?v=1739239631"
+    },
+    {
+      "id": "the-large-toiletry-bag",
+      "label": "The Large Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/large-toiletry-bag-olive-green-v1",
+      "keywords": [
+        "The Large Toiletry Bag",
+        "the large toiletry bag",
+        "Large Toiletry Bag",
+        "large toiletry bag"
+      ],
+      "priority": 11,
+      "price": "$66",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/172ceb5b-6e28-49c4-8c8e-0c97f5210d3f_77c3ae7c-ee45-4729-8c16-62c0436f2ca6.jpg?v=1739239298"
+    },
+    {
+      "id": "the-large-aluminum-edition",
+      "label": "The Large: Aluminum Edition",
+      "url": "https://www.awaytravel.com/products/aluminum-large-silver",
+      "keywords": [
+        "The Large: Aluminum Edition",
+        "the large: aluminum edition",
+        "Large: Aluminum Edition",
+        "large: aluminum edition"
+      ],
+      "priority": 11,
+      "price": "$670",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Aluminum_Silver_Large_02_d91c1611-36dd-4960-9d96-dcc61491af42.jpg?v=1742829767"
+    },
+    {
+      "id": "the-medium",
+      "label": "The Medium",
+      "url": "https://www.awaytravel.com/products/medium-scenic-route",
+      "keywords": [
+        "Medium suitcase",
+        "medium suitcase",
+        "The Medium",
+        "the medium",
+        "Medium",
+        "medium"
+      ],
+      "priority": 11,
+      "price": "$278",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Summer_PC_Sea-Olive_Medium_01.jpg?v=1780604801"
+    },
+    {
+      "id": "the-medium-aluminum-edition",
+      "label": "The Medium: Aluminum Edition",
+      "url": "https://www.awaytravel.com/products/aluminum-medium-onyx-black",
+      "keywords": [
+        "The Medium: Aluminum Edition",
+        "the medium: aluminum edition",
+        "Medium: Aluminum Edition",
+        "medium: aluminum edition"
+      ],
+      "priority": 11,
+      "price": "$652",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Aluminum_Onyx_Medium_02_5cb847f6-c09b-496d-9df9-905ffc0d8ec9.jpg?v=1742829863"
+    },
+    {
+      "id": "the-protective-packing-cube",
+      "label": "The Protective Packing Cube",
+      "url": "https://www.awaytravel.com/products/protective-packing-cube-jet-black",
+      "keywords": [
+        "The Protective Packing Cube",
+        "the protective packing cube",
+        "Protective Packing Cube",
+        "protective packing cube"
+      ],
+      "priority": 11,
+      "price": "$68",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/4c9eeb7b-a56a-4e71-b5c8-1f939739d676_e105e31c-4c29-41ce-bbd6-3adac429d99f.jpg?v=1736350913"
+    },
+    {
+      "id": "the-trunk",
+      "label": "The Trunk",
+      "url": "https://www.awaytravel.com/products/trunk-clay-pink",
+      "keywords": [
+        "The Trunk",
+        "the trunk",
+        "Trunk",
+        "trunk"
+      ],
+      "priority": 11,
+      "price": "$369",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_PC_Matte_Clay_Trunk_02_c0f1b008-1459-4565-bb0a-fae92558cad5.jpg?v=1739239781"
+    },
+    {
+      "id": "the-weekender",
+      "label": "The Weekender",
+      "url": "https://www.awaytravel.com/products/weekender-olive-green",
+      "keywords": [
+        "The Weekender",
+        "the weekender",
+        "Weekender",
+        "weekender"
+      ],
+      "priority": 11,
+      "price": "$198",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_EverywhereBag_Large_Olive_01.jpg?v=1761682785"
+    },
+    {
+      "id": "toy-story-5-stadium-bag",
+      "label": "Toy Story 5 Stadium Bag",
+      "url": "https://www.awaytravel.com/products/toy-story-5-stadium-bag-buzz-lightyear-purple",
+      "keywords": [
+        "Toy Story 5 Stadium Bag",
+        "toy story 5 stadium bag"
+      ],
+      "priority": 11,
+      "price": "$83",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_ToyStory_StadiumBag_Buzz_01_3a3dacbc-8d8c-4d26-9298-7b2105110eae.jpg?v=1782928336"
+    },
+    {
+      "id": "transit-canvas-weekender",
+      "label": "Transit Canvas Weekender",
+      "url": "https://www.awaytravel.com/products/transit-canvas-weekender-transit-canvas-tan",
+      "keywords": [
+        "Transit Canvas Weekender",
+        "transit canvas weekender"
+      ],
+      "priority": 11,
+      "price": "$253",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/e08f3169-8cc5-44e4-901f-88408dc896da_4ffe73fe-ca84-4e60-a18b-eb694ca7b3cc.jpg?v=1739239793"
+    },
+    {
+      "id": "active-backpack-26l",
+      "label": "Active Backpack 26L",
+      "url": "https://www.awaytravel.com/products/active-backpack-26l-vivid-blue",
+      "keywords": [
+        "Active Backpack 26L",
+        "active backpack 26l"
+      ],
+      "priority": 10,
+      "price": "$110",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_FAR_Backpack_26L_Blue_01.jpg?v=1741119625"
+    },
+    {
+      "id": "active-convertible-backpack-25l",
+      "label": "Active Convertible Backpack 25L",
+      "url": "https://www.awaytravel.com/products/active-convertible-backpack-25l-forest-green",
+      "keywords": [
+        "Active Convertible Backpack 25L",
+        "active convertible backpack 25l"
+      ],
+      "priority": 10,
+      "price": "$153",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/32824_OutdoorBackpack25L_CoreGreen_Front_004_e1d9fd48-62ad-4d39-9b2f-0ebe0f5f47a7.jpg?v=1739239480"
+    },
+    {
+      "id": "active-convertible-backpack-45l",
+      "label": "Active Convertible Backpack 45L",
+      "url": "https://www.awaytravel.com/products/active-convertible-backpack-45l-vivid-blue",
+      "keywords": [
+        "Active Convertible Backpack 45L",
+        "active convertible backpack 45l"
+      ],
+      "priority": 10,
+      "price": "$187",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_FAR_Backpack_45L_Blue_02.jpg?v=1739290273"
+    },
+    {
+      "id": "active-daypack-20l",
+      "label": "Active Daypack 20L",
+      "url": "https://www.awaytravel.com/products/active-daypack-20l-jet-black",
+      "keywords": [
+        "Active Daypack 20L",
+        "active daypack 20l"
+      ],
+      "priority": 10,
+      "price": "$85",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Outdoor_Daypack_20L_Black_01.jpg?v=1741110675"
+    },
+    {
+      "id": "active-duffle-40l",
+      "label": "Active Duffle 40L",
+      "url": "https://www.awaytravel.com/products/active-duffle-40l-jet-black",
+      "keywords": [
+        "Active Duffle 40L",
+        "active duffle 40l"
+      ],
+      "priority": 10,
+      "price": "$127",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_OutdoorDuffle40L_Black_Front.jpg?v=1739290331"
+    },
+    {
+      "id": "active-duffle-55l",
+      "label": "Active Duffle 55L",
+      "url": "https://www.awaytravel.com/products/active-duffle-55l-jet-black",
+      "keywords": [
+        "Active Duffle 55L",
+        "active duffle 55l"
+      ],
+      "priority": 10,
+      "price": "$170",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_FAR_Duffle_55L_Black_01_270cc5a2-2daa-4489-820a-bea5ef5eebec.jpg?v=1739239809"
+    },
+    {
+      "id": "active-duffle-70l",
+      "label": "Active Duffle 70L",
+      "url": "https://www.awaytravel.com/products/active-duffle-70l-burgundy-red",
+      "keywords": [
+        "Active Duffle 70L",
+        "active duffle 70l"
+      ],
+      "priority": 10,
+      "price": "$161",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/619bd434-8fff-420c-b2b4-d0212bcc4b34_c6e1ead2-ecb5-4b9b-9cf2-057a28a5a617.jpg?v=1739239458"
+    },
+    {
+      "id": "active-messenger-16l",
+      "label": "Active Messenger 16L",
+      "url": "https://www.awaytravel.com/products/active-messenger-16l-atomic-celery",
+      "keywords": [
+        "Active Messenger 16L",
+        "active messenger 16l"
+      ],
+      "priority": 10,
+      "price": "$68",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_FAR_Messenger_16L_Celery_01.jpg?v=1739290253"
+    },
+    {
+      "id": "active-rolling-duffle-85l",
+      "label": "Active Rolling Duffle 85L",
+      "url": "https://www.awaytravel.com/products/active-rolling-duffle-85l-navy-blue",
+      "keywords": [
+        "Active Rolling Duffle 85L",
+        "active rolling duffle 85l"
+      ],
+      "priority": 10,
+      "price": "$316",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/295412a7-ea01-4c4d-b8a9-90479c4e0e8e_e0af1e4a-3ea7-4d55-86ef-aa076cbc32f3.jpg?v=1739239753"
+    },
+    {
+      "id": "active-tote-45l",
+      "label": "Active Tote 45L",
+      "url": "https://www.awaytravel.com/products/active-tote-45l-burgundy-red",
+      "keywords": [
+        "Active Tote 45L",
+        "active tote 45l"
+      ],
+      "priority": 10,
+      "price": "$112",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/3ee8d1cd-7182-4a9b-9686-7c381310109c_98f315d1-69f3-4072-82e7-8a39566ef8c6.jpg?v=1739239966"
+    },
+    {
+      "id": "beach-tote",
+      "label": "Beach Tote",
+      "url": "https://www.awaytravel.com/products/beach-tote-golden-hour-yellow",
+      "keywords": [
+        "Beach Tote",
+        "beach tote"
+      ],
+      "priority": 10,
+      "price": "$108",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Beach_Tote_Yellow_01.jpg?v=1776692954"
+    },
+    {
+      "id": "bridal-bundle",
+      "label": "Bridal Bundle",
+      "url": "https://www.awaytravel.com/products/bridal-bundle",
+      "keywords": [
+        "Bridal Bundle",
+        "bridal bundle"
+      ],
+      "priority": 10,
+      "price": "$593",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Wedding_Bundle_bridal-bundle_Gallery.jpg?v=1774275112"
+    },
+    {
+      "id": "canvas-overnight-bag",
+      "label": "Canvas Overnight Bag",
+      "url": "https://www.awaytravel.com/products/canvas-overnight-bag-saddle-brown",
+      "keywords": [
+        "Canvas Overnight Bag",
+        "canvas overnight bag"
+      ],
+      "priority": 10,
+      "price": "$236",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_MeridianLeather_CanvasOvernight_Brown_01.jpg?v=1760449982"
+    },
+    {
+      "id": "card-case",
+      "label": "Card Case",
+      "url": "https://www.awaytravel.com/products/card-case-jet-black",
+      "keywords": [
+        "Card Case",
+        "card case"
+      ],
+      "priority": 10,
+      "price": "$58",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/fe88f05d-77fb-4450-bb83-b6a7d7f34695.jpg?v=1739239505"
+    },
+    {
+      "id": "clear-cosmetic-case",
+      "label": "Clear Cosmetic Case",
+      "url": "https://www.awaytravel.com/products/clear-cosmetic-case-cherry-red",
+      "keywords": [
+        "Clear Cosmetic Case",
+        "clear cosmetic case"
+      ],
+      "priority": 10,
+      "price": "$85",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_CosmeticCase_Clear_Cherry_01.jpg?v=1759940267"
+    },
+    {
+      "id": "clear-daily-backpack",
+      "label": "Clear Daily Backpack",
+      "url": "https://www.awaytravel.com/products/clear-daily-backpack",
+      "keywords": [
+        "Clear Daily Backpack",
+        "clear daily backpack"
+      ],
+      "priority": 10,
+      "price": "$98",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_School_Backpack_Daily_Clear_01.jpg?v=1783433638"
+    },
+    {
+      "id": "clear-luggage-cover",
+      "label": "Clear Luggage Cover",
+      "url": "https://www.awaytravel.com/products/clear-luggage-cover-medium",
+      "keywords": [
+        "Clear Luggage Cover",
+        "clear luggage cover"
+      ],
+      "priority": 10,
+      "price": "$70",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Cover_Medium_01.jpg?v=1755113471"
+    },
+    {
+      "id": "clear-pouch-set",
+      "label": "Clear Pouch Set",
+      "url": "https://www.awaytravel.com/products/clear-pouch-set-salt-white",
+      "keywords": [
+        "Clear Pouch Set",
+        "clear pouch set"
+      ],
+      "priority": 10,
+      "price": "$55",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_PouchSet_Clear_Salt_01.jpg?v=1755177201"
+    },
+    {
+      "id": "clear-toiletry-bag",
+      "label": "Clear Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/clear-toiletry-bag-coast-blue",
+      "keywords": [
+        "Clear Toiletry Bag",
+        "clear toiletry bag"
+      ],
+      "priority": 10,
+      "price": "$75",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_ToiletryCase_Clear_Coast_02.jpg?v=1787692577"
+    },
+    {
+      "id": "compact-packaway-closet",
+      "label": "Compact PackAway™ Closet",
+      "url": "https://www.awaytravel.com/products/compact-pack-away-closet",
+      "keywords": [
+        "Compact PackAway™ Closet",
+        "compact packaway™ closet"
+      ],
+      "priority": 10,
+      "price": "$98",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Closet_Carry-On_01.jpg?v=1777575697"
+    },
+    {
+      "id": "compression-packaway-closet",
+      "label": "Compression PackAway™ Closet",
+      "url": "https://www.awaytravel.com/products/compression-pack-away-closet-jet-black",
+      "keywords": [
+        "Compression PackAway™ Closet",
+        "compression packaway™ closet"
+      ],
+      "priority": 10,
+      "price": "$128",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Closet_Checked_01.jpg?v=1777575700"
+    },
+    {
+      "id": "cooler-tote",
+      "label": "Cooler Tote",
+      "url": "https://www.awaytravel.com/products/cooler-tote-olive-green",
+      "keywords": [
+        "Cooler Tote",
+        "cooler tote"
+      ],
+      "priority": 10,
+      "price": "$210",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Beach_CoolerBag_Olive_02.jpg?v=1776702943"
+    },
+    {
+      "id": "courtside-tote",
+      "label": "Courtside Tote",
+      "url": "https://www.awaytravel.com/products/courtside-tote-salt-white-textured-nylon",
+      "keywords": [
+        "Courtside Tote",
+        "courtside tote"
+      ],
+      "priority": 10,
+      "price": "$125",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/ff95999a-6055-4b18-8ac0-02b715531e16_fb93f12c-ecc4-4b81-9708-654db03092fa.jpg?v=1739290333"
+    },
+    {
+      "id": "crossbody-strap",
+      "label": "Crossbody Strap",
+      "url": "https://www.awaytravel.com/products/crossbody-strap-red-stripe",
+      "keywords": [
+        "Crossbody Strap",
+        "crossbody strap"
+      ],
+      "priority": 10,
+      "price": "$38",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Fifa_CrossbodyStrap_Red_01.jpg?v=1778611141"
+    },
+    {
+      "id": "custom-checked-wheel-set",
+      "label": "Custom Checked Wheel Set",
+      "url": "https://www.awaytravel.com/products/custom-checked-wheel-set-salt-white",
+      "keywords": [
+        "Custom Checked Wheel Set",
+        "custom checked wheel set"
+      ],
+      "priority": 10,
+      "price": "$60",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Custom_Wheels_Salt_01.jpg?v=1762265315"
+    },
+    {
+      "id": "custom-handle-set",
+      "label": "Custom Handle Set",
+      "url": "https://www.awaytravel.com/products/custom-handle-set-coast-blue",
+      "keywords": [
+        "Custom Handle Set",
+        "custom handle set"
+      ],
+      "priority": 10,
+      "price": "$40",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Custom_Handles_Coast_01.jpg?v=1761601733"
+    },
+    {
+      "id": "dry-bag-duo",
+      "label": "Dry Bag Duo",
+      "url": "https://www.awaytravel.com/products/dry-bag-duo-cherry-red",
+      "keywords": [
+        "Dry Bag Duo",
+        "dry bag duo"
+      ],
+      "priority": 10,
+      "price": "$68",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Beach_DryBag_Red_01.jpg?v=1776284135"
+    },
+    {
+      "id": "explorer-essentials-bundle",
+      "label": "Explorer Essentials Bundle",
+      "url": "https://www.awaytravel.com/products/explorer-essentials-bundle",
+      "keywords": [
+        "Explorer Essentials Bundle",
+        "explorer essentials bundle"
+      ],
+      "priority": 10,
+      "price": "$670",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/Holiday_25_Ecomm-Bundles-BCO_LRG-6x5-gray.jpg?v=1766723976"
+    },
+    {
+      "id": "fabric-luggage-cover",
+      "label": "Fabric Luggage Cover",
+      "url": "https://www.awaytravel.com/products/fabric-luggage-cover-large",
+      "keywords": [
+        "Fabric Luggage Cover",
+        "fabric luggage cover"
+      ],
+      "priority": 10,
+      "price": "$85",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_LuggageCover_Black_Large_01.jpg?v=1761258887"
+    },
+    {
+      "id": "featherlight-backpack",
+      "label": "Featherlight Backpack",
+      "url": "https://www.awaytravel.com/products/featherlight-backpack-clay-pink",
+      "keywords": [
+        "Featherlight Collection",
+        "featherlight collection",
+        "Featherlight Backpack",
+        "featherlight backpack"
+      ],
+      "priority": 10,
+      "price": "$78",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/100816a6-f656-40b0-b412-012af6fd25c3.jpg?v=1740001020"
+    },
+    {
+      "id": "featherlight-cargo-backpack",
+      "label": "Featherlight Cargo Backpack",
+      "url": "https://www.awaytravel.com/products/featherlight-cargo-backpack-nordic-gray",
+      "keywords": [
+        "Featherlight Cargo Backpack",
+        "featherlight cargo backpack"
+      ],
+      "priority": 10,
+      "price": "$94",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Cargo_Gray_01.jpg?v=1753903195"
+    },
+    {
+      "id": "featherlight-cargo-pack",
+      "label": "Featherlight Cargo Pack",
+      "url": "https://www.awaytravel.com/products/featherlight-cargo-pack-amaro-brown",
+      "keywords": [
+        "Featherlight Cargo Pack",
+        "featherlight cargo pack"
+      ],
+      "priority": 10,
+      "price": "$54",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_CargoBag_Amaro_01.jpg?v=1741127882"
+    },
+    {
+      "id": "featherlight-crossbody",
+      "label": "Featherlight Crossbody",
+      "url": "https://www.awaytravel.com/products/featherlight-crossbody-salt-white",
+      "keywords": [
+        "Featherlight Crossbody",
+        "featherlight crossbody"
+      ],
+      "priority": 10,
+      "price": "$46",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Crossbody_Small_Salt_01.jpg?v=1768332438"
+    },
+    {
+      "id": "featherlight-daily-backpack",
+      "label": "Featherlight Daily Backpack",
+      "url": "https://www.awaytravel.com/products/featherlight-daily-backpack-tidal-blue",
+      "keywords": [
+        "Featherlight Daily Backpack",
+        "featherlight daily backpack"
+      ],
+      "priority": 10,
+      "price": "$98",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_School_Backpack_Daily_TidalBlue_01.jpg?v=1783433638"
+    },
+    {
+      "id": "featherlight-daily-cosmetic-case",
+      "label": "Featherlight Daily Cosmetic Case",
+      "url": "https://www.awaytravel.com/products/featherlight-daily-cosmetic-case-misty-purple",
+      "keywords": [
+        "Featherlight Daily Cosmetic Case",
+        "featherlight daily cosmetic case"
+      ],
+      "priority": 10,
+      "price": "$88",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_CosmeticCase_MistyPurple_01.jpg?v=1784580868"
+    },
+    {
+      "id": "featherlight-daily-tote",
+      "label": "Featherlight Daily Tote",
+      "url": "https://www.awaytravel.com/products/featherlight-daily-tote-tidal-blue",
+      "keywords": [
+        "Featherlight Daily Tote",
+        "featherlight daily tote"
+      ],
+      "priority": 10,
+      "price": "$108",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_School_DailyTote_TidalBlue_01.jpg?v=1783433750"
+    },
+    {
+      "id": "featherlight-diaper-backpack",
+      "label": "Featherlight Diaper Backpack",
+      "url": "https://www.awaytravel.com/products/featherlight-diaper-backpack-amaro-brown",
+      "keywords": [
+        "Featherlight Diaper Backpack",
+        "featherlight diaper backpack"
+      ],
+      "priority": 10,
+      "price": "$160",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Diaper_Backpack_Amaro_01.jpg?v=1746459883"
+    },
+    {
+      "id": "featherlight-diaper-tote",
+      "label": "Featherlight Diaper Tote",
+      "url": "https://www.awaytravel.com/products/featherlight-diaper-tote-amaro-brown",
+      "keywords": [
+        "Featherlight Diaper Tote",
+        "featherlight diaper tote"
+      ],
+      "priority": 10,
+      "price": "$160",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Diaper_Tote_Amaro_01.jpg?v=1746459730"
+    },
+    {
+      "id": "featherlight-duo-crossbody",
+      "label": "Featherlight Duo Crossbody",
+      "url": "https://www.awaytravel.com/products/featherlight-duo-crossbody-camel-brown",
+      "keywords": [
+        "Featherlight Duo Crossbody",
+        "featherlight duo crossbody"
+      ],
+      "priority": 10,
+      "price": "$52",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_DuoCrossbody_Camel_01.jpg?v=1769724648"
+    },
+    {
+      "id": "featherlight-hanging-travel-vanity",
+      "label": "Featherlight Hanging Travel Vanity",
+      "url": "https://www.awaytravel.com/products/featherlight-hanging-travel-vanity-camel-brown",
+      "keywords": [
+        "Featherlight Hanging Travel Vanity",
+        "featherlight hanging travel vanity"
+      ],
+      "priority": 10,
+      "price": "$78",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Vanity_Camel_01.jpg?v=1770129238"
+    },
+    {
+      "id": "featherlight-jewelry-roll",
+      "label": "Featherlight Jewelry Roll",
+      "url": "https://www.awaytravel.com/products/featherlight-jewelry-roll-jet-black",
+      "keywords": [
+        "Featherlight Jewelry Roll",
+        "featherlight jewelry roll"
+      ],
+      "priority": 10,
+      "price": "$65",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_VDay_JewelryRoll_Black_07.jpg?v=1768341975"
+    },
+    {
+      "id": "featherlight-mini-daily-tote",
+      "label": "Featherlight Mini Daily Tote",
+      "url": "https://www.awaytravel.com/products/featherlight-mini-daily-tote-opal-blue",
+      "keywords": [
+        "Featherlight Mini Daily Tote",
+        "featherlight mini daily tote"
+      ],
+      "priority": 10,
+      "price": "$62",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Glazed_MiniTote_Blue_01.jpg?v=1772472930"
+    },
+    {
+      "id": "featherlight-overnight-bag",
+      "label": "Featherlight Overnight Bag",
+      "url": "https://www.awaytravel.com/products/featherlight-overnight-bag-camel-brown",
+      "keywords": [
+        "Featherlight Overnight Bag",
+        "featherlight overnight bag"
+      ],
+      "priority": 10,
+      "price": "$115",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Overnight_Camel_01.jpg?v=1770672876"
+    },
+    {
+      "id": "featherlight-sling-bag",
+      "label": "Featherlight Sling Bag",
+      "url": "https://www.awaytravel.com/products/featherlight-sling-bag-misty-purple",
+      "keywords": [
+        "Featherlight Sling Bag",
+        "featherlight sling bag"
+      ],
+      "priority": 10,
+      "price": "$38",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Sling_Purple_01.jpg?v=1741261314"
+    },
+    {
+      "id": "featherlight-tech-set",
+      "label": "Featherlight Tech Set",
+      "url": "https://www.awaytravel.com/products/featherlight-tech-set-jet-black",
+      "keywords": [
+        "Featherlight Tech Set",
+        "featherlight tech set"
+      ],
+      "priority": 10,
+      "price": "$98",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_TechCase_Black_01.jpg?v=1761063849"
+    },
+    {
+      "id": "featherlight-tote",
+      "label": "Featherlight Tote",
+      "url": "https://www.awaytravel.com/products/featherlight-tote-my-baggage",
+      "keywords": [
+        "Featherlight Tote",
+        "featherlight tote"
+      ],
+      "priority": 10,
+      "price": "$128",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Featherlight_Tote_Black_Pride_01.jpg?v=1780072438"
+    },
+    {
+      "id": "garment-bag",
+      "label": "Garment Bag",
+      "url": "https://www.awaytravel.com/products/garment-bag-navy-blue",
+      "keywords": [
+        "Garment Bag",
+        "garment bag"
+      ],
+      "priority": 10,
+      "price": "$158",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_GarmentBag_BiFold_Navy_01.jpg?v=1744715772"
+    },
+    {
+      "id": "garment-duffle",
+      "label": "Garment Duffle",
+      "url": "https://www.awaytravel.com/products/garment-duffle-olive-green",
+      "keywords": [
+        "Garment Duffle",
+        "garment duffle"
+      ],
+      "priority": 10,
+      "price": "$222",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Garment_Duffle_Olive_01.jpg?v=1744722696"
+    },
+    {
+      "id": "gym-bag",
+      "label": "Gym Bag",
+      "url": "https://www.awaytravel.com/products/gym-bag-salt-white",
+      "keywords": [
+        "Gym Bag",
+        "gym bag"
+      ],
+      "priority": 10,
+      "price": "$240",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Sport_Duffle_Salt_01.jpg?v=1749556797"
+    },
+    {
+      "id": "hanging-jewelry-organizer",
+      "label": "Hanging Jewelry Organizer",
+      "url": "https://www.awaytravel.com/products/hanging-jewelry-organizer-flamingo-pink",
+      "keywords": [
+        "Hanging Jewelry Organizer",
+        "hanging jewelry organizer"
+      ],
+      "priority": 10,
+      "price": "$78",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/4811d4cb-8073-4f82-9048-6470071e41f7.jpg?v=1739239604"
+    },
+    {
+      "id": "hanging-toiletry-bag",
+      "label": "Hanging Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/hanging-toiletry-bag-blush-pink",
+      "keywords": [
+        "Hanging Toiletry Bag",
+        "hanging toiletry bag"
+      ],
+      "priority": 10,
+      "price": "$85",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_ToiletryBag_Hanging_Blush_01.jpg?v=1783529442"
+    },
+    {
+      "id": "keepsake-jewelry-case",
+      "label": "Keepsake Jewelry Case",
+      "url": "https://www.awaytravel.com/products/keepsake-jewelry-case-pearl-white",
+      "keywords": [
+        "Keepsake Jewelry Case",
+        "keepsake jewelry case"
+      ],
+      "priority": 10,
+      "price": "$128",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Wedding_JewelryBox_White_01.jpg?v=1773688009"
+    },
+    {
+      "id": "kids-backpack",
+      "label": "Kids Backpack",
+      "url": "https://www.awaytravel.com/products/kids-backpack-alien-green",
+      "keywords": [
+        "Kids Backpack",
+        "kids backpack"
+      ],
+      "priority": 10,
+      "price": "$83",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/06TS26-PR_PDP_ToyStory_Backpack_Alien_01.jpg?v=1780589321"
+    },
+    {
+      "id": "kids-lunch-box",
+      "label": "Kids Lunch Box",
+      "url": "https://www.awaytravel.com/products/kids-lunch-box-marshmallow-white",
+      "keywords": [
+        "Kids Lunch Box",
+        "kids lunch box"
+      ],
+      "priority": 10,
+      "price": "$40",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Kids_LunchBox_Salt_01.jpg?v=1746459540"
+    },
+    {
+      "id": "kids-pouch-set",
+      "label": "Kids Pouch Set",
+      "url": "https://www.awaytravel.com/products/kids-pouch-set-garden-mix",
+      "keywords": [
+        "Kids Pouch Set",
+        "kids pouch set"
+      ],
+      "priority": 10,
+      "price": "$40",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Kids_PouchTrio_01.jpg?v=1776183663"
+    },
+    {
+      "id": "kids-toiletry-bag",
+      "label": "Kids Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/kids-toiletry-bag-dragonfly-blue",
+      "keywords": [
+        "Kids Toiletry Bag",
+        "kids toiletry bag"
+      ],
+      "priority": 10,
+      "price": "$55",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Kids_Toiletry_Blue_01.jpg?v=1776183663"
+    },
+    {
+      "id": "leather-backpack",
+      "label": "Leather Backpack",
+      "url": "https://www.awaytravel.com/products/leather-backpack-saddle-brown",
+      "keywords": [
+        "Leather Backpack",
+        "leather backpack"
+      ],
+      "priority": 10,
+      "price": "$295",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_MeridianLeather_Backpack_Brown_Front.jpg?v=1760449872"
+    },
+    {
+      "id": "leather-crossbody",
+      "label": "Leather Crossbody",
+      "url": "https://www.awaytravel.com/products/leather-crossbody-saddle-brown",
+      "keywords": [
+        "Leather Crossbody",
+        "leather crossbody"
+      ],
+      "priority": 10,
+      "price": "$168",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_MeridianLeather_Crossbody_Brown_01.jpg?v=1760440422"
+    },
+    {
+      "id": "leather-duffle",
+      "label": "Leather Duffle",
+      "url": "https://www.awaytravel.com/products/leather-duffle-saddle-brown",
+      "keywords": [
+        "Leather Duffle",
+        "leather duffle"
+      ],
+      "priority": 10,
+      "price": "$338",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_MeridianLeather_Duffle_Brown_01.jpg?v=1760449893"
+    },
+    {
+      "id": "leather-tote",
+      "label": "Leather Tote",
+      "url": "https://www.awaytravel.com/products/leather-tote-saddle-brown",
+      "keywords": [
+        "Leather Tote",
+        "leather tote"
+      ],
+      "priority": 10,
+      "price": "$253",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_MeridianLeather_Tote_Brown_01.jpg?v=1760440855"
+    },
+    {
+      "id": "mini-riviera-straw-tote",
+      "label": "Mini Riviera Straw Tote",
+      "url": "https://www.awaytravel.com/products/mini-riviera-straw-tote-white-seagrass",
+      "keywords": [
+        "Mini Riviera Straw Tote",
+        "mini riviera straw tote",
+        "Cabana Collection",
+        "cabana collection",
+        "Cabana",
+        "cabana"
+      ],
+      "priority": 10,
+      "price": "$151",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Cabana_MiniTote_White_01.jpg?v=1779976097"
+    },
+    {
+      "id": "mini-tech-case",
+      "label": "Mini Tech Case",
+      "url": "https://www.awaytravel.com/products/mini-tech-case-coast-blue",
+      "keywords": [
+        "Mini Tech Case",
+        "mini tech case"
+      ],
+      "priority": 10,
+      "price": "$48",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_TechCase_Small_Coast_01.jpg?v=1784114962"
+    },
+    {
+      "id": "off-to-college-bundle",
+      "label": "Off to College Bundle",
+      "url": "https://www.awaytravel.com/products/off-to-college-bundle",
+      "keywords": [
+        "Off to College Bundle",
+        "off to college bundle"
+      ],
+      "priority": 10,
+      "price": "$601",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/06TWEEN26_Ecomm-PDP-Bundle_4-1.jpg?v=1784580529"
+    },
+    {
+      "id": "passport-holder",
+      "label": "Passport Holder",
+      "url": "https://www.awaytravel.com/products/passport-holder-saddle-brown",
+      "keywords": [
+        "Passport Holder",
+        "passport holder"
+      ],
+      "priority": 10,
+      "price": "$98",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Holiday_PassportSleeve_SaddleBrown_01.jpg?v=1761065181"
+    },
+    {
+      "id": "passport-wallet",
+      "label": "Passport Wallet",
+      "url": "https://www.awaytravel.com/products/passport-wallet-navy-blue",
+      "keywords": [
+        "Passport Wallet",
+        "passport wallet"
+      ],
+      "priority": 10,
+      "price": "$63",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/fcbca67f-9b82-4808-b23d-114dc93331b8.jpg?v=1739239875"
+    },
+    {
+      "id": "pouch-duo",
+      "label": "Pouch Duo",
+      "url": "https://www.awaytravel.com/products/pouch-duo-sea-green",
+      "keywords": [
+        "Pouch Duo",
+        "pouch duo"
+      ],
+      "priority": 10,
+      "price": "$54",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/44d288a2-2173-4175-bf0f-4daedde7e3fd.jpg?v=1739239574"
+    },
+    {
+      "id": "racket-bag",
+      "label": "Racket Bag",
+      "url": "https://www.awaytravel.com/products/racket-bag-salt-white",
+      "keywords": [
+        "Racket Bag",
+        "racket bag"
+      ],
+      "priority": 10,
+      "price": "$80",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Sport_Racket_Salt_01.jpg?v=1749228704"
+    },
+    {
+      "id": "riviera-straw-tote",
+      "label": "Riviera Straw Tote",
+      "url": "https://www.awaytravel.com/products/riviera-straw-tote-black-seagrass",
+      "keywords": [
+        "Riviera Straw Tote",
+        "riviera straw tote",
+        "Cabana Collection",
+        "cabana collection",
+        "Cabana",
+        "cabana"
+      ],
+      "priority": 10,
+      "price": "$236",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Cabana_Tote_Black_01.jpg?v=1780006086"
+    },
+    {
+      "id": "roll-top-ski-bag",
+      "label": "Roll-Top Ski Bag",
+      "url": "https://www.awaytravel.com/products/roll-top-ski-bag-jet-black",
+      "keywords": [
+        "Roll-Top Ski Bag",
+        "roll-top ski bag"
+      ],
+      "priority": 10,
+      "price": "$168",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_SkiBag_Black_01_51b455a5-d0e5-438b-8469-9c463b44fac4.jpg?v=1763758231"
+    },
+    {
+      "id": "shoe-cube",
+      "label": "Shoe Cube",
+      "url": "https://www.awaytravel.com/products/shoe-cube-large-jet-black",
+      "keywords": [
+        "Shoe Cube",
+        "shoe cube"
+      ],
+      "priority": 10,
+      "price": "$38",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_ShoeCubes_Large_Black_02.jpg?v=1782237796"
+    },
+    {
+      "id": "slim-jewelry-organizer",
+      "label": "Slim Jewelry Organizer",
+      "url": "https://www.awaytravel.com/products/slim-jewelry-organizer-arctic-blue",
+      "keywords": [
+        "Slim Jewelry Organizer",
+        "slim jewelry organizer"
+      ],
+      "priority": 10,
+      "price": "$106",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Holiday_SlimJewelryOrganizer_ArcticBlue_01.jpg?v=1761067129"
+    },
+    {
+      "id": "small-toiletry-bag",
+      "label": "Small Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/small-toiletry-bag-olive-green",
+      "keywords": [
+        "Small Toiletry Bag",
+        "small toiletry bag"
+      ],
+      "priority": 10,
+      "price": "$65",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_ToiletryBag_Small_Olive_02.jpg?v=1755179709"
+    },
+    {
+      "id": "softside-garment-roller",
+      "label": "Softside Garment Roller",
+      "url": "https://www.awaytravel.com/products/softside-garment-roller-navy-blue",
+      "keywords": [
+        "Softside Garment Roller",
+        "softside garment roller",
+        "Garment Roller",
+        "garment roller"
+      ],
+      "priority": 10,
+      "price": "$495",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Softside_Roller_Navy_01.jpg?v=1770823332"
+    },
+    {
+      "id": "sport-backpack",
+      "label": "Sport Backpack",
+      "url": "https://www.awaytravel.com/products/sport-backpack-jet-black",
+      "keywords": [
+        "Sport Backpack",
+        "sport backpack"
+      ],
+      "priority": 10,
+      "price": "$204",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Sport_Backpack_Black_01.jpg?v=1749139320"
+    },
+    {
+      "id": "sunglasses-pouch",
+      "label": "Sunglasses Pouch",
+      "url": "https://www.awaytravel.com/products/sunglasses-pouch-desert-tan",
+      "keywords": [
+        "Sunglasses Pouch",
+        "sunglasses pouch"
+      ],
+      "priority": 10,
+      "price": "$48",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Holiday_SunglassesPouch_Desert_01.jpg?v=1741985650"
+    },
+    {
+      "id": "the-centerfold-garment-sleeve",
+      "label": "The Centerfold Garment Sleeve",
+      "url": "https://www.awaytravel.com/products/centerfold-garment-sleeve-jet-black",
+      "keywords": [
+        "The Centerfold Garment Sleeve",
+        "the centerfold garment sleeve",
+        "Centerfold Garment Sleeve",
+        "centerfold garment sleeve"
+      ],
+      "priority": 10,
+      "price": "$68",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_GarmentSleeve_BCO_Black_01.jpg?v=1741984678"
+    },
+    {
+      "id": "the-circle-zip-pouch",
+      "label": "The Circle Zip Pouch",
+      "url": "https://www.awaytravel.com/products/circle-zip-pouch-jet-black",
+      "keywords": [
+        "The Circle Zip Pouch",
+        "the circle zip pouch",
+        "Circle Zip Pouch",
+        "circle zip pouch"
+      ],
+      "priority": 10,
+      "price": "$32",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/2ef5abdf-053b-4390-b27a-b28fcc50cf70_f4491f61-225c-4edd-a341-ef337174d02b.jpg?v=1739239538"
+    },
+    {
+      "id": "the-cosmetics-bag",
+      "label": "The Cosmetics Bag",
+      "url": "https://www.awaytravel.com/products/cosmetics-bag-clay-pink",
+      "keywords": [
+        "The Cosmetics Bag",
+        "the cosmetics bag",
+        "Cosmetics Bag",
+        "cosmetics bag"
+      ],
+      "priority": 10,
+      "price": "$78",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/a1454713-56bd-4190-a534-c90aa1232ba2_32718d2d-6924-4b89-916c-4ef12f895181.jpg?v=1736350302"
+    },
+    {
+      "id": "the-double-diaper-backpack",
+      "label": "The Double Diaper Backpack",
+      "url": "https://www.awaytravel.com/products/double-diaper-backpack-clay-pink",
+      "keywords": [
+        "The Double Diaper Backpack",
+        "the double diaper backpack",
+        "Double Diaper Backpack",
+        "double diaper backpack"
+      ],
+      "priority": 10,
+      "price": "$198",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/db1efb56-474d-4e03-82d7-0d7a1608ad28_0e6403d5-f6f2-4b3a-8001-77c024d53636.jpg?v=1739239652"
+    },
+    {
+      "id": "the-double-diaper-tote",
+      "label": "The Double Diaper Tote",
+      "url": "https://www.awaytravel.com/products/double-diaper-tote-clay-pink",
+      "keywords": [
+        "The Double Diaper Tote",
+        "the double diaper tote",
+        "Double Diaper Tote",
+        "double diaper tote"
+      ],
+      "priority": 10,
+      "price": "$198",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/d4ba6518-87f5-4f25-8081-5562dfb509bb_44196eb9-026b-4119-a3dd-4c181fda7f4e.jpg?v=1739239596"
+    },
+    {
+      "id": "the-everywhere-sling-bag",
+      "label": "The Everywhere Sling Bag",
+      "url": "https://www.awaytravel.com/products/everywhere-sling-bag-sunrise",
+      "keywords": [
+        "The Everywhere Sling Bag",
+        "the everywhere sling bag",
+        "Everywhere Sling Bag",
+        "everywhere sling bag"
+      ],
+      "priority": 10,
+      "price": "$85",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/96c1752b-e85c-44d7-a69b-290f9614eefe_df5681d6-1716-40c9-ba5f-10a40c7d0728.jpg?v=1736350944"
+    },
+    {
+      "id": "the-everywhere-tote",
+      "label": "The Everywhere Tote",
+      "url": "https://www.awaytravel.com/products/everywhere-tote-salt-white",
+      "keywords": [
+        "The Everywhere Tote",
+        "the everywhere tote",
+        "Everywhere Tote",
+        "everywhere tote"
+      ],
+      "priority": 10,
+      "price": "$126",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Tote_Salt_01_79b5b4a4-ed3b-495a-8cfb-5967c2a5232e.jpg?v=1739239738"
+    },
+    {
+      "id": "the-everywhere-zip-backpack",
+      "label": "The Everywhere Zip Backpack",
+      "url": "https://www.awaytravel.com/products/everywhere-zip-backpack-salt-white-textured-nylon",
+      "keywords": [
+        "The Everywhere Zip Backpack",
+        "the everywhere zip backpack",
+        "Everywhere Zip Backpack",
+        "everywhere zip backpack"
+      ],
+      "priority": 10,
+      "price": "$198",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/efddaa3d-2e70-4c99-b4e7-f8399523b89e_b8b93bd2-872b-48db-97a4-7733a5b31136.jpg?v=1759804423"
+    },
+    {
+      "id": "the-garment-bag",
+      "label": "The Garment Bag",
+      "url": "https://www.awaytravel.com/products/garment-bag-jet-black-archive",
+      "keywords": [
+        "The Garment Bag",
+        "the garment bag",
+        "Garment Bag",
+        "garment bag"
+      ],
+      "priority": 10,
+      "price": "$165",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_GarmentBag_Black_02_7b8c490f-473f-45b7-9c4b-e6b67085315f.jpg?v=1744714943"
+    },
+    {
+      "id": "the-hanging-toiletry-bag",
+      "label": "The Hanging Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/hanging-toiletry-bag-green",
+      "keywords": [
+        "The Hanging Toiletry Bag",
+        "the hanging toiletry bag",
+        "Hanging Toiletry Bag",
+        "hanging toiletry bag"
+      ],
+      "priority": 10,
+      "price": "$62",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_HangingToiletry_Green_01.jpg?v=1739290252"
+    },
+    {
+      "id": "the-luggage-tag",
+      "label": "The Luggage Tag",
+      "url": "https://www.awaytravel.com/products/luggage-tag-the-words",
+      "keywords": [
+        "The Luggage Tag",
+        "the luggage tag",
+        "Luggage Tag",
+        "luggage tag"
+      ],
+      "priority": 10,
+      "price": "$38",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_LuggageTag_Cherry_Pride_BCO_01_Declaration.jpg?v=1780175770"
+    },
+    {
+      "id": "the-mini-crossbody",
+      "label": "The Mini Crossbody",
+      "url": "https://www.awaytravel.com/products/mini-crossbody-glazed-opal-blue",
+      "keywords": [
+        "The Mini Crossbody",
+        "the mini crossbody",
+        "Mini Crossbody",
+        "mini crossbody"
+      ],
+      "priority": 10,
+      "price": "$68",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Glazed_Mini_Blue_01.jpg?v=1772552368"
+    },
+    {
+      "id": "the-overnight-bag",
+      "label": "The Overnight Bag",
+      "url": "https://www.awaytravel.com/products/overnight-bag-olive-green",
+      "keywords": [
+        "The Overnight Bag",
+        "the overnight bag",
+        "Overnight Bag",
+        "overnight bag"
+      ],
+      "priority": 10,
+      "price": "$182",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/95b6484a-8c2e-4bb8-bdc2-22a9e4784dbb_c0c653df-174f-4178-974f-7257ba03a04a.jpg?v=1741980507"
+    },
+    {
+      "id": "the-packable-sling-bag",
+      "label": "The Packable Sling Bag",
+      "url": "https://www.awaytravel.com/products/packable-sling-bag-cayenne",
+      "keywords": [
+        "The Packable Sling Bag",
+        "the packable sling bag",
+        "Packable Sling Bag",
+        "packable sling bag"
+      ],
+      "priority": 10,
+      "price": "$36",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Packable_Sling_Orange_01new_f75925ad-502c-4c70-9d6e-d2917d3d4169.jpg?v=1736350655"
+    },
+    {
+      "id": "the-pet-carrier",
+      "label": "The Pet Carrier",
+      "url": "https://www.awaytravel.com/products/pet-carrier-olive-green",
+      "keywords": [
+        "The Pet Carrier",
+        "the pet carrier",
+        "Pet Carrier",
+        "pet carrier"
+      ],
+      "priority": 10,
+      "price": "$182",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_PetCarrier_Olive_01.jpg?v=1755782154"
+    },
+    {
+      "id": "the-sleep-mask",
+      "label": "The Sleep Mask",
+      "url": "https://www.awaytravel.com/products/sleep-mask-coast-blue",
+      "keywords": [
+        "The Sleep Mask",
+        "the sleep mask",
+        "Sleep Mask",
+        "sleep mask"
+      ],
+      "priority": 10,
+      "price": "$45",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_TravelWell_SleepMask_Coast_02_f253c7ea-2e8b-4bec-9961-d19c374f7967.jpg?v=1759804415"
+    },
+    {
+      "id": "the-small-everywhere-sling-bag",
+      "label": "The Small Everywhere Sling Bag",
+      "url": "https://www.awaytravel.com/products/small-everywhere-sling-bag-jet-black",
+      "keywords": [
+        "The Small Everywhere Sling Bag",
+        "the small everywhere sling bag",
+        "Small Everywhere Sling Bag",
+        "small everywhere sling bag"
+      ],
+      "priority": 10,
+      "price": "$48",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/3c2be6a3-bbb3-4855-96cd-e9cc5ae0a12a_cdbbf907-08d4-456d-a856-519af65e795f.jpg?v=1739239512"
+    },
+    {
+      "id": "the-small-toiletry-bag",
+      "label": "The Small Toiletry Bag",
+      "url": "https://www.awaytravel.com/products/small-toiletry-bag-jet-black-v1",
+      "keywords": [
+        "The Small Toiletry Bag",
+        "the small toiletry bag",
+        "Small Toiletry Bag",
+        "small toiletry bag"
+      ],
+      "priority": 10,
+      "price": "$58",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_ToiletryBag_Small_Black_01_a7af90ff-c260-4564-9405-409eb2c78215.jpg?v=1739239494"
+    },
+    {
+      "id": "the-train-case",
+      "label": "The Train Case",
+      "url": "https://www.awaytravel.com/products/train-case-glazed-tide-line-stripe",
+      "keywords": [
+        "The Train Case",
+        "the train case",
+        "Train Case",
+        "train case"
+      ],
+      "priority": 10,
+      "price": "$150",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Cabana_TrainCase_01.jpg?v=1779743051"
+    },
+    {
+      "id": "toy-story-5-bag-charm",
+      "label": "Toy Story 5 Bag Charm",
+      "url": "https://www.awaytravel.com/products/toy-story-5-bag-charm-lilypad",
+      "keywords": [
+        "Toy Story 5 Bag Charm",
+        "toy story 5 bag charm"
+      ],
+      "priority": 10,
+      "price": "$38",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/06TS26-PR_PDP_ToyStory_Charm_Lilypad_01.jpg?v=1780589321"
+    },
+    {
+      "id": "toy-story-5-keychain",
+      "label": "Toy Story 5 Keychain",
+      "url": "https://www.awaytravel.com/products/toy-story-5-keychain-toy-story-5",
+      "keywords": [
+        "Toy Story 5 Keychain",
+        "toy story 5 keychain"
+      ],
+      "priority": 10,
+      "price": "$28",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/06TS26-PR_PDP_ToyStory_Charm_Name_01.jpg?v=1780589321"
+    },
+    {
+      "id": "transit-canvas-tote",
+      "label": "Transit Canvas Tote",
+      "url": "https://www.awaytravel.com/products/transit-canvas-tote-transit-canvas-tan",
+      "keywords": [
+        "Transit Canvas Tote",
+        "transit canvas tote"
+      ],
+      "priority": 10,
+      "price": "$236",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/2086e6b3-7318-40f6-b059-a98b3cc8a07e_001a651c-dded-4689-b235-616e86a9e8db.jpg?v=1739239972"
+    },
+    {
+      "id": "travel-glasses-case",
+      "label": "Travel Glasses Case",
+      "url": "https://www.awaytravel.com/products/travel-glasses-case-tide-line-stripe",
+      "keywords": [
+        "Travel Glasses Case",
+        "travel glasses case"
+      ],
+      "priority": 10,
+      "price": "$88",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Cabana_Sunglasses_01_43e6d285-44e8-4579-a45c-8e9734ef15ed.jpg?v=1779975160"
+    },
+    {
+      "id": "travel-wallet",
+      "label": "Travel Wallet",
+      "url": "https://www.awaytravel.com/products/travel-wallet-glacial-pink",
+      "keywords": [
+        "Travel Wallet",
+        "travel wallet"
+      ],
+      "priority": 10,
+      "price": "$98",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Holiday_TravelWallet_GlacialPink_01.jpg?v=1761069423"
+    },
+    {
+      "id": "wirecutter-bundle",
+      "label": "Wirecutter Bundle",
+      "url": "https://www.awaytravel.com/products/wirecutter-bundle",
+      "keywords": [
+        "Wirecutter Bundle",
+        "wirecutter bundle"
+      ],
+      "priority": 10,
+      "price": "$493",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/Holiday25_Ecomm-Bundles-BCO_EWB-6x5-gray.jpg?v=1766723976"
+    },
+    {
+      "id": "zip-card-case",
+      "label": "Zip Card Case",
+      "url": "https://www.awaytravel.com/products/zip-card-case-saddle-brown",
+      "keywords": [
+        "Zip Card Case",
+        "zip card case"
+      ],
+      "priority": 10,
+      "price": "$78",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/7418/0792/files/PDP_Holiday_ZipCardCase_SaddleBrown_01.jpg?v=1761066821"
+    }
+  ]
+}

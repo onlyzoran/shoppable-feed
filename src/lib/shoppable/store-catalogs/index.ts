@@ -1,4 +1,6 @@
 import { ADAHLAZORGAN_CATALOG } from "./adahlazorgan";
+import { ALLBIRDS_CATALOG } from "./allbirds";
+import { AWAYTRAVEL_CATALOG } from "./awaytravel";
 import { BANANHOT_CATALOG } from "./bananhot";
 import { BROOKLINEN_CATALOG } from "./brooklinen";
 import { DROPSSTORE_CATALOG } from "./dropsstore";
@@ -10,6 +12,8 @@ import { WILDFLOWERCASES_CATALOG } from "./wildflowercases";
 import type { StoreCatalog } from "./types";
 
 export { ADAHLAZORGAN_CATALOG } from "./adahlazorgan";
+export { ALLBIRDS_CATALOG } from "./allbirds";
+export { AWAYTRAVEL_CATALOG } from "./awaytravel";
 export { BANANHOT_CATALOG } from "./bananhot";
 export { BROOKLINEN_CATALOG } from "./brooklinen";
 export { DROPSSTORE_CATALOG } from "./dropsstore";
@@ -30,6 +34,8 @@ const STORE_CATALOGS: StoreCatalog[] = [
   MEUNDIES_CATALOG,
   WILDFLOWERCASES_CATALOG,
   BROOKLINEN_CATALOG,
+  ALLBIRDS_CATALOG,
+  AWAYTRAVEL_CATALOG,
 ];
 
 export function getStoreCatalog(storeUrl: string): StoreCatalog | null {

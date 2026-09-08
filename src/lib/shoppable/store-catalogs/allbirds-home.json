@@ -1,0 +1,801 @@
+{
+  "storeHostname": "allbirds.com",
+  "source": "https://www.allbirds.com",
+  "fetchedFrom": "https://www.allbirds.com/products.json?limit=250&page=*",
+  "products": [
+    {
+      "id": "canvas-cruiser",
+      "label": "Canvas Cruiser",
+      "url": "https://www.allbirds.com/products/womens-cruiser-canvas",
+      "keywords": [
+        "Canvas Cruiser Collection",
+        "canvas cruiser collection",
+        "Pantone collection",
+        "pantone collection",
+        "Canvas Cruiser",
+        "canvas cruiser"
+      ],
+      "priority": 12,
+      "price": "$75",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12344_26Q1_Cruiser-Canvas-Warm-White-Natural-White_PDP_LEFT.png?v=1768946396"
+    },
+    {
+      "id": "canvas-cruiser-slip-on",
+      "label": "Canvas Cruiser Slip On",
+      "url": "https://www.allbirds.com/products/womens-cruiser-slip-on-canvas-deep-navy-stripes",
+      "keywords": [
+        "Cruiser Canvas Slip-Ons",
+        "cruiser canvas slip-ons",
+        "Canvas Cruiser Slip On",
+        "canvas cruiser slip on",
+        "Cruiser Canvas Slip-On",
+        "cruiser canvas slip-on",
+        "Canvas Cruiser",
+        "canvas cruiser"
+      ],
+      "priority": 12,
+      "price": "$75",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12492_26Q1_Cruiser-Slip-On-Canvas-Stripes-Deep-Navy-Blizzard-Sole_PDP_LEFT_c46417ce-d3b2-434e-a0c1-ad2b8981c5db.png?v=1774560117"
+    },
+    {
+      "id": "cruiser",
+      "label": "Cruiser",
+      "url": "https://www.allbirds.com/products/mens-cruiser-shadow-blue-natural-white-sole",
+      "keywords": [
+        "Cruiser",
+        "cruiser"
+      ],
+      "priority": 12,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/All-birds_0010.png?v=1783535519"
+    },
+    {
+      "id": "cruiser-corduroy",
+      "label": "Cruiser Corduroy",
+      "url": "https://www.allbirds.com/products/mens-cruiser-corduroy-stony-cream",
+      "keywords": [
+        "Cruiser Corduroy",
+        "cruiser corduroy"
+      ],
+      "priority": 12,
+      "price": "$110",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11872_25Q3_Cruiser-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1.png?v=1756413876"
+    },
+    {
+      "id": "cruiser-mid-explore",
+      "label": "Cruiser Mid Explore",
+      "url": "https://www.allbirds.com/products/womens-cruiser-mid-explore-natural-black",
+      "keywords": [
+        "Cruiser Mid Explore",
+        "cruiser mid explore",
+        "Cruiser Mid",
+        "cruiser mid"
+      ],
+      "priority": 12,
+      "price": "$140",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11765_25Q3_Cruiser-Mid-Explore-Natural-Black-Dark-Grey_PDP_LEFT_cfbf6b08-2b56-44db-96cc-95f247a2afae.png?v=1758235395"
+    },
+    {
+      "id": "cruiser-remix",
+      "label": "Cruiser Remix",
+      "url": "https://www.allbirds.com/products/mens-cruiser-remix",
+      "keywords": [
+        "Cruiser Remix",
+        "cruiser remix"
+      ],
+      "priority": 12,
+      "price": "$140",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11821_25Q3_Cruiser-Remix-Natural-White-Natural-White_PDP_LEFT__1.png?v=1755120150"
+    },
+    {
+      "id": "cruiser-slip-on",
+      "label": "Cruiser Slip On",
+      "url": "https://www.allbirds.com/products/womens-cruiser-slip-on-blizzard",
+      "keywords": [
+        "Cruiser Slip On",
+        "cruiser slip on",
+        "Cruiser Slip",
+        "cruiser slip"
+      ],
+      "priority": 12,
+      "price": "$100",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12451_26Q1_Cruiser-Slip-On-Blizzard-Blizzard-Sole_PDP_LEFT_6b76e0cd-df5b-4ddc-bb7e-b354f44bbd8a.png?v=1768947332"
+    },
+    {
+      "id": "cruiser-slip-on-canvas",
+      "label": "Cruiser Slip On Canvas",
+      "url": "https://www.allbirds.com/products/womens-cruiser-slip-on-canvas-sea-spray-natural-white-sole",
+      "keywords": [
+        "Cruiser Canvas Slip-Ons",
+        "cruiser canvas slip-ons",
+        "Cruiser Slip On Canvas",
+        "cruiser slip on canvas",
+        "Cruiser Canvas Slip-On",
+        "cruiser canvas slip-on",
+        "Cruiser Slip",
+        "cruiser slip"
+      ],
+      "priority": 12,
+      "price": "$100",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/All-birds_0005_c3386c3f-064e-43f2-9d46-66377d0ebd10.png?v=1783537948"
+    },
+    {
+      "id": "cruiser-slip-on-corduroy",
+      "label": "Cruiser Slip On Corduroy",
+      "url": "https://www.allbirds.com/products/mens-cruiser-slip-on-corduroy",
+      "keywords": [
+        "Cruiser Slip On Corduroy",
+        "cruiser slip on corduroy",
+        "Cruiser Slip",
+        "cruiser slip"
+      ],
+      "priority": 12,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11562_25Q3_Cruiser-Slip-On-Corduroy-Dark-Navy-Stony-Cream_PDP_LEFT__1_e5538ee4-8e53-4af4-9f79-f803c27b9973.png?v=1757701019"
+    },
+    {
+      "id": "cruiser-slip-on-tweed",
+      "label": "Cruiser Slip On Tweed",
+      "url": "https://www.allbirds.com/products/mens-cruiser-slip-on-tweed-weathered-brown",
+      "keywords": [
+        "Cruiser Slip On Tweed",
+        "cruiser slip on tweed",
+        "Cruiser Slip",
+        "cruiser slip"
+      ],
+      "priority": 12,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11904_25Q4_Cruiser-Slip-On-Tweed-Weathered-Brown-Weathered-White-Sole_PDP_LEFT.png?v=1761685446"
+    },
+    {
+      "id": "cruiser-terralux",
+      "label": "Cruiser Terralux",
+      "url": "https://www.allbirds.com/products/mens-cruiser-terralux-anthracite",
+      "keywords": [
+        "Cruiser Terralux",
+        "cruiser terralux",
+        "Terralux",
+        "terralux"
+      ],
+      "priority": 12,
+      "price": "$135",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12400_26Q1_Cruiser-Terralux-Anthracite-Dark-Gum-Sole_PDP_LEFT.png?v=1768947640"
+    },
+    {
+      "id": "cruiser-tweed",
+      "label": "Cruiser Tweed",
+      "url": "https://www.allbirds.com/products/mens-cruiser-tweed-weathered-brown",
+      "keywords": [
+        "Cruiser Tweed",
+        "cruiser tweed"
+      ],
+      "priority": 12,
+      "price": "$110",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11902_25Q4_Cruiser-Tweed-Weathered-Brown-Weathered-White-Sole_PDP_LEFT.png?v=1761687073"
+    },
+    {
+      "id": "dasher-nz",
+      "label": "Dasher NZ",
+      "url": "https://www.allbirds.com/products/womens-dasher-nz-blizzard-deep-navy",
+      "keywords": [
+        "Dasher NZ",
+        "dasher nz"
+      ],
+      "priority": 12,
+      "price": "$140",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12464_26Q1_Dasher-NZ-Blizzard-Deep-Navy-Blizzard_PDP_LEFT_e38509e9-51da-49a3-a794-53de6797a109.png?v=1768948779"
+    },
+    {
+      "id": "dasher-nz-relay",
+      "label": "Dasher NZ Relay",
+      "url": "https://www.allbirds.com/products/mens-dasher-nz-relay-natural-black-blizzard",
+      "keywords": [
+        "Dasher NZ Relay",
+        "dasher nz relay",
+        "Dasher Relay",
+        "dasher relay"
+      ],
+      "priority": 12,
+      "price": "$135",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12640_26Q1_Dasher-NZ-Relay-Natural-Black-Blizzard_PDP_LEFT.png?v=1768950664"
+    },
+    {
+      "id": "runner-nz-jersey",
+      "label": "Runner NZ Jersey",
+      "url": "https://www.allbirds.com/products/womens-runner-nz-jersey-light-grey-anthracite",
+      "keywords": [
+        "Jersey Collection",
+        "jersey collection",
+        "Runner NZ Jersey",
+        "runner nz jersey",
+        "Varsity Jersey",
+        "varsity jersey",
+        "Runner Jersey",
+        "runner jersey"
+      ],
+      "priority": 12,
+      "price": "$110",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12561_26Q1_Runner-NZ-Jersey-Light-Grey-Anthracite-Blizzard-Sole_PDP_LEFT_6325abf4-1f99-49af-adde-63c95a8741c8.png?v=1774566541"
+    },
+    {
+      "id": "runner-nz-remix",
+      "label": "Runner NZ Remix",
+      "url": "https://www.allbirds.com/products/mens-runner-nz-remix",
+      "keywords": [
+        "Runner NZ Remix",
+        "runner nz remix",
+        "Runner Remix",
+        "runner remix",
+        "Runner NZ",
+        "runner nz"
+      ],
+      "priority": 12,
+      "price": "$140",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11943_25Q3_Runner-NZ-Remix-Natural-White-Natural-White-Sole_PDP_LEFT__1.png?v=1755120006"
+    },
+    {
+      "id": "runner-nz-slip-on",
+      "label": "Runner NZ Slip On",
+      "url": "https://www.allbirds.com/products/mens-runner-nz-slip-on-light-grey",
+      "keywords": [
+        "Runner NZ Slip On",
+        "runner nz slip on",
+        "Runner Slip",
+        "runner slip"
+      ],
+      "priority": 12,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12558_26Q1_Runner-NZ-Slip-On-Light-Grey-Light-Grey_PDP_LEFT.png?v=1768951211"
+    },
+    {
+      "id": "runner-nz-terralux",
+      "label": "Runner NZ Terralux™",
+      "url": "https://www.allbirds.com/products/mens-runner-nz-terralux-light-grey",
+      "keywords": [
+        "Runner NZ Terralux™",
+        "runner nz terralux™",
+        "Runner Terralux™",
+        "runner terralux™"
+      ],
+      "priority": 12,
+      "price": "$135",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12535_26Q1_Runner-NZ-Terralux-Light-Grey-Parchment_PDP_LEFT.png?v=1768955085"
+    },
+    {
+      "id": "runner-nz-tweed",
+      "label": "Runner NZ Tweed",
+      "url": "https://www.allbirds.com/products/mens-runner-nz-tweed-hazy-indigo",
+      "keywords": [
+        "Runner NZ Tweed",
+        "runner nz tweed",
+        "Runner Tweed",
+        "runner tweed"
+      ],
+      "priority": 12,
+      "price": "$120",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11941_25Q4_Runner-NZ-Tweed-Hazy-Indigo-Light-Grey-Sole_PDP_LEFT.png?v=1761688446"
+    },
+    {
+      "id": "superlight-tree-runner",
+      "label": "SuperLight Tree Runner",
+      "url": "https://www.allbirds.com/products/womens-superlight-tree-runners-light-grey",
+      "keywords": [
+        "SuperLight Tree Runner",
+        "superlight tree runner",
+        "SuperLight Tree",
+        "superlight tree"
+      ],
+      "priority": 12,
+      "price": "$115",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A10598_24Q1_SuperLight-TR-Light-Grey-Medium-Grey-Blizzard_PDP_LEFT__1_769e94b6-4321-4331-abe9-a54819675b19.png?v=1776209291"
+    },
+    {
+      "id": "superlight-tree-runners",
+      "label": "SuperLight Tree Runners",
+      "url": "https://www.allbirds.com/products/womens-superlight-tree-runners-natural-black-dark-grey",
+      "keywords": [
+        "SuperLight Tree Runners",
+        "superlight tree runners",
+        "SuperLight Tree",
+        "superlight tree"
+      ],
+      "priority": 12,
+      "price": "$115",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A10619_24Q1_SuperLight-TR-Natural-Black-Dark-Grey-Blizzard_PDP_LEFT__1.png?v=1776201928"
+    },
+    {
+      "id": "tree-dasher-2",
+      "label": "Tree Dasher 2",
+      "url": "https://www.allbirds.com/products/mens-tree-dashers",
+      "keywords": [
+        "Tree Dasher 2",
+        "tree dasher 2",
+        "Tree Dasher",
+        "tree dasher"
+      ],
+      "priority": 12,
+      "price": "$140",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/AA000YM_SHOE_LEFT_GLOBAL_MENS_TREE_DASHER_2.0_Natural_Black_Blizzard_48bbccd1-a0ef-475d-a3c1-af945ece7fbc.png?v=1751061059"
+    },
+    {
+      "id": "tree-dasher-relay",
+      "label": "Tree Dasher Relay",
+      "url": "https://www.allbirds.com/products/mens-tree-dasher-relay-blizzard",
+      "keywords": [
+        "Tree Dasher Relay",
+        "tree dasher relay",
+        "Tree Dasher",
+        "tree dasher"
+      ],
+      "priority": 12,
+      "price": "$135",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/AA004FW090_SHOE_PROFILE_GLOBAL_WOMENS_TREE_DASHER_RELAY_BLIZZARD_BLIZZARD_16082bc1-7af2-429b-a2a2-c290c7c06b05.png?v=1751061389"
+    },
+    {
+      "id": "tree-runner",
+      "label": "Tree Runner",
+      "url": "https://www.allbirds.com/products/womens-tree-runners-hazy-indigo",
+      "keywords": [
+        "Tree Runner",
+        "tree runner"
+      ],
+      "priority": 12,
+      "price": "$100",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/AB00FVM090_SHOE_PROFILE_GLOBAL_MENS_TREE_RUNNER_HAZY_INDIGO_BLIZZARD_6aa55bbf-dbb2-4830-9c13-ba0927aa024a.png?v=1751165366"
+    },
+    {
+      "id": "tree-runner-go",
+      "label": "Tree Runner Go",
+      "url": "https://www.allbirds.com/products/womens-tree-runner-go-utility",
+      "keywords": [
+        "Tree Runner Go",
+        "tree runner go",
+        "Tree Runner",
+        "tree runner"
+      ],
+      "priority": 12,
+      "price": "$130",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11488_25Q2_Tree_Runner_Go_Utility_Natural_Black_Natural_Black_PDP_LEFT-2000x2000_76300992-0ce1-4e6f-a0ac-bd3b12ef777e.png?v=1751063776"
+    },
+    {
+      "id": "tree-runner-nz",
+      "label": "Tree Runner NZ",
+      "url": "https://www.allbirds.com/products/womens-tree-runner-nz",
+      "keywords": [
+        "Tree Runner NZ",
+        "tree runner nz",
+        "Tree Runner",
+        "tree runner"
+      ],
+      "priority": 12,
+      "price": "$100",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11918_25Q3_Tree_Runner_NZ_Blizzard_Blizzard_Sole_PDP_LEFT-2000x2000_77f92b7c-e2d6-494c-aa3c-caa9a2d8b6bc.png?v=1751898682"
+    },
+    {
+      "id": "varsity",
+      "label": "Varsity",
+      "url": "https://www.allbirds.com/products/mens-varsity-mushroom",
+      "keywords": [
+        "Varsity Collection",
+        "varsity collection",
+        "Varsity",
+        "varsity"
+      ],
+      "priority": 12,
+      "price": "$120",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12585_26Q1_Mens-Varsity-Mushroom-Blizzard-Sole_PDP_LEFT.png?v=1765307399"
+    },
+    {
+      "id": "varsity-airy",
+      "label": "Varsity Airy",
+      "url": "https://www.allbirds.com/products/womens-varsity-airy-mid-yellow",
+      "keywords": [
+        "Varsity Airy's",
+        "varsity airy's",
+        "Varsity Airy",
+        "varsity airy"
+      ],
+      "priority": 12,
+      "price": "$120",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12574_26Q2_Womens-Varsity-Airy-Mid-Yellow-Blizzard-Sole_PDP_LEFT.png?v=1770677958"
+    },
+    {
+      "id": "wool-cruiser",
+      "label": "Wool Cruiser",
+      "url": "https://www.allbirds.com/products/womens-wool-cruiser-natural-grey",
+      "keywords": [
+        "Wool Cruiser",
+        "wool cruiser"
+      ],
+      "priority": 12,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11724_25Q3_Wool-Cruiser-Natural-Grey-Natural-White-Sole_PDP_LEFT__1_d5b7101e-dcbb-4bbf-a3e4-d691971cf3ec.png?v=1754504857"
+    },
+    {
+      "id": "wool-dasher-mizzle",
+      "label": "Wool Dasher Mizzle",
+      "url": "https://www.allbirds.com/products/womens-wool-dasher-mizzles-deep-navy-hazy-indigo",
+      "keywords": [
+        "Wool Dasher Mizzle",
+        "wool dasher mizzle",
+        "Wool Dasher",
+        "wool dasher"
+      ],
+      "priority": 12,
+      "price": "$150",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11089_24Q3_Wool_Dasher_2_Mizzle_Deep_Navy_Hazy_Indigo_PDP_LEFT-2000x2000_e17aeee2-8816-464b-b22d-83257f50263a.png?v=1751052759"
+    },
+    {
+      "id": "wool-runner",
+      "label": "Wool Runner",
+      "url": "https://www.allbirds.com/products/womens-wool-runner-up-mizzles-hazy-indigo",
+      "keywords": [
+        "Wool Runner",
+        "wool runner"
+      ],
+      "priority": 12,
+      "price": "$145",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/AB0074M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER-UP_MIZZLE2_HAZY_INDIGO_RUGGED_KHAKI_9542e175-df7f-4dca-9092-29289041b8cc.png?v=1781829612"
+    },
+    {
+      "id": "wool-runner-nz",
+      "label": "Wool Runner NZ",
+      "url": "https://www.allbirds.com/products/womens-wool-runner-nz-natural-black",
+      "keywords": [
+        "Wool Runner NZ",
+        "wool runner nz",
+        "Wool Runner",
+        "wool runner"
+      ],
+      "priority": 12,
+      "price": "$110",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12009_25Q3_Wool_Runner_NZ_Natural_Black_Natural_Black_Sole_PDP_LEFT_722d0fa8-2302-4608-8fb9-5546367a278e.png?v=1753733930"
+    },
+    {
+      "id": "wool-runner-nz-mid-waterproof",
+      "label": "Wool Runner NZ Mid Waterproof",
+      "url": "https://www.allbirds.com/products/womens-wool-runner-nz-mid-waterproof",
+      "keywords": [
+        "Wool Runner NZ Mid Waterproof",
+        "wool runner nz mid waterproof",
+        "Wool Runner",
+        "wool runner"
+      ],
+      "priority": 12,
+      "price": "$160",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12023_25Q3_Wool-Runner-NZ-Mid-Waterproof-Natural-Black-Natural-White-Sole_PDP_LEFT_15a18748-ff33-4e50-8755-fbf0158abcdd.png?v=1757724073"
+    },
+    {
+      "id": "wool-runner-nz-waterproof",
+      "label": "Wool Runner NZ Waterproof",
+      "url": "https://www.allbirds.com/products/mens-wool-runner-nz-waterproof-weathered-brown",
+      "keywords": [
+        "Wool Runner NZ Waterproof",
+        "wool runner nz waterproof",
+        "Wool Runner",
+        "wool runner"
+      ],
+      "priority": 12,
+      "price": "$150",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12071_25Q4_Wool-Runner-NZ-Waterproof-Weathered-Brown-Weathered-Brown-Sole_PDP_LEFT.png?v=1757523475"
+    },
+    {
+      "id": "wool-runners",
+      "label": "Wool Runners",
+      "url": "https://www.allbirds.com/products/mens-wool-runners-savanna-night-navy",
+      "keywords": [
+        "Wool Runners",
+        "wool runners"
+      ],
+      "priority": 12,
+      "price": "$110",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/Allbirds_FY19_August_PDP_WL_RN_Savanna_Night_LAT_f65bf3f0-b6cd-4950-a684-fe3c1317de5f.png?v=1761106668"
+    },
+    {
+      "id": "lounger-lift",
+      "label": "Lounger Lift",
+      "url": "https://www.allbirds.com/products/womens-lounger-lift-rugged-beige-stony-cream",
+      "keywords": [
+        "Lounger Lift",
+        "lounger lift"
+      ],
+      "priority": 11,
+      "price": "$110",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11844_25Q3_Lounger_Lift_Travel_Rugged_Beige_Stony_Cream_Sole_PDP_LEFT-2000x2000.png?v=1751580756"
+    },
+    {
+      "id": "plant-pacer",
+      "label": "Plant Pacer",
+      "url": "https://www.allbirds.com/products/womens-plant-pacers",
+      "keywords": [
+        "Plant Pacer",
+        "plant pacer"
+      ],
+      "priority": 11,
+      "price": "$135",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/AB0081M_SHOE_LEFT_GLOBAL_MENS_PLANT_PACER_NATURAL_WHITE_BLIZZARD.png?v=1781738644"
+    },
+    {
+      "id": "strider",
+      "label": "Strider",
+      "url": "https://www.allbirds.com/products/mens-strider-medium-grey",
+      "keywords": [
+        "Strider",
+        "strider"
+      ],
+      "priority": 11,
+      "price": "$130",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11729_25Q3_Strider-Medium-Grey-Blizzard-Sole_PDP_LEFT.png?v=1754951480"
+    },
+    {
+      "id": "strider-explore",
+      "label": "Strider Explore",
+      "url": "https://www.allbirds.com/products/mens-strider-explore",
+      "keywords": [
+        "Strider Explore",
+        "strider explore"
+      ],
+      "priority": 11,
+      "price": "$130",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11768_25Q4_Strider-Explore-Natural-Black-Dark-Grey-Sole_PDP_LEFT.png?v=1759336475"
+    },
+    {
+      "id": "wool-loungers",
+      "label": "Wool Loungers",
+      "url": "https://www.allbirds.com/products/smallbirds-wool-loungers-big-kids-natural-white-fluffs",
+      "keywords": [
+        "Wool Loungers",
+        "wool loungers"
+      ],
+      "priority": 11,
+      "price": "$75",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/products/AB00A3Y_SHOE_ANGLE_GLOBAL_SMALLBIRDS_BIG_KIDS_WOOL_LOUNGER_FLUFF_NATURAL_WHITE_NATURAL_WHITE.png?v=1666737382"
+    },
+    {
+      "id": "wool-strider",
+      "label": "Wool Strider",
+      "url": "https://www.allbirds.com/products/mens-wool-strider-rugged-beige",
+      "keywords": [
+        "Wool Strider",
+        "wool strider"
+      ],
+      "priority": 11,
+      "price": "$130",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11840_25Q3_Wool-Strider-Rugged-Beige-Natural-White-Sole_PDP_LEFT__1.png?v=1754953087"
+    },
+    {
+      "id": "allbirds-flip-flop",
+      "label": "Allbirds Flip Flop",
+      "url": "https://www.allbirds.com/products/womens-allbirds-flip-flop-natural-black",
+      "keywords": [
+        "Allbirds Flip Flop",
+        "allbirds flip flop",
+        "Allbirds Flip",
+        "allbirds flip"
+      ],
+      "priority": 10,
+      "price": "$50",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12629_26Q1_Allbirds-Flip-Flop-Natural-Black_PDP_LEFT_fc9ee9c3-2231-49fb-ba23-4cecd162c329.png?v=1769462491"
+    },
+    {
+      "id": "allbirds-slide",
+      "label": "Allbirds Slide",
+      "url": "https://www.allbirds.com/products/mens-allbirds-slide-anthracite",
+      "keywords": [
+        "Allbirds Slide",
+        "allbirds slide"
+      ],
+      "priority": 10,
+      "price": "$55",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12411_26Q1_Allbirds-Slide-Anthracite_PDP_LEFT_24dca340-50d5-49fb-8f78-4b8ccb83cfcd.png?v=1769735331"
+    },
+    {
+      "id": "allbirds-slipper",
+      "label": "Allbirds Slipper",
+      "url": "https://www.allbirds.com/products/allbirds-slipper-dark-grey-tweed",
+      "keywords": [
+        "Allbirds Slipper",
+        "allbirds slipper"
+      ],
+      "priority": 10,
+      "price": "$75",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11582_25Q4_Slipper-Tweed-Dark-Grey-Dark-Grey-Sole_PDP_LEFT.png?v=1759335422"
+    },
+    {
+      "id": "breezer-mary-jane",
+      "label": "Breezer Mary Jane",
+      "url": "https://www.allbirds.com/products/womens-breezer-mary-jane-anthracite",
+      "keywords": [
+        "Breezer Mary Jane",
+        "breezer mary jane",
+        "Breezer Mary",
+        "breezer mary"
+      ],
+      "priority": 10,
+      "price": "$115",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12120_25Q4_Breezer-Mary-Jane-Anthracite-Dark-Anthracite-Sole_PDP_LEFT.png?v=1761878842"
+    },
+    {
+      "id": "breezer-point",
+      "label": "Breezer Point",
+      "url": "https://www.allbirds.com/products/womens-breezer-point-warm-white",
+      "keywords": [
+        "Breezer Point",
+        "breezer point"
+      ],
+      "priority": 10,
+      "price": "$125",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A12672_26Q1_Breezer-Point-Warm-White-Natural-Black-Sole_PDP_LEFT.png?v=1768946582"
+    },
+    {
+      "id": "canvas-piper",
+      "label": "Canvas Piper",
+      "url": "https://www.allbirds.com/products/womens-canvas-pipers-blizzard-bark-brown",
+      "keywords": [
+        "Canvas Piper",
+        "canvas piper"
+      ],
+      "priority": 10,
+      "price": "$90",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11505_25Q2_Canvas_Piper_Blizzard_Bark_Brown_PDP_LEFT-2000x2000.png?v=1750966530"
+    },
+    {
+      "id": "courier",
+      "label": "Courier",
+      "url": "https://www.allbirds.com/products/womens-couriers",
+      "keywords": [
+        "Courier",
+        "courier"
+      ],
+      "priority": 10,
+      "price": "$98",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A10795_24Q2_Courier-Blizzard-Light-Grey-Natural-White_PDP_LEFT__1.png?v=1776209239"
+    },
+    {
+      "id": "runner",
+      "label": "Runner",
+      "url": "https://www.allbirds.com/products/womens-runner-up-protect",
+      "keywords": [
+        "Runner",
+        "runner"
+      ],
+      "priority": 10,
+      "price": "$150",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11024_24Q4_Runner-Up-Protect-Natural-Black-Natural-Black_PDP_LEFT__1_c2900450-9543-466c-b8bf-9c5a484d17ef.png?v=1776208978"
+    },
+    {
+      "id": "runner-go",
+      "label": "Runner Go",
+      "url": "https://www.allbirds.com/products/mens-runner-go-luxe",
+      "keywords": [
+        "Runner Go",
+        "runner go"
+      ],
+      "priority": 10,
+      "price": "$125",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A10906_24Q4_Runner-2-Lux-Blizzard-Blizzard_PDP_LEFT__1.png?v=1751059728"
+    },
+    {
+      "id": "runner-protect",
+      "label": "Runner Protect",
+      "url": "https://www.allbirds.com/products/womens-runner-protect-natural-black-chasm-teal",
+      "keywords": [
+        "Runner Protect",
+        "runner protect"
+      ],
+      "priority": 10,
+      "price": "$130",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A10914_24Q4_Runner_Protect_Waitomo_Natural_Black_Multi_Stony_Beige_PDP_SINGLE_3Q-1000x1000.png?v=1776183124"
+    },
+    {
+      "id": "trail-runner",
+      "label": "Trail Runner",
+      "url": "https://www.allbirds.com/products/womens-trail-runners-swt-true-navy-hazy-indigo",
+      "keywords": [
+        "Trail Runner",
+        "trail runner"
+      ],
+      "priority": 10,
+      "price": "$145",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A10723_24Q1_Trail-Runner-SWT-True-Navy-Hazy-Indigo-Natural-Black_PDP_LEFT__1_79054b1d-5fe5-442c-8af7-c5919ba6a1f1.png?v=1750995547"
+    },
+    {
+      "id": "tree-breezer",
+      "label": "Tree Breezer",
+      "url": "https://www.allbirds.com/products/womens-tree-breezers-mist",
+      "keywords": [
+        "Tree Breezer",
+        "tree breezer"
+      ],
+      "priority": 10,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/TB1WMST_SHOE_LEFT_GLOBAL_WOMENS_TREE_BREEZERS_MIST_DARK_GREY.png?v=1751060586"
+    },
+    {
+      "id": "tree-breezer-bow",
+      "label": "Tree Breezer Bow",
+      "url": "https://www.allbirds.com/products/womens-tree-breezer-bow",
+      "keywords": [
+        "Tree Breezer Bow",
+        "tree breezer bow",
+        "Tree Breezer",
+        "tree breezer"
+      ],
+      "priority": 10,
+      "price": "$100",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11594_25Q3_Tree_Breezer_Bow_Medium_Grey_PDP_LEFT-2000x2000.png?v=1751993156"
+    },
+    {
+      "id": "tree-breezers",
+      "label": "Tree Breezers",
+      "url": "https://www.allbirds.com/products/womens-tree-breezers-forage-tan",
+      "keywords": [
+        "Tree Breezers",
+        "tree breezers"
+      ],
+      "priority": 10,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/products/AB00CZW_SHOE_45_GLOBAL_WOMENS_TREE_BREEZER_FORAGE_TAN_FORAGE-TAN.png?v=1707179388"
+    },
+    {
+      "id": "tree-glider",
+      "label": "Tree Glider",
+      "url": "https://www.allbirds.com/products/mens-tree-gliders",
+      "keywords": [
+        "Tree Glider",
+        "tree glider"
+      ],
+      "priority": 10,
+      "price": "$140",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11068_24Q3_Tree_Glider_Cloudy_Grey_Light_Grey_PDP_LEFT-2000x2000_c179b49a-6789-42c3-ab34-6f8fe19af48f.png?v=1751059058"
+    },
+    {
+      "id": "tree-piper",
+      "label": "Tree Piper",
+      "url": "https://www.allbirds.com/products/womens-tree-pipers",
+      "keywords": [
+        "Tree Piper",
+        "tree piper"
+      ],
+      "priority": 10,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE.png?v=1776804757"
+    },
+    {
+      "id": "tree-pipers",
+      "label": "Tree Pipers",
+      "url": "https://www.allbirds.com/products/womens-tree-pipers-natural-black-natural-black",
+      "keywords": [
+        "Tree Pipers",
+        "tree pipers"
+      ],
+      "priority": 10,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/AB00ESW080_SHOE_PROFILE_GLOBAL_MENS_TREE_PIPER_NATURAL_BLACK_NATURAL_BLACK_4abaa970-9cfc-42b4-9963-c535b407f3a9.png?v=1776804570"
+    },
+    {
+      "id": "tree-skipper",
+      "label": "Tree Skipper",
+      "url": "https://www.allbirds.com/products/mens-tree-skippers-jet-black",
+      "keywords": [
+        "Tree Skipper",
+        "tree skipper"
+      ],
+      "priority": 10,
+      "price": "$105",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/TS2MJBW080_SHOE_LEFT_GLOBAL_MENS_TREE_SKIPPER_JET_BLACK_WHITE.png?v=1751166909"
+    },
+    {
+      "id": "tree-topper",
+      "label": "Tree Topper",
+      "url": "https://www.allbirds.com/products/mens-tree-toppers-natural-black",
+      "keywords": [
+        "Tree Topper",
+        "tree topper"
+      ],
+      "priority": 10,
+      "price": "$115",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1104/4168/files/A11185_24Q4_Tree_Topper_Natural_Black_Natural_Black_PDP_LEFT-1000x1000.png?v=1751057517"
+    }
+  ]
+}

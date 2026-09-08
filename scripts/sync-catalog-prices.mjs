@@ -569,6 +569,88 @@ async function syncBrooklinen() {
   );
 }
 
+async function syncAllbirds() {
+  const { path, data } = loadCatalog("allbirds-home.json");
+  if ((data.products ?? []).length === 0) {
+    console.log("ALLBIRDS: catalog empty, skipping price sync");
+    return;
+  }
+
+  const fieldsByUrl = new Map();
+
+  for (let page = 1; page <= 12; page += 1) {
+    const payload = await fetchJson(
+      `https://www.allbirds.com/products.json?limit=250&page=${page}`,
+    );
+    const batch = payload.products ?? [];
+    if (batch.length === 0) {
+      break;
+    }
+
+    for (const product of batch) {
+      const variant = product.variants?.[0];
+      if (!variant?.price) {
+        continue;
+      }
+
+      fieldsByUrl.set(
+        normalizeUrl(`https://www.allbirds.com/products/${product.handle}`),
+        {
+          price: formatUsdPrice(variant.price),
+          imageUrl: product.images?.[0]?.src ?? null,
+        },
+      );
+    }
+  }
+
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "ALLBIRDS");
+  saveCatalog(path, data);
+  console.log(
+    `ALLBIRDS: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
+}
+
+async function syncAwaytravel() {
+  const { path, data } = loadCatalog("awaytravel-home.json");
+  if ((data.products ?? []).length === 0) {
+    console.log("AWAY: catalog empty, skipping price sync");
+    return;
+  }
+
+  const fieldsByUrl = new Map();
+
+  for (let page = 1; page <= 12; page += 1) {
+    const payload = await fetchJson(
+      `https://www.awaytravel.com/products.json?limit=250&page=${page}`,
+    );
+    const batch = payload.products ?? [];
+    if (batch.length === 0) {
+      break;
+    }
+
+    for (const product of batch) {
+      const variant = product.variants?.[0];
+      if (!variant?.price) {
+        continue;
+      }
+
+      fieldsByUrl.set(
+        normalizeUrl(`https://www.awaytravel.com/products/${product.handle}`),
+        {
+          price: formatUsdPrice(variant.price),
+          imageUrl: product.images?.[0]?.src ?? null,
+        },
+      );
+    }
+  }
+
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "AWAY");
+  saveCatalog(path, data);
+  console.log(
+    `AWAY: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
+}
+
 function normalizeCaption(text) {
   return text.toLowerCase().replace(/\s+/g, " ");
 }
@@ -640,6 +722,16 @@ function auditPostsOnExamples() {
       label: "BROOKLINEN",
       file: "brooklinen.json",
       catalogFile: "brooklinen-home.json",
+    },
+    {
+      label: "ALLBIRDS",
+      file: "allbirds.json",
+      catalogFile: "allbirds-home.json",
+    },
+    {
+      label: "AWAY",
+      file: "awaytravel.json",
+      catalogFile: "awaytravel-home.json",
     },
   ];
 
@@ -714,4 +806,6 @@ await syncAdahlazorgan();
 await syncWildflowercases();
 await syncMeundies();
 await syncBrooklinen();
+await syncAllbirds();
+await syncAwaytravel();
 auditPostsOnExamples();

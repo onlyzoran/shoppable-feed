@@ -108,6 +108,26 @@ export const EXAMPLE_SOURCES: ExampleSource[] = [
     profileExternalUrl: "https://www.brooklinen.com",
     profileLinks: ["https://www.brooklinen.com"],
   },
+  {
+    id: "allbirds",
+    label: "ALLBIRDS",
+    profileUrl: "https://www.instagram.com/allbirds/",
+    fileName: "allbirds.json",
+    profileBio:
+      "Comfortable, sustainable shoes & apparel — https://www.allbirds.com",
+    profileExternalUrl: "https://www.allbirds.com",
+    profileLinks: ["https://www.allbirds.com"],
+  },
+  {
+    id: "away",
+    label: "AWAY",
+    profileUrl: "https://www.instagram.com/away/",
+    fileName: "awaytravel.json",
+    profileBio:
+      "Modern travel luggage & bags — https://www.awaytravel.com",
+    profileExternalUrl: "https://www.awaytravel.com",
+    profileLinks: ["https://www.awaytravel.com"],
+  },
 ];
 
 export const VISIBLE_EXAMPLE_SOURCES = EXAMPLE_SOURCES.filter(

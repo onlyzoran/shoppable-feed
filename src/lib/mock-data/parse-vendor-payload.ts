@@ -66,6 +66,18 @@ function mapVendorPost(post: VendorPost, fallbackUsername: string): ParsedVendor
     return null;
   }
 
+  const mediaType = resolveMediaType(post);
+  let { mediaUrl, mediaPosterUrl } = media;
+
+  // Carousel preview must be an image; video slides store mp4 in mediaUrl.
+  if (
+    mediaType === "carousel" &&
+    post.media?.[0]?.type === "video" &&
+    mediaPosterUrl
+  ) {
+    mediaUrl = mediaPosterUrl;
+  }
+
   const author = post.author ?? {};
   const profileUrl = author.url?.trim() ?? "";
 
@@ -75,9 +87,9 @@ function mapVendorPost(post: VendorPost, fallbackUsername: string): ParsedVendor
     avatarUrl: author.profilePictureUrl ?? "",
     isVerified: Boolean(author.isVerifiedProfile),
     postedAt: post.publishedAt ?? new Date(0).toISOString(),
-    mediaUrl: media.mediaUrl,
-    mediaPosterUrl: media.mediaPosterUrl,
-    mediaType: resolveMediaType(post),
+    mediaUrl,
+    mediaPosterUrl,
+    mediaType,
     likesCount: post.likesCount ?? 0,
     commentsCount: post.commentsCount ?? 0,
     repostsCount: post.shareCount ?? 0,
