@@ -31,7 +31,8 @@ export function PostCard({
 }: PostCardProps) {
   const formattedDate = formatPostDate(post.postedAt);
   const showOverlay = buttonPlacement === "overlay";
-  const hidePostProducts = buttonPlacement === "gallery";
+  const hidePostProducts =
+    buttonPlacement === "gallery" || buttonPlacement === "product-post";
   const shoppableButtons = buildShoppableButtonsForPost(post);
   const productButtons = findProductButtons(shoppableButtons);
   const fallbackProductImage = post.mediaPosterUrl ?? post.mediaUrl;

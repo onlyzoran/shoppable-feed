@@ -30,10 +30,12 @@ export function PostProductGalleryTile({
       ) : (
         <span className={styles.productGalleryThumbPlaceholder} aria-hidden />
       )}
-      <span className={styles.productGalleryTitle}>{button.label}</span>
-      {button.price ? (
-        <span className={styles.productGalleryPrice}>{button.price}</span>
-      ) : null}
+      <span className={styles.productGalleryTileMeta}>
+        <span className={styles.productGalleryTitle}>{button.label}</span>
+        {button.price ? (
+          <span className={styles.productGalleryPrice}>{button.price}</span>
+        ) : null}
+      </span>
     </a>
   );
 }

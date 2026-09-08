@@ -11,6 +11,7 @@ import { collectProductButtonsFromPosts } from "@/lib/shoppable";
 import { FeedSkeleton } from "./FeedSkeleton";
 import { PostCard } from "./PostCard";
 import { PostProductGallery } from "./PostProductGallery";
+import { ProductPostCard } from "./ProductPostCard";
 import { ProfileUrlForm } from "./ProfileUrlForm";
 import {
   BUTTON_PLACEMENT_OPTIONS,
@@ -34,6 +35,25 @@ function normalizeProfileUrl(url: string): string {
 
 const EMPTY_INPUT_MESSAGE =
   "Введите ссылку на профиль Instagram, например https://www.instagram.com/username/";
+
+const PRODUCT_POST_GRID_ORDER = 3;
+
+function getPostGridOrder(postIndex: number): number {
+  return postIndex < PRODUCT_POST_GRID_ORDER - 1
+    ? postIndex + 1
+    : postIndex + 2;
+}
+
+function shuffleArray<T>(items: T[]): T[] {
+  const shuffled = [...items];
+
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  return shuffled;
+}
 
 export function FeedPage() {
   const [profileUrl, setProfileUrl] = useState(
@@ -113,13 +133,21 @@ export function FeedPage() {
   const showEmptyPosts =
     status === "success" && posts.length === 0 && hasLoadedOnce;
 
-  const feedProductButtons = useMemo(
+  const galleryProductButtons = useMemo(
     () =>
       buttonPlacement === "gallery"
         ? collectProductButtonsFromPosts(posts)
         : [],
     [buttonPlacement, posts],
   );
+
+  const productPostButtons = useMemo(() => {
+    if (buttonPlacement !== "product-post") {
+      return [];
+    }
+
+    return shuffleArray(collectProductButtonsFromPosts(posts));
+  }, [buttonPlacement, posts]);
 
   return (
     <main className={styles.page}>
@@ -214,22 +242,36 @@ export function FeedPage() {
 
         {status === "success" && posts.length > 0 ? (
           <>
-            {buttonPlacement === "gallery" && feedProductButtons.length > 0 ? (
+            {buttonPlacement === "gallery" && galleryProductButtons.length > 0 ? (
               <section
                 className={styles.feedGallery}
                 aria-label="Product gallery"
               >
-                <PostProductGallery buttons={feedProductButtons} />
+                <PostProductGallery buttons={galleryProductButtons} />
               </section>
             ) : null}
             <section className={styles.grid} aria-label="Лента постов">
-              {posts.map((post) => (
-                <PostCard
+              {posts.map((post, index) => (
+                <div
                   key={post.id}
-                  post={post}
-                  buttonPlacement={buttonPlacement}
-                />
+                  className={styles.gridItem}
+                  style={{ order: getPostGridOrder(index) }}
+                >
+                  <PostCard post={post} buttonPlacement={buttonPlacement} />
+                </div>
               ))}
+              {buttonPlacement === "product-post" &&
+              productPostButtons.length > 0 ? (
+                <div
+                  className={styles.gridItem}
+                  style={{ order: PRODUCT_POST_GRID_ORDER }}
+                >
+                  <ProductPostCard
+                    post={posts[0]}
+                    buttons={productPostButtons}
+                  />
+                </div>
+              ) : null}
             </section>
           </>
         ) : null}
