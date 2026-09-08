@@ -424,6 +424,151 @@ async function syncWildflowercases() {
   );
 }
 
+async function syncMeundies() {
+  const { path, data } = loadCatalog("meundies-home.json");
+  if ((data.products ?? []).length === 0) {
+    console.log("MEUNDIES: catalog empty, skipping price sync");
+    return;
+  }
+
+  const fieldsByUrl = new Map();
+
+  /** Retail prices scraped from meundies.com product pages (fallback when bot protection blocks fetch). */
+  const fallbackByProductId = {
+    moonwalk: { price: "$29" },
+    "alien-arcade": { price: "$26" },
+    "all-over-lace": { price: "$44" },
+    "jurassic-park": { price: "$26" },
+    "halloween-collection": { price: "$26" },
+    "caught-in-your-web": { price: "$26" },
+    "feelfree-plunge-bralette": { price: "$44" },
+    "feelfree-ruched-bralette": { price: "$44" },
+  };
+
+  for (const product of data.products) {
+    if (!product.url.includes("/products/")) {
+      const fallback = fallbackByProductId[product.id];
+      if (fallback?.price && product.price !== fallback.price) {
+        product.price = fallback.price;
+      }
+      continue;
+    }
+
+    try {
+      const response = await fetch(product.url, {
+        headers: {
+          Accept: "text/html,application/xhtml+xml",
+          "Accept-Language": "en-US,en;q=0.9",
+          "User-Agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+        },
+      });
+      if (!response.ok) {
+        console.warn(
+          `MEUNDIES: ${product.label} returned ${response.status}, skipping`,
+        );
+        continue;
+      }
+
+      const html = await response.text();
+      if (html.includes("Vercel Security Checkpoint")) {
+        console.warn(`MEUNDIES: ${product.label} blocked by bot protection`);
+        continue;
+      }
+
+      const nextImage = html.match(
+        /\/_next\/image\?url=(https[^"&]+cdn\.shopify[^"&]+)/i,
+      )?.[1];
+      const shopifyImage = html.match(
+        /(https:\/\/cdn\.shopify\.com\/s\/files\/[^"'\\]+?\.(?:png|jpe?g|webp)(?:\?[^"'\\]*)?)/i,
+      )?.[1];
+      const ogImage = html.match(
+        /<meta property="og:image" content="([^"]+)"/i,
+      )?.[1];
+      const priceMatch =
+        html.match(/Get Once[^$]*\$(\d+(?:\.\d{2})?)/i) ??
+        html.match(/Retail:\s*\$(\d+(?:\.\d{2})?)/i) ??
+        html.match(/#\s*[^#\n]+\n+\$(\d+(?:\.\d{2})?)/);
+      const price = priceMatch ? formatUsdPrice(priceMatch[1]) : null;
+
+      fieldsByUrl.set(normalizeUrl(product.url), {
+        price,
+        imageUrl:
+          (nextImage ? decodeURIComponent(nextImage) : null) ??
+          shopifyImage ??
+          ogImage ??
+          null,
+      });
+    } catch (error) {
+      console.warn(`MEUNDIES: failed to fetch ${product.label}: ${error.message}`);
+    }
+  }
+
+  if (fieldsByUrl.size === 0) {
+    let fallbackUpdated = 0;
+    for (const product of data.products) {
+      const fallback = fallbackByProductId[product.id];
+      if (fallback?.price && product.price !== fallback.price) {
+        product.price = fallback.price;
+        fallbackUpdated += 1;
+      }
+    }
+    saveCatalog(path, data);
+    console.warn(
+      "MEUNDIES: no live product pages fetched (bot protection?). Applied fallback retail prices.",
+    );
+    console.log(`MEUNDIES: fallback prices ${fallbackUpdated}`);
+    return;
+  }
+
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "MEUNDIES");
+  saveCatalog(path, data);
+  console.log(
+    `MEUNDIES: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
+}
+
+async function syncBrooklinen() {
+  const { path, data } = loadCatalog("brooklinen-home.json");
+  if ((data.products ?? []).length === 0) {
+    console.log("BROOKLINEN: catalog empty, skipping price sync");
+    return;
+  }
+
+  const fieldsByUrl = new Map();
+
+  for (let page = 1; page <= 12; page += 1) {
+    const payload = await fetchJson(
+      `https://www.brooklinen.com/products.json?limit=250&page=${page}`,
+    );
+    const batch = payload.products ?? [];
+    if (batch.length === 0) {
+      break;
+    }
+
+    for (const product of batch) {
+      const variant = product.variants?.[0];
+      if (!variant?.price) {
+        continue;
+      }
+
+      fieldsByUrl.set(
+        normalizeUrl(`https://www.brooklinen.com/products/${product.handle}`),
+        {
+          price: formatUsdPrice(variant.price),
+          imageUrl: product.images?.[0]?.src ?? null,
+        },
+      );
+    }
+  }
+
+  const stats = applyCatalogFieldsByUrl(data, fieldsByUrl, "BROOKLINEN");
+  saveCatalog(path, data);
+  console.log(
+    `BROOKLINEN: prices ${stats.priceUpdated}, images ${stats.imageUpdated}, missing price ${stats.missingPrice}, missing image ${stats.missingImage}`,
+  );
+}
+
 function normalizeCaption(text) {
   return text.toLowerCase().replace(/\s+/g, " ");
 }
@@ -485,6 +630,16 @@ function auditPostsOnExamples() {
       label: "WILDFLOWER",
       file: "wildflowercases.json",
       catalogFile: "wildflowercases-home.json",
+    },
+    {
+      label: "MEUNDIES",
+      file: "meundies.json",
+      catalogFile: "meundies-home.json",
+    },
+    {
+      label: "BROOKLINEN",
+      file: "brooklinen.json",
+      catalogFile: "brooklinen-home.json",
     },
   ];
 
@@ -557,4 +712,6 @@ await syncGrez();
 await syncBananhot();
 await syncAdahlazorgan();
 await syncWildflowercases();
+await syncMeundies();
+await syncBrooklinen();
 auditPostsOnExamples();

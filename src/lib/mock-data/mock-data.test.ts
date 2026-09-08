@@ -112,6 +112,24 @@ describe("findExampleByProfileUrl", () => {
     expect(example?.fileName).toBe("wildflowercases.json");
   });
 
+  it("matches meundies profile URL", () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/meundies/",
+    );
+
+    expect(example?.id).toBe("meundies");
+    expect(example?.fileName).toBe("meundies.json");
+  });
+
+  it("matches brooklinen profile URL", () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/brooklinen/",
+    );
+
+    expect(example?.id).toBe("brooklinen");
+    expect(example?.fileName).toBe("brooklinen.json");
+  });
+
   it("returns null for unknown profile", () => {
     expect(
       findExampleByProfileUrl("https://www.instagram.com/unknown-brand/"),
@@ -365,5 +383,90 @@ describe("loadExamplePosts", () => {
           button.label === "Polka Dot | Turquoise and Black",
       ),
     ).toBe(true);
+  });
+
+  it("loads meundies posts with catalog buttons", async () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/meundies/",
+    );
+
+    expect(example).not.toBeNull();
+    const posts = await loadExamplePosts(example!, 12);
+
+    expect(posts.length).toBeGreaterThanOrEqual(10);
+    expect(posts[0].username).toBe("meundies");
+    expect(buildShoppableButtonsForPost(posts[0])[0]).toMatchObject({
+      label: "Магазин",
+      url: "https://www.meundies.com/",
+    });
+
+    const moonwalkPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("moonwalk"),
+    );
+    expect(moonwalkPost).toBeDefined();
+    expect(
+      buildShoppableButtonsForPost(moonwalkPost!).some(
+        (button) => button.kind === "product" && button.label === "Moonwalk",
+      ),
+    ).toBe(true);
+    expect(
+      buildShoppableButtonsForPost(moonwalkPost!).some(
+        (button) =>
+          button.kind === "product" && button.label === "Alien Arcade",
+      ),
+    ).toBe(true);
+
+    const jurassicPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("jurassic park"),
+    );
+    expect(jurassicPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(jurassicPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "Jurassic Park x MeUndies",
+      url: expect.stringContaining(
+        "meundies.com/products/boxer-brief-life-finds-a-way",
+      ),
+      price: "$26",
+    });
+  });
+
+  it("loads brooklinen posts with catalog buttons", async () => {
+    const example = findExampleByProfileUrl(
+      "https://www.instagram.com/brooklinen/",
+    );
+
+    expect(example).not.toBeNull();
+    const posts = await loadExamplePosts(example!, 12);
+
+    expect(posts.length).toBeGreaterThanOrEqual(10);
+    expect(posts[0].username).toBe("brooklinen");
+    expect(buildShoppableButtonsForPost(posts[0])[0]).toMatchObject({
+      label: "Магазин",
+      url: "https://www.brooklinen.com/",
+    });
+
+    const bestSheetsPost = posts.find((post) =>
+      post.caption.toLowerCase().includes("best sheets ever"),
+    );
+    expect(bestSheetsPost).toBeDefined();
+    expect(buildShoppableButtonsForPost(bestSheetsPost!)[1]).toMatchObject({
+      kind: "product",
+      label: "Classic Percale Core Sheet Set",
+      url: expect.stringContaining("brooklinen.com/products/classic-core-sheet-set"),
+      price: "$159",
+      imageUrl: expect.stringMatching(/^https:\/\//),
+    });
+
+    const upgradePost = posts.find((post) =>
+      post.caption.toLowerCase().includes("desert stripe in avocado"),
+    );
+    expect(upgradePost).toBeDefined();
+    const upgradeButtons = buildShoppableButtonsForPost(upgradePost!).filter(
+      (button) => button.kind === "product",
+    );
+    expect(upgradeButtons.map((button) => button.label)).toEqual([
+      "Desert Stripe Avocado",
+      "Heritage Wool Throw",
+    ]);
   });
 });

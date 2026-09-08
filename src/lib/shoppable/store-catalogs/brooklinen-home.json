@@ -1,0 +1,58 @@
+{
+  "storeHostname": "brooklinen.com",
+  "source": "https://www.brooklinen.com",
+  "fetchedFrom": "curated-from-instagram-captions+shopify-products.json",
+  "products": [
+    {
+      "id": "classic-percale-core-sheet-set",
+      "label": "Classic Percale Core Sheet Set",
+      "url": "https://www.brooklinen.com/products/classic-core-sheet-set",
+      "keywords": [
+        "Best Sheets Ever",
+        "best sheets ever",
+        "best. sheets. ever",
+        "the best sheets ever",
+        "best sheets",
+        "fave sheets",
+        "brooklinen sheets",
+        "our sheet"
+      ],
+      "priority": 12,
+      "price": "$159",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0951/7126/files/BKL_25-11_Bedding_Classic_White_CSS_1_x_PDP_WO.jpg?v=1772487751"
+    },
+    {
+      "id": "washed-classic-desert-stripe-avocado",
+      "label": "Desert Stripe Avocado",
+      "url": "https://www.brooklinen.com/products/washed-classic-core-sheet-set",
+      "keywords": [
+        "Desert Stripe in Avocado",
+        "desert stripe in avocado",
+        "Washed Classic in Desert Stripe",
+        "washed classic in desert stripe",
+        "washed classic desert stripe",
+        "desert stripe avocado",
+        "new washed classic"
+      ],
+      "priority": 13,
+      "price": "$229",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0951/7126/files/BKL_26-05_Bedding_WashedClassic_DesertStripeInAvocado_COR_1x_PDP_WOgrey_1bb0bb61-75a1-41fe-adfb-742907bb0b64.jpg?v=1784749722"
+    },
+    {
+      "id": "heritage-wool-throw-algae",
+      "label": "Heritage Wool Throw",
+      "url": "https://www.brooklinen.com/products/heritage-wool-bed-blanket",
+      "keywords": [
+        "Heritage Wool Throw in Algae",
+        "heritage wool throw in algae",
+        "Heritage Wool Throw",
+        "heritage wool throw",
+        "heritage wool",
+        "wool throw in algae"
+      ],
+      "priority": 13,
+      "price": "$299",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0951/7126/files/BKL_26-06_Bedding_Blanket_HeritageWool_Algae_1x_PDP_WOgrey.jpg?v=1784659355"
+    }
+  ]
+}

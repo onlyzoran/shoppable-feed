@@ -1,0 +1,109 @@
+{
+  "storeHostname": "meundies.com",
+  "source": "https://www.meundies.com",
+  "fetchedFrom": "product-pages-scraped-2026-09-08",
+  "products": [
+    {
+      "id": "moonwalk",
+      "label": "Moonwalk",
+      "url": "https://www.meundies.com/products/ball-caddy-boxer-brief-fly-moonwalk",
+      "keywords": [
+        "Moonwalk",
+        "moonwalk",
+        "moon walk"
+      ],
+      "priority": 12,
+      "price": "$29",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/4454/4918/files/FLAT_M630-ASIS_7622.png?v=1787084165"
+    },
+    {
+      "id": "alien-arcade",
+      "label": "Alien Arcade",
+      "url": "https://www.meundies.com/products/boxer-brief-fly-alien-arcade",
+      "keywords": [
+        "Alien Arcade",
+        "alien arcade"
+      ],
+      "priority": 12,
+      "price": "$26"
+    },
+    {
+      "id": "all-over-lace",
+      "label": "All Over Lace",
+      "url": "https://www.meundies.com/products/all-over-lace-plunge-bralette-latte-zebra",
+      "keywords": [
+        "All Over Lace",
+        "all over lace",
+        "all-over lace"
+      ],
+      "priority": 12,
+      "price": "$44"
+    },
+    {
+      "id": "jurassic-park",
+      "label": "Jurassic Park x MeUndies",
+      "url": "https://www.meundies.com/products/boxer-brief-life-finds-a-way",
+      "keywords": [
+        "Jurassic Park x MeUndies",
+        "jurassic park x meundies",
+        "jurassic park",
+        "meundies x jurassic park"
+      ],
+      "priority": 12,
+      "price": "$26"
+    },
+    {
+      "id": "halloween-collection",
+      "label": "Halloween Collection",
+      "url": "https://www.meundies.com/collections/halloween-collection",
+      "keywords": [
+        "Halloween Collection",
+        "halloween collection",
+        "the halloween collection"
+      ],
+      "priority": 11,
+      "price": "$26"
+    },
+    {
+      "id": "caught-in-your-web",
+      "label": "Caught in Your Web",
+      "url": "https://www.meundies.com/products/boxer-brief-caught-in-a-web",
+      "keywords": [
+        "Caught in Your Web",
+        "caught in your web"
+      ],
+      "priority": 11,
+      "price": "$26"
+    },
+    {
+      "id": "feelfree-plunge-bralette",
+      "label": "FeelFree Plunge Bralette",
+      "url": "https://www.meundies.com/products/feelfree-plunge-bralette-cups-black",
+      "keywords": [
+        "FeelFree Plunge Bralette",
+        "feelfree plunge bralette",
+        "plunge bralette",
+        "plunge + ruched bralettes",
+        "plunge and ruched bralettes",
+        "plunge bralettes"
+      ],
+      "priority": 12,
+      "price": "$44"
+    },
+    {
+      "id": "feelfree-ruched-bralette",
+      "label": "FeelFree Ruched Bralette",
+      "url": "https://www.meundies.com/products/feelfree-ruched-bralette-cups-pink-bloom",
+      "keywords": [
+        "FeelFree Ruched Bralette",
+        "feelfree ruched bralette",
+        "ruched bralette",
+        "plunge + ruched bralettes",
+        "plunge and ruched bralettes",
+        "ruched bralettes"
+      ],
+      "priority": 12,
+      "price": "$44"
+    }
+  ]
+}

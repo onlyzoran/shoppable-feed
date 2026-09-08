@@ -9,7 +9,9 @@ import {
   GREZ_CATALOG,
   MADJ_CATALOG,
   MANEKENBRAND_CATALOG,
+  MEUNDIES_CATALOG,
   WILDFLOWERCASES_CATALOG,
+  BROOKLINEN_CATALOG,
 } from "./store-catalogs";
 
 describe("matchCatalogProduct", () => {
@@ -273,6 +275,61 @@ describe("matchCatalogProduct for WILDFLOWER", () => {
     expect(matches.map((product) => product.label)).toEqual([
       "Ahoy Babe",
       "Polka Dot | Turquoise and Black",
+    ]);
+  });
+});
+
+describe("matchCatalogProduct for MEUNDIES", () => {
+  it("находит Moonwalk и Alien Arcade в подписи", () => {
+    const caption =
+      "Moonwalk + Alien Arcade have officially landed. shop meundies.com";
+    const matches = matchCatalogProducts(caption, MEUNDIES_CATALOG);
+
+    expect(matches.map((product) => product.label)).toEqual([
+      "Moonwalk",
+      "Alien Arcade",
+    ]);
+  });
+
+  it("находит Jurassic Park x MeUndies в подписи", () => {
+    const match = matchCatalogProduct(
+      "Jurassic Park x MeUndies is BACK from extinction for a very limited time.",
+      MEUNDIES_CATALOG,
+    );
+
+    expect(match?.label).toBe("Jurassic Park x MeUndies");
+  });
+
+  it("находит Plunge и Ruched Bralettes в подписи", () => {
+    const caption =
+      "Meet the newest members of the FeelFree family: our Plunge + Ruched Bralettes, now with sewn-in cups.";
+    const matches = matchCatalogProducts(caption, MEUNDIES_CATALOG);
+
+    expect(matches.map((product) => product.label)).toEqual([
+      "FeelFree Plunge Bralette",
+      "FeelFree Ruched Bralette",
+    ]);
+  });
+});
+
+describe("matchCatalogProduct for BROOKLINEN", () => {
+  it("находит Best Sheets Ever в подписи кампании", () => {
+    const match = matchCatalogProduct(
+      "Labor Day is better from bed when you have the BEST. SHEETS. EVER.",
+      BROOKLINEN_CATALOG,
+    );
+
+    expect(match?.label).toBe("Classic Percale Core Sheet Set");
+  });
+
+  it("находит Washed Classic и Heritage Wool в подписи", () => {
+    const caption =
+      "New Washed Classic in Desert Stripe in Avocado for warm summer nights, and a beautiful new Heritage Wool Throw in Algae for when things get cooler.";
+    const matches = matchCatalogProducts(caption, BROOKLINEN_CATALOG);
+
+    expect(matches.map((product) => product.label)).toEqual([
+      "Desert Stripe Avocado",
+      "Heritage Wool Throw",
     ]);
   });
 });

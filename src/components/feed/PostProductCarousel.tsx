@@ -16,13 +16,17 @@ type PostProductCarouselProps = {
 type ScrollState = {
   canScrollLeft: boolean;
   canScrollRight: boolean;
+  hasOverflow: boolean;
 };
 
 function readScrollState(element: HTMLDivElement): ScrollState {
+  const hasOverflow = element.scrollWidth > element.clientWidth + 1;
+
   return {
     canScrollLeft: element.scrollLeft > 1,
     canScrollRight:
       element.scrollLeft + element.clientWidth < element.scrollWidth - 1,
+    hasOverflow,
   };
 }
 
@@ -34,6 +38,7 @@ export function PostProductCarousel({
   const [scrollState, setScrollState] = useState<ScrollState>({
     canScrollLeft: false,
     canScrollRight: false,
+    hasOverflow: false,
   });
 
   const updateScrollState = useCallback(() => {
@@ -97,7 +102,7 @@ export function PostProductCarousel({
     );
   }
 
-  const showArrows = buttons.length > 1;
+  const showArrows = scrollState.hasOverflow;
 
   return (
     <div className={styles.productCarouselWrap}>
