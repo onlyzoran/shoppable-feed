@@ -34,7 +34,6 @@ export function PostCard({
   const hidePostProducts = buttonPlacement === "gallery";
   const shoppableButtons = buildShoppableButtonsForPost(post);
   const productButtons = findProductButtons(shoppableButtons);
-  const primaryProductButton = productButtons[0] ?? null;
   const fallbackProductImage = post.mediaPosterUrl ?? post.mediaUrl;
 
   return (
@@ -88,9 +87,9 @@ export function PostCard({
         </div>
         {showOverlay ? (
           <>
-            {primaryProductButton ? (
+            {productButtons.length > 0 ? (
               <PostProductPin
-                button={primaryProductButton}
+                buttons={productButtons}
                 fallbackImageUrl={fallbackProductImage}
               />
             ) : null}
