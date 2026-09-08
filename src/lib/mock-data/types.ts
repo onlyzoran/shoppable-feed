@@ -4,6 +4,8 @@ export type ExampleSource = {
   id: string;
   label: string;
   profileUrl: string;
+  /** Скрыть из списка Examples в UI, но оставить mock/API доступным */
+  hidden?: boolean;
   /** Если указан — посты берутся из mock-data, иначе — live Instagram */
   fileName?: string;
   profileBio?: string;

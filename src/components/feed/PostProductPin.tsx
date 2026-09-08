@@ -1,6 +1,7 @@
 import { ShoppingBagIcon } from "@/components/icons";
 import type { ShoppableButton } from "@/lib/shoppable/types";
 
+import { ProductThumbImage } from "./ProductThumbImage";
 import styles from "./feed.module.css";
 
 type PostProductPinProps = {
@@ -27,11 +28,9 @@ export function PostProductPin({
       </span>
       <span className={styles.productPinCard}>
         {thumbUrl ? (
-          <img
+          <ProductThumbImage
             className={styles.productPinCardThumb}
             src={thumbUrl}
-            alt=""
-            loading="lazy"
           />
         ) : (
           <span className={styles.productPinCardThumbPlaceholder} aria-hidden />

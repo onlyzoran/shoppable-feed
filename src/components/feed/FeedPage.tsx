@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Post } from "@/lib/instagram/types";
 import { buildPostsApiUrl } from "@/lib/api/build-posts-url";
 import { APP_NAME } from "@/lib/constants";
-import { EXAMPLE_SOURCES } from "@/lib/mock-data/examples";
+import { VISIBLE_EXAMPLE_SOURCES } from "@/lib/mock-data/examples";
 import { collectProductButtonsFromPosts } from "@/lib/shoppable";
 
 import { FeedSkeleton } from "./FeedSkeleton";
@@ -26,7 +26,7 @@ type ApiErrorPayload = {
 };
 
 const SHOW_PROFILE_FORM = false;
-const DEFAULT_EXAMPLE = EXAMPLE_SOURCES[0];
+const DEFAULT_EXAMPLE = VISIBLE_EXAMPLE_SOURCES[0];
 
 function normalizeProfileUrl(url: string): string {
   return url.trim().replace(/\/+$/, "").toLowerCase();
@@ -140,36 +140,12 @@ export function FeedPage() {
             />
           </>
         ) : null}
-        {EXAMPLE_SOURCES.length > 0 ? (
-          <div className={styles.examples}>
-            <span className={styles.examplesLabel}>Примеры:</span>
-            <ul className={styles.examplesList}>
-              {EXAMPLE_SOURCES.map((example) => (
-                <li key={example.id}>
-                  <button
-                    type="button"
-                    className={`${styles.exampleButton}${
-                      activeProfileUrl ===
-                      normalizeProfileUrl(example.profileUrl)
-                        ? ` ${styles.exampleButtonActive}`
-                        : ""
-                    }`}
-                    onClick={() => handleExampleClick(example.profileUrl)}
-                    disabled={status === "loading"}
-                  >
-                    {example.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : null}
         <div className={styles.modeSection}>
-          <span className={styles.examplesLabel}>Кнопки:</span>
+          <span className={styles.examplesLabel}>Layout</span>
           <div
             className={styles.modeToggle}
             role="radiogroup"
-            aria-label="Режим отображения кнопок"
+            aria-label="Layout"
           >
             {BUTTON_PLACEMENT_OPTIONS.map((option) => (
               <button
@@ -189,6 +165,30 @@ export function FeedPage() {
             ))}
           </div>
         </div>
+        {VISIBLE_EXAMPLE_SOURCES.length > 0 ? (
+          <div className={styles.examples}>
+            <span className={styles.examplesLabel}>Examples</span>
+            <ul className={styles.examplesList}>
+              {VISIBLE_EXAMPLE_SOURCES.map((example) => (
+                <li key={example.id}>
+                  <button
+                    type="button"
+                    className={`${styles.exampleButton}${
+                      activeProfileUrl ===
+                      normalizeProfileUrl(example.profileUrl)
+                        ? ` ${styles.exampleButtonActive}`
+                        : ""
+                    }`}
+                    onClick={() => handleExampleClick(example.profileUrl)}
+                    disabled={status === "loading"}
+                  >
+                    {example.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </aside>
 
       <div className={styles.content}>
@@ -217,7 +217,7 @@ export function FeedPage() {
             {buttonPlacement === "gallery" && feedProductButtons.length > 0 ? (
               <section
                 className={styles.feedGallery}
-                aria-label="Галерея товаров"
+                aria-label="Product gallery"
               >
                 <PostProductGallery buttons={feedProductButtons} />
               </section>

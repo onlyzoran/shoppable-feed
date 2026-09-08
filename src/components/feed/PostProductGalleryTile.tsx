@@ -1,5 +1,6 @@
 import type { ShoppableButton } from "@/lib/shoppable/types";
 
+import { ProductThumbImage } from "./ProductThumbImage";
 import styles from "./feed.module.css";
 
 type PostProductGalleryTileProps = {
@@ -22,11 +23,9 @@ export function PostProductGalleryTile({
       role="listitem"
     >
       {thumbUrl ? (
-        <img
+        <ProductThumbImage
           className={styles.productGalleryThumb}
           src={thumbUrl}
-          alt=""
-          loading="lazy"
         />
       ) : (
         <span className={styles.productGalleryThumbPlaceholder} aria-hidden />

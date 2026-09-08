@@ -103,7 +103,7 @@ export function PostProductGallery({
         ref={trackRef}
         className={styles.productGalleryTrack}
         role="list"
-        aria-label="Галерея товаров"
+        aria-label="Product gallery"
       >
         {buttons.map((button) => (
           <PostProductGalleryTile

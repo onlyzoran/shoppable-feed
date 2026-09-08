@@ -126,6 +126,8 @@
 .examplesLabel {
   color: var(--muted-foreground);
   font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .examplesList {
@@ -615,7 +617,12 @@
   height: 44px;
   border-radius: 6px;
   object-fit: cover;
+  object-position: center;
   background: #efefef;
+}
+
+.productThumbPortrait {
+  object-position: 50% 30%;
 }
 
 .productCardThumbPlaceholder {

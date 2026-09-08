@@ -92,6 +92,7 @@ export const EXAMPLE_SOURCES: ExampleSource[] = [
     label: "MEUNDIES",
     profileUrl: "https://www.instagram.com/meundies/",
     fileName: "meundies.json",
+    hidden: true,
     profileBio:
       "Feel-good underwear & loungewear — https://www.meundies.com",
     profileExternalUrl: "https://www.meundies.com",
@@ -108,6 +109,10 @@ export const EXAMPLE_SOURCES: ExampleSource[] = [
     profileLinks: ["https://www.brooklinen.com"],
   },
 ];
+
+export const VISIBLE_EXAMPLE_SOURCES = EXAMPLE_SOURCES.filter(
+  (example) => !example.hidden,
+);
 
 export function findExampleByProfileUrl(profileUrl: string): ExampleSource | null {
   const normalized = profileUrl.trim().replace(/\/+$/, "").toLowerCase();

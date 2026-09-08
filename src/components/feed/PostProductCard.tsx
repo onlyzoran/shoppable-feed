@@ -1,5 +1,6 @@
 import type { ShoppableButton } from "@/lib/shoppable/types";
 
+import { ProductThumbImage } from "./ProductThumbImage";
 import styles from "./feed.module.css";
 
 type PostProductCardProps = {
@@ -21,11 +22,9 @@ export function PostProductCard({
       rel="noopener noreferrer"
     >
       {thumbUrl ? (
-        <img
+        <ProductThumbImage
           className={styles.productCardThumb}
           src={thumbUrl}
-          alt=""
-          loading="lazy"
         />
       ) : (
         <span className={styles.productCardThumbPlaceholder} aria-hidden />

@@ -4,7 +4,7 @@ export const BUTTON_PLACEMENT_OPTIONS: {
   value: ButtonPlacement;
   label: string;
 }[] = [
-  { value: "below", label: "Под подписью" },
-  { value: "overlay", label: "На картинке" },
-  { value: "gallery", label: "Галерея товаров" },
+  { value: "below", label: "In post" },
+  { value: "overlay", label: "On media" },
+  { value: "gallery", label: "Product gallery" },
 ];
