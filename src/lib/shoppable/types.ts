@@ -22,3 +22,4 @@ export type ShoppableInput = {
 };
 
 export const MAX_SHOPPABLE_BUTTONS = 3;
+export const MAX_PRODUCT_BUTTONS = 12;

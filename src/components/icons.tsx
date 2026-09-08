@@ -178,3 +178,45 @@ export function ShoppingBagIcon({ className, size = 18 }: IconProps) {
     </svg>
   );
 }
+
+export function ChevronLeftIcon({ className, size = 16 }: IconProps) {
+  return (
+    <svg
+      aria-hidden
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M14.5 6 8.5 12l6 6"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function ChevronRightIcon({ className, size = 16 }: IconProps) {
+  return (
+    <svg
+      aria-hidden
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="m9.5 6 6 6-6 6"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}

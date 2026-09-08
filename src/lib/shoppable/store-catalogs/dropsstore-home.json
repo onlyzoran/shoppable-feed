@@ -65,7 +65,8 @@
       "label": "Джоггеры",
       "url": "https://www.dropsstore.ru/catalog/tproduct/201586878313-dzhoggeri",
       "keywords": [
-        "джоггеры"
+        "джоггеры",
+        "mokko"
       ],
       "priority": 10,
       "price": "9 490 ₽",
@@ -135,7 +136,9 @@
       "label": "Худи",
       "url": "https://www.dropsstore.ru/catalog/tproduct/774687500792-hudi",
       "keywords": [
-        "худи"
+        "худи",
+        "dark gray",
+        "dark grey"
       ],
       "priority": 10,
       "price": "6 293 ₽",
@@ -194,7 +197,9 @@
       "url": "https://www.dropsstore.ru/catalog/tproduct/542003582342-palto-iz-shersti",
       "keywords": [
         "пальто из шерсти",
-        "iz shersti"
+        "iz shersti",
+        "pearl",
+        "шерсти"
       ],
       "priority": 10,
       "price": "21 990 ₽",
@@ -206,6 +211,7 @@
       "url": "https://www.dropsstore.ru/catalog/tproduct/168093550702-zhiletka-gray",
       "keywords": [
         "жилетка gray",
+        "жилет gray",
         "gray"
       ],
       "priority": 10,
@@ -217,7 +223,8 @@
       "label": "Жилетка",
       "url": "https://www.dropsstore.ru/catalog/tproduct/163542828892-zhiletka",
       "keywords": [
-        "жилетка"
+        "жилетка",
+        "beige"
       ],
       "priority": 10,
       "price": "8 393 ₽",
@@ -253,6 +260,7 @@
       "url": "https://www.dropsstore.ru/catalog/tproduct/754940801012-rubashka-v-kletku",
       "keywords": [
         "рубашка в клетку",
+        "рубашка утепленная в клетку",
         "v kletku"
       ],
       "priority": 10,
@@ -265,7 +273,9 @@
       "url": "https://www.dropsstore.ru/catalog/tproduct/124903112012-plate-monaco",
       "keywords": [
         "платье monaco",
-        "monaco"
+        "платье монако",
+        "monaco",
+        "монако"
       ],
       "priority": 10,
       "price": "2 997 ₽",
@@ -276,8 +286,7 @@
       "label": "Платье flower",
       "url": "https://www.dropsstore.ru/catalog/tproduct/736417691722-plate-flower",
       "keywords": [
-        "платье flower",
-        "flower"
+        "платье flower"
       ],
       "priority": 10,
       "price": "6 293 ₽",
@@ -434,6 +443,8 @@
       "url": "https://www.dropsstore.ru/catalog/tproduct/137277353552-yubka-maksi-iz-tensela",
       "keywords": [
         "юбка макси из тенсела",
+        "юбка из тенсела макси",
+        "dark flower",
         "maksi iz tensela"
       ],
       "priority": 10,

@@ -7,7 +7,7 @@ import {
   truncateButtonLabel,
 } from "./extract-product-headline";
 import { extractHashtags, extractUrlsFromText } from "./extract-urls";
-import { matchCatalogProduct } from "./match-catalog-product";
+import { matchCatalogProduct, matchCatalogProducts } from "./match-catalog-product";
 import { getStoreCatalog } from "./store-catalogs";
 import {
   buildMapsSearchUrl,
@@ -20,7 +20,7 @@ import type {
   ShoppableButton,
   ShoppableInput,
 } from "./types";
-import { MAX_SHOPPABLE_BUTTONS } from "./types";
+import { MAX_PRODUCT_BUTTONS, MAX_SHOPPABLE_BUTTONS } from "./types";
 
 function normalizeButtonUrl(url: string): string {
   try {
@@ -82,6 +82,53 @@ function collectExplicitUrlButtons(input: ShoppableInput): ShoppableButton[] {
   return buttons;
 }
 
+function addProductButton(
+  buttons: ShoppableButton[],
+  seenUrls: Set<string>,
+  button: ShoppableButton,
+): void {
+  if (buttons.filter((item) => item.kind === "product").length >= MAX_PRODUCT_BUTTONS) {
+    return;
+  }
+
+  const normalizedUrl = normalizeButtonUrl(button.url);
+  if (seenUrls.has(normalizedUrl)) {
+    return;
+  }
+
+  seenUrls.add(normalizedUrl);
+  buttons.push(button);
+}
+
+function catalogProductToButton(product: {
+  label: string;
+  url: string;
+  imageUrl?: string;
+  price?: string;
+}): ShoppableButton {
+  return {
+    kind: "product",
+    label: truncateButtonLabel(product.label),
+    url: product.url,
+    imageUrl: product.imageUrl,
+    price: product.price,
+  };
+}
+
+function buildCatalogProductButtons(input: ShoppableInput): ShoppableButton[] {
+  const storeUrl = input.profileExternalUrl?.trim();
+  if (!storeUrl) {
+    return [];
+  }
+
+  const catalog = getStoreCatalog(storeUrl);
+  if (!catalog) {
+    return [];
+  }
+
+  return matchCatalogProducts(input.caption, catalog).map(catalogProductToButton);
+}
+
 function buildProductSearchButton(input: ShoppableInput): ShoppableButton | null {
   const storeUrl = input.profileExternalUrl?.trim();
 
@@ -96,13 +143,7 @@ function buildProductSearchButton(input: ShoppableInput): ShoppableButton | null
       return null;
     }
 
-    return {
-      kind: "product",
-      label: truncateButtonLabel(catalogMatch.label),
-      url: catalogMatch.url,
-      imageUrl: catalogMatch.imageUrl,
-      price: catalogMatch.price,
-    };
+    return catalogProductToButton(catalogMatch);
   }
 
   const category = detectCommercialCategory(
@@ -126,30 +167,40 @@ function buildProductSearchButton(input: ShoppableInput): ShoppableButton | null
 }
 
 function collectDirectButtons(input: ShoppableInput): ShoppableButton[] {
-  const buttons = collectExplicitUrlButtons(input);
-  const seenUrls = new Set(buttons.map((button) => button.url));
+  const linkButtons = collectExplicitUrlButtons(input);
+  const seenUrls = new Set(linkButtons.map((button) => button.url));
+  const productButtons = buildCatalogProductButtons(input);
 
-  const productButton = buildProductSearchButton(input);
-  if (productButton) {
-    addButton(
-      buttons,
-      seenUrls,
-      productButton.label,
-      productButton.url,
-      {
-        kind: "product",
-        imageUrl: productButton.imageUrl,
-        price: productButton.price,
-      },
-    );
-  } else {
-    const profileUrl = input.profileExternalUrl?.trim();
-    if (profileUrl) {
-      addButton(buttons, seenUrls, labelForUrl(profileUrl), profileUrl);
+  if (productButtons.length === 0) {
+    const productButton = buildProductSearchButton(input);
+    if (productButton) {
+      addProductButton(linkButtons, seenUrls, productButton);
+    } else {
+      const profileUrl = input.profileExternalUrl?.trim();
+      if (profileUrl) {
+        addButton(linkButtons, seenUrls, labelForUrl(profileUrl), profileUrl);
+      }
     }
+
+    return linkButtons;
   }
 
-  return buttons;
+  for (const productButton of productButtons) {
+    addProductButton(linkButtons, seenUrls, productButton);
+  }
+
+  return linkButtons;
+}
+
+function partitionShoppableButtons(buttons: ShoppableButton[]): ShoppableButton[] {
+  const linkButtons = buttons
+    .filter((button) => button.kind !== "product")
+    .slice(0, MAX_SHOPPABLE_BUTTONS);
+  const productButtons = buttons
+    .filter((button) => button.kind === "product")
+    .slice(0, MAX_PRODUCT_BUTTONS);
+
+  return [...linkButtons, ...productButtons];
 }
 
 function buildHeuristicButtons(
@@ -241,7 +292,7 @@ function buildHeuristicButtons(
 export function buildShoppableButtons(input: ShoppableInput): ShoppableButton[] {
   const directButtons = collectDirectButtons(input);
   if (directButtons.length > 0) {
-    return directButtons.slice(0, MAX_SHOPPABLE_BUTTONS);
+    return partitionShoppableButtons(directButtons);
   }
 
   const category = detectCommercialCategory(
@@ -269,7 +320,32 @@ export function buildShoppableButtonsForPost(post: Post): ShoppableButton[] {
 export function findProductButton(
   buttons: ShoppableButton[],
 ): ShoppableButton | null {
-  return buttons.find((button) => button.kind === "product") ?? null;
+  return findProductButtons(buttons)[0] ?? null;
+}
+
+export function findProductButtons(
+  buttons: ShoppableButton[],
+): ShoppableButton[] {
+  return buttons.filter((button) => button.kind === "product");
+}
+
+export function collectProductButtonsFromPosts(posts: Post[]): ShoppableButton[] {
+  const seenUrls = new Set<string>();
+  const products: ShoppableButton[] = [];
+
+  for (const post of posts) {
+    for (const button of findProductButtons(buildShoppableButtonsForPost(post))) {
+      const normalizedUrl = normalizeButtonUrl(button.url);
+      if (seenUrls.has(normalizedUrl)) {
+        continue;
+      }
+
+      seenUrls.add(normalizedUrl);
+      products.push(button);
+    }
+  }
+
+  return products;
 }
 
 export function extractShoppableContext(input: ShoppableInput) {

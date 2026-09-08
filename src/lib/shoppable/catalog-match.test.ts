@@ -1,10 +1,11 @@
 import { describe, expect, it } from "vitest";
 
 import { buildShoppableButtons } from "./generate-buttons";
-import { matchCatalogProduct } from "./match-catalog-product";
+import { matchCatalogProduct, matchCatalogProducts } from "./match-catalog-product";
 import {
   ADAHLAZORGAN_CATALOG,
   BANANHOT_CATALOG,
+  DROPSSTORE_CATALOG,
   GREZ_CATALOG,
   MADJ_CATALOG,
   MANEKENBRAND_CATALOG,
@@ -41,6 +42,58 @@ describe("matchCatalogProduct", () => {
     );
 
     expect(match).toBeNull();
+  });
+});
+
+describe("matchCatalogProducts for DROPS", () => {
+  const septemberCaption =
+    "Собрали для вас образы на сентябрь 🍂\nдля любого повода и настроения :\n\n1. Пальто из 100% шерсти ‘pearl’ 21990₽\n Платье ‘Монако’ 9990₽-70% / 2997₽\n\n2.Рубашка утепленная в клетку 8490₽\n Жилет ‘beige’ 11990₽-30% /  8393₽\n Джоггеры ‘mokko’ 9490₽\n\n3.Юбка из тенсела макси \n ‘dark flower’  6990₽ -40% / 4194₽\n\n4.Жилет ‘gray’\n Худи с начёсом ‘dark gray’  8990₽ -20% / 7192₽\n Джоггеры с начёсом ‘dark grey’ 8490₽-20% / 6792₽\n\nВ наличии на сайте: dropsstore.ru";
+
+  it("находит все товары из подписи с образами", () => {
+    const matches = matchCatalogProducts(septemberCaption, DROPSSTORE_CATALOG);
+
+    expect(matches.map((product) => product.id)).toEqual([
+      "пальто-из-шерсти",
+      "платье-monaco",
+      "рубашка-в-клетку",
+      "жилетка",
+      "джоггеры",
+      "юбка-макси-из-тенсела",
+      "жилетка-gray",
+      "худи",
+    ]);
+  });
+});
+
+describe("buildShoppableButtons with DROPS catalog", () => {
+  const baseInput = {
+    mediaType: "image" as const,
+    username: "dropsstore.ru",
+    profileExternalUrl: "https://www.dropsstore.ru",
+    profileBio: "DROP'S — dropsstore.ru",
+  };
+
+  it("добавляет карточки для всех товаров из подписи", () => {
+    const buttons = buildShoppableButtons({
+      ...baseInput,
+      caption:
+        "Собрали для вас образы на сентябрь 🍂\n1. Пальто из 100% шерсти ‘pearl’ 21990₽\n Платье ‘Монако’ 9990₽-70% / 2997₽\n2.Рубашка утепленная в клетку 8490₽\n Жилет ‘beige’ 11990₽-30% /  8393₽\n Джоггеры ‘mokko’ 9490₽\n3.Юбка из тенсела макси ‘dark flower’ 6990₽ -40% / 4194₽\n4.Жилет ‘gray’\n Худи с начёсом ‘dark gray’ 8990₽ -20% / 7192₽",
+    });
+
+    const productButtons = buttons.filter((button) => button.kind === "product");
+    expect(productButtons.length).toBeGreaterThanOrEqual(7);
+    expect(productButtons.map((button) => button.label)).toEqual(
+      expect.arrayContaining([
+        "Пальто из шерсти",
+        "Платье Monaco",
+        "Рубашка в клетку",
+        "Жилетка",
+        "Джоггеры",
+        "Юбка макси из тенсела",
+        "Жилетка Gray",
+        "Худи",
+      ]),
+    );
   });
 });
 

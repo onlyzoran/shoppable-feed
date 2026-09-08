@@ -1,14 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { Post } from "@/lib/instagram/types";
 import { buildPostsApiUrl } from "@/lib/api/build-posts-url";
 import { APP_NAME } from "@/lib/constants";
 import { EXAMPLE_SOURCES } from "@/lib/mock-data/examples";
+import { collectProductButtonsFromPosts } from "@/lib/shoppable";
 
 import { FeedSkeleton } from "./FeedSkeleton";
 import { PostCard } from "./PostCard";
+import { PostProductGallery } from "./PostProductGallery";
 import { ProfileUrlForm } from "./ProfileUrlForm";
 import {
   BUTTON_PLACEMENT_OPTIONS,
@@ -111,6 +113,14 @@ export function FeedPage() {
   const showEmptyPosts =
     status === "success" && posts.length === 0 && hasLoadedOnce;
 
+  const feedProductButtons = useMemo(
+    () =>
+      buttonPlacement === "gallery"
+        ? collectProductButtonsFromPosts(posts)
+        : [],
+    [buttonPlacement, posts],
+  );
+
   return (
     <main className={styles.page}>
       <aside className={styles.sidebar}>
@@ -203,15 +213,25 @@ export function FeedPage() {
         ) : null}
 
         {status === "success" && posts.length > 0 ? (
-          <section className={styles.grid} aria-label="Лента постов">
-            {posts.map((post) => (
-              <PostCard
-                key={post.id}
-                post={post}
-                buttonPlacement={buttonPlacement}
-              />
-            ))}
-          </section>
+          <>
+            {buttonPlacement === "gallery" && feedProductButtons.length > 0 ? (
+              <section
+                className={styles.feedGallery}
+                aria-label="Галерея товаров"
+              >
+                <PostProductGallery buttons={feedProductButtons} />
+              </section>
+            ) : null}
+            <section className={styles.grid} aria-label="Лента постов">
+              {posts.map((post) => (
+                <PostCard
+                  key={post.id}
+                  post={post}
+                  buttonPlacement={buttonPlacement}
+                />
+              ))}
+            </section>
+          </>
         ) : null}
       </div>
     </main>

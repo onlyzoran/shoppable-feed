@@ -2,7 +2,7 @@ import type { Post } from "@/lib/instagram/types";
 import { formatCount, formatPostDate } from "@/lib/format";
 import {
   buildShoppableButtonsForPost,
-  findProductButton,
+  findProductButtons,
 } from "@/lib/shoppable";
 import {
   CommentIcon,
@@ -14,7 +14,7 @@ import {
 } from "@/components/icons";
 
 import { PostCaption } from "./PostCaption";
-import { PostProductCard } from "./PostProductCard";
+import { PostProductCarousel } from "./PostProductCarousel";
 import { PostProductPin } from "./PostProductPin";
 import { PostShoppableButtons } from "./PostShoppableButtons";
 import type { ButtonPlacement } from "./button-placement";
@@ -31,8 +31,10 @@ export function PostCard({
 }: PostCardProps) {
   const formattedDate = formatPostDate(post.postedAt);
   const showOverlay = buttonPlacement === "overlay";
+  const hidePostProducts = buttonPlacement === "gallery";
   const shoppableButtons = buildShoppableButtonsForPost(post);
-  const productButton = findProductButton(shoppableButtons);
+  const productButtons = findProductButtons(shoppableButtons);
+  const primaryProductButton = productButtons[0] ?? null;
   const fallbackProductImage = post.mediaPosterUrl ?? post.mediaUrl;
 
   return (
@@ -86,9 +88,9 @@ export function PostCard({
         </div>
         {showOverlay ? (
           <>
-            {productButton ? (
+            {primaryProductButton ? (
               <PostProductPin
-                button={productButton}
+                button={primaryProductButton}
                 fallbackImageUrl={fallbackProductImage}
               />
             ) : null}
@@ -97,9 +99,9 @@ export function PostCard({
         ) : null}
       </div>
 
-      {productButton && !showOverlay ? (
-        <PostProductCard
-          button={productButton}
+      {productButtons.length > 0 && !showOverlay && !hidePostProducts ? (
+        <PostProductCarousel
+          buttons={productButtons}
           fallbackImageUrl={fallbackProductImage}
         />
       ) : null}

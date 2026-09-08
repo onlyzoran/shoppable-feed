@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { buildShoppableButtons } from "./generate-buttons";
+import type { Post } from "@/lib/instagram/types";
+
+import {
+  buildShoppableButtons,
+  collectProductButtonsFromPosts,
+} from "./generate-buttons";
 
 describe("buildShoppableButtons", () => {
   it("возвращает кнопки с осмысленными подписями для явных URL в подписи", () => {
@@ -138,5 +143,51 @@ describe("buildShoppableButtons", () => {
     });
 
     expect(buttons).toEqual([]);
+  });
+});
+
+describe("collectProductButtonsFromPosts", () => {
+  const basePost: Omit<Post, "id" | "caption"> = {
+    username: "manekenbrand",
+    avatarUrl: "https://example.com/avatar.jpg",
+    isVerified: true,
+    postedAt: "2026-01-01T00:00:00.000Z",
+    mediaUrl: "https://example.com/post.jpg",
+    mediaType: "image",
+    likesCount: 10,
+    commentsCount: 2,
+    repostsCount: 0,
+    permalink: "https://www.instagram.com/p/test/",
+    profileBio: "Каталог https://manekenbrand.com",
+    profileExternalUrl: "https://manekenbrand.com",
+    profileLinks: [],
+  };
+
+  it("собирает уникальные товары из всех постов", () => {
+    const posts: Post[] = [
+      {
+        ...basePost,
+        id: "1",
+        caption: "Технологичная ветровка Urban Veil в трендовом цвете",
+      },
+      {
+        ...basePost,
+        id: "2",
+        caption: "Возвращение бестселлера: костюм Champion в оттенке меланж",
+      },
+      {
+        ...basePost,
+        id: "3",
+        caption: "Urban Veil снова в наличии — успейте заказать",
+      },
+    ];
+
+    const products = collectProductButtonsFromPosts(posts);
+
+    expect(products).toHaveLength(2);
+    expect(products.map((product) => product.label)).toEqual([
+      "Ветровка Urban Veil",
+      "Костюм Champion",
+    ]);
   });
 });
