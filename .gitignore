@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/services/shoppable-feed-api/node_modules
+/services/shoppable-feed-api/dist
 /.pnp
 .pnp.*
 .yarn/*

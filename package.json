@@ -10,7 +10,11 @@
     "test": "vitest run",
     "fetch:instagram-mocks": "node scripts/fetch-instagram-mock.mjs",
     "sync:catalog-prices": "node scripts/sync-catalog-prices.mjs",
-    "enrich:meundies-images": "node scripts/enrich-meundies-catalog-images.mjs"
+    "enrich:meundies-images": "node scripts/enrich-meundies-catalog-images.mjs",
+    "api:dev": "npm run dev --prefix services/shoppable-feed-api",
+    "api:build": "npm run build --prefix services/shoppable-feed-api",
+    "api:start": "npm run start --prefix services/shoppable-feed-api",
+    "api:test": "npm run test --prefix services/shoppable-feed-api"
   },
   "dependencies": {
     "next": "16.3.4",
